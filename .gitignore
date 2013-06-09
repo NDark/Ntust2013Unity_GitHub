@@ -113,3 +113,6 @@ UpgradeLog*.XML
 /COURSE/CameraDemonstration01/Library/ScriptAssemblies
 /COURSE/CameraDemonstration01/*.userprefs
 /COURSE/CameraDemonstration01/Temp
+/COURSE/MinmapManager01/Temp
+/COURSE/MinmapManager01/Library/metadata
+/COURSE/MinmapManager01/Library/ScriptAssemblies
