@@ -116,3 +116,5 @@ UpgradeLog*.XML
 /COURSE/MinmapManager01/Temp
 /COURSE/MinmapManager01/Library/metadata
 /COURSE/MinmapManager01/Library/ScriptAssemblies
+/COURSE/MinmapManager01/*.sln
+/COURSE/MinmapManager01/*.csproj
