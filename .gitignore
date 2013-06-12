@@ -120,3 +120,6 @@ UpgradeLog*.XML
 /COURSE/MinmapManager01/*.csproj
 /COURSE/MinmapManager01/*.pidb
 /COURSE/MinmapManager01/*.userprefs
+/COURSE/MessageQueueManager01/Library/metadata
+/COURSE/MessageQueueManager01/Library/ScriptAssemblies
+/COURSE/MessageQueueManager01/Temp
