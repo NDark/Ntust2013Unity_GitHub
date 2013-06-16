@@ -135,3 +135,5 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration01/*.sln
 /COURSE/LevelGeneration01/Library/ScriptAssemblies
 /COURSE/LevelGeneration01/Library/metadata
+/COURSE/LevelGeneration01/*.userprefs
+/COURSE/LevelGeneration01/*.pidb
