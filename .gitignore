@@ -129,3 +129,9 @@ UpgradeLog*.XML
 /COURSE/MessageQueueManager01/*.sln
 /COURSE/MessageQueueManager01/*.sln
 /COURSE/MessageQueueManager01/*.pidb
+/COURSE/LevelGeneration01/*.sln
+/COURSE/LevelGeneration01/*.csproj
+/COURSE/LevelGeneration01/*.csproj
+/COURSE/LevelGeneration01/*.sln
+/COURSE/LevelGeneration01/Library/ScriptAssemblies
+/COURSE/LevelGeneration01/Library/metadata
