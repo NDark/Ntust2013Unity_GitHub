@@ -156,3 +156,10 @@ UpgradeLog*.XML
 /COURSE/XMLParse01/Temp
 /COURSE/XMLParse01/Library/metadata
 /COURSE/XMLParse01/Library/ScriptAssemblies
+/COURSE/LevelGeneration02/*.csproj
+/COURSE/LevelGeneration02/*.csproj
+/COURSE/LevelGeneration02/*.sln
+/COURSE/LevelGeneration02/*.sln
+/COURSE/LevelGeneration02/Temp
+/COURSE/LevelGeneration02/Library/metadata
+/COURSE/LevelGeneration02/Library/ScriptAssemblies
