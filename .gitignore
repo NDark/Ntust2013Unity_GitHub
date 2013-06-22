@@ -147,3 +147,12 @@ UpgradeLog*.XML
 /COURSE/Prototype01/Library/ScriptAssemblies
 /COURSE/Prototype01/Library/metadata
 /COURSE/Prototype01/Temp
+/COURSE/XMLParse01/*.userprefs
+/COURSE/XMLParse01/*.csproj
+/COURSE/XMLParse01/*.csproj
+/COURSE/XMLParse01/*.sln
+/COURSE/XMLParse01/*.sln
+/COURSE/XMLParse01/*.pidb
+/COURSE/XMLParse01/Temp
+/COURSE/XMLParse01/Library/metadata
+/COURSE/XMLParse01/Library/ScriptAssemblies
