@@ -1,0 +1,11 @@
+<Level name="Level002">
+	<Unit name="ChessPawn001" >
+		<Position3D x="0.65" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn033" >
+		<Position3D x="0.65" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+</Level>
