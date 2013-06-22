@@ -146,3 +146,4 @@ UpgradeLog*.XML
 /COURSE/Prototype01/*.pidb
 /COURSE/Prototype01/Library/ScriptAssemblies
 /COURSE/Prototype01/Library/metadata
+/COURSE/Prototype01/Temp
