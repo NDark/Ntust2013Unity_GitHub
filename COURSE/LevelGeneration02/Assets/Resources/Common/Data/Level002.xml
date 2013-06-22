@@ -4,8 +4,162 @@
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	
-	<Unit name="ChessPawn033" >
+	<Unit name="ChessPawn002" >
+		<Position3D x="1.9" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn003" >
+		<Position3D x="3.15" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn004" >
+		<Position3D x="4.4" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn005" >
+		<Position3D x="5.65" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn006" >
+		<Position3D x="6.9" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn007" >
+		<Position3D x="8.15" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn008" >
+		<Position3D x="9.4" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+
+	<Unit name="ChessPawn009" >
+		<Position3D x="0.65" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn010" >
+		<Position3D x="1.9" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn011" >
+		<Position3D x="3.15" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn012" >
+		<Position3D x="4.4" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn013" >
+		<Position3D x="5.65" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn014" >
+		<Position3D x="6.9" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn015" >
+		<Position3D x="8.15" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn016" >
+		<Position3D x="9.4" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+		
+	
+	<Unit name="ChessPawn017" >
 		<Position3D x="0.65" y="1" z="8.15" />
 		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn018" >
+		<Position3D x="1.9" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn019" >
+		<Position3D x="3.15" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn020" >
+		<Position3D x="4.4" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn021" >
+		<Position3D x="5.65" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
 	</Unit>		
+
+	<Unit name="ChessPawn022" >
+		<Position3D x="6.9" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn023" >
+		<Position3D x="8.15" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn024" >
+		<Position3D x="9.4" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn025" >
+		<Position3D x="0.65" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn026" >
+		<Position3D x="1.9" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn027" >
+		<Position3D x="3.15" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn028" >
+		<Position3D x="4.4" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn029" >
+		<Position3D x="5.65" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn030" >
+		<Position3D x="6.9" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn031" >
+		<Position3D x="8.15" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn032" >
+		<Position3D x="9.4" y="1" z="9.4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+			
+		
 </Level>
