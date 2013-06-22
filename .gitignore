@@ -138,3 +138,11 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration01/*.userprefs
 /COURSE/LevelGeneration01/*.pidb
 /COURSE/LevelGeneration01/Temp
+/COURSE/Prototype01/*.userprefs
+/COURSE/Prototype01/*.sln
+/COURSE/Prototype01/*.sln
+/COURSE/Prototype01/*.csproj
+/COURSE/Prototype01/*.csproj
+/COURSE/Prototype01/*.pidb
+/COURSE/Prototype01/Library/ScriptAssemblies
+/COURSE/Prototype01/Library/metadata
