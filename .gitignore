@@ -183,3 +183,11 @@ UpgradeLog*.XML
 /COURSE/JSONParse01/Library/*
 /COURSE/JSONParse01/*.pidb
 /COURSE/JSONParse01/*.userprefs
+/COURSE/LevelGeneration03/*.csproj
+/COURSE/LevelGeneration03/*.csproj
+/COURSE/LevelGeneration03/*.sln
+/COURSE/LevelGeneration03/*.sln
+/COURSE/LevelGeneration03/*.pidb
+/COURSE/LevelGeneration03/*.userprefs
+/COURSE/LevelGeneration03/Library/ScriptAssemblies
+/COURSE/LevelGeneration03/Library/metadata
