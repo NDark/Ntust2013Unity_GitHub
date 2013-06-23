@@ -1,2 +1,3 @@
 http://jsonformat.com/#jsondataurllabel
 http://en.wikipedia.org/wiki/JSON
+http://blog.roodo.com/rocksaying/archives/2045155.html
