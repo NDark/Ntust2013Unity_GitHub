@@ -1,0 +1,1 @@
+http://docs.unity3d.com/Documentation/ScriptReference/PlayerPrefs.html
