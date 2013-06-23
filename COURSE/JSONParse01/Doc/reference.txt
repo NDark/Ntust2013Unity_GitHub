@@ -1,0 +1,2 @@
+http://jsonformat.com/#jsondataurllabel
+http://en.wikipedia.org/wiki/JSON

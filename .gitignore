@@ -174,3 +174,12 @@ UpgradeLog*.XML
 /COURSE/PlayerPerfs01/*.userprefs
 /COURSE/PlayerPerfs01/Library/metadata
 /COURSE/PlayerPerfs01/Library/ScriptAssemblies
+/COURSE/JSONParse01/*.sln
+/COURSE/JSONParse01/*.csproj
+/COURSE/JSONParse01/*.csproj
+/COURSE/JSONParse01/*.sln
+/COURSE/JSONParse01/Temp
+/COURSE/JSONParse01/Library/*
+/COURSE/JSONParse01/Library/*
+/COURSE/JSONParse01/*.pidb
+/COURSE/JSONParse01/*.userprefs
