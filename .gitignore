@@ -165,3 +165,12 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration02/Library/ScriptAssemblies
 /COURSE/LevelGeneration02/*.userprefs
 /COURSE/LevelGeneration02/*.pidb
+/COURSE/PlayerPerfs01/Temp
+/COURSE/PlayerPerfs01/*.csproj
+/COURSE/PlayerPerfs01/*.csproj
+/COURSE/PlayerPerfs01/*.sln
+/COURSE/PlayerPerfs01/*.sln
+/COURSE/PlayerPerfs01/*.pidb
+/COURSE/PlayerPerfs01/*.userprefs
+/COURSE/PlayerPerfs01/Library/metadata
+/COURSE/PlayerPerfs01/Library/ScriptAssemblies
