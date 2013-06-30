@@ -191,3 +191,12 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration03/*.userprefs
 /COURSE/LevelGeneration03/Library/ScriptAssemblies
 /COURSE/LevelGeneration03/Library/metadata
+/COURSE/MainUpudate01/*.csproj
+/COURSE/MainUpudate01/*.pidb
+/COURSE/MainUpudate01/*.csproj
+/COURSE/MainUpudate01/*.sln
+/COURSE/MainUpudate01/*.userprefs
+/COURSE/MainUpudate01/*.sln
+/COURSE/MainUpudate01/Library/ScriptAssemblies
+/COURSE/MainUpudate01/Library/metadata
+/COURSE/MainUpudate01/Temp
