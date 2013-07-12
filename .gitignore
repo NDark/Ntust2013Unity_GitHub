@@ -200,3 +200,11 @@ UpgradeLog*.XML
 /COURSE/MainUpudate01/Library/ScriptAssemblies
 /COURSE/MainUpudate01/Library/metadata
 /COURSE/MainUpudate01/Temp
+/COURSE/TransformDemonstration01/*.csproj
+/COURSE/TransformDemonstration01/*.csproj
+/COURSE/TransformDemonstration01/*.sln
+/COURSE/TransformDemonstration01/*.sln
+/COURSE/TransformDemonstration01/*.pidb
+/COURSE/TransformDemonstration01/*.userprefs
+/COURSE/TransformDemonstration01/Library/ScriptAssemblies
+/COURSE/TransformDemonstration01/Library/metadata
