@@ -1,6 +1,9 @@
 /*
  * @file RotateAroundGlobalX.cs
  * @author NDark
+ * 
+ * Demonstration of transform.Rotate()
+ * 
  * @date 20130712 . file started.
  */
 using UnityEngine;
@@ -18,7 +21,9 @@ public class RotateAroundGlobalX : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		this.transform.Rotate( m_Right , 1 , Space.World ) ;
+		this.transform.Rotate( m_Right , 
+							   1 , 
+							   Space.World ) ;
 	}
 }
  

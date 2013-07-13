@@ -1,6 +1,9 @@
 /**
  * @file LookAtBall02.cs
  * @author NDark
+ * 
+ * Demonstration of Quaternion.LookRotation()
+ * 
  * @date 20130712 . file started.
  */
 using UnityEngine;
@@ -16,7 +19,6 @@ public class LookAtBall02 : MonoBehaviour
 		{
 			InitializeBall() ;
 		}
-	
 	}
 	
 	// Update is called once per frame
@@ -27,6 +29,7 @@ public class LookAtBall02 : MonoBehaviour
 		
 		Vector3 toBall = m_Ball.transform.position - this.gameObject.transform.position ;
 		
+		// set rotation from a vector
 		this.gameObject.transform.rotation = Quaternion.LookRotation( toBall ) ;
 	}
 	

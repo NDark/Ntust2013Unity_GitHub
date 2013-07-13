@@ -9,7 +9,8 @@ using System.Collections;
 public class FindAverageFromObjects02 : MonoBehaviour 
 {
 	GameObject m_BallParent = null ;
-	GameObject [] m_Balls ;
+	
+	GameObject [] m_Balls = null ;
 	// Use this for initialization
 	void Start () 
 	{
@@ -20,6 +21,9 @@ public class FindAverageFromObjects02 : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		if( null == m_Balls )
+			return ;
+		
 		int count = 0 ;
 		Vector3 sumPos = Vector3.zero ;
 		for( int i = 0 ; i < m_Balls.Length ; ++i )
@@ -31,6 +35,7 @@ public class FindAverageFromObjects02 : MonoBehaviour
 			}
 		}
 		
+		// average from sum of positions
 		this.transform.position = ( sumPos / count ) ;
 	}
 	
@@ -46,10 +51,13 @@ public class FindAverageFromObjects02 : MonoBehaviour
 			Debug.Log( "FindAverageFromObjects02::InitializedBallParent() end." ) ;
 		}
 	}	
+	
 	private void InitializedBalls()
 	{
 		if( null == m_BallParent )
 			return ;
+		
+		// use m_BallParent to find its children Ball0 to Ball9, if they exist
 		Transform trans = null ;
 		m_Balls = new GameObject[10] ;
 		for( int i = 0 ; i < m_Balls.Length ; ++i )
@@ -60,7 +68,9 @@ public class FindAverageFromObjects02 : MonoBehaviour
 				m_Balls[ i ] = trans.gameObject ;
 			}
 			else
+			{
 				m_Balls[ i ] = null ;
+			}
 		}
 	}
 }
