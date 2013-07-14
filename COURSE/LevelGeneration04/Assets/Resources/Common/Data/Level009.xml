@@ -27,21 +27,21 @@
 	<Component name="AlienUnit0" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit1" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-4.5" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit1" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit2" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-3" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit2" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit3" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="-1.5" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -49,28 +49,28 @@
 
 
 	<Unit name="AlienUnit4" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="0" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit4" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit5" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="1.5" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit5" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit6" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="3" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit6" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit7" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="4.5" y="1" z="1" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -91,21 +91,21 @@
 	<Component name="AlienUnit9" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit10" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-4.5" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit10" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit11" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-3" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit11" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit12" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="-1.5" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -113,28 +113,28 @@
 
 
 	<Unit name="AlienUnit13" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="0" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit13" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit14" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="1.5" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit14" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit15" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="3" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit15" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit16" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="4.5" y="1" z="2" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -155,21 +155,21 @@
 	<Component name="AlienUnit18" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit19" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-4.5" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit19" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit20" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-3" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit20" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit21" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="-1.5" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -177,28 +177,28 @@
 
 
 	<Unit name="AlienUnit22" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="0" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit22" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit23" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="1.5" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit23" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit24" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="3" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit24" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit25" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="4.5" y="1" z="3" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -220,21 +220,21 @@
 	<Component name="AlienUnit27" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit28" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-4.5" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit28" componentName="AllienCollector"/>
 	
 	<Unit name="AlienUnit29" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit02">
 		<Position3D x="-3" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit29" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit30" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="-1.5" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
@@ -242,28 +242,28 @@
 
 
 	<Unit name="AlienUnit31" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="0" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit31" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit32" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit03">
 		<Position3D x="1.5" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit32" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit33" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="3" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="AlienUnit33" componentName="AllienCollector"/>
 
 	<Unit name="AlienUnit34" 
-		  prefabName="Common/Prefabs/AlienUnit01">
+		  prefabName="Common/Prefabs/AlienUnit04">
 		<Position3D x="4.5" y="1" z="4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
