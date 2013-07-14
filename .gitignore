@@ -220,3 +220,10 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration04/Library/metadata
 /COURSE/Prototype02/Library/ScriptAssemblies
 /COURSE/Prototype02/Library/metadata
+/COURSE/Prototype02/*.csproj
+/COURSE/Prototype02/*.csproj
+/COURSE/Prototype02/*.sln
+/COURSE/Prototype02/*.sln
+/COURSE/Prototype02/*.pidb
+/COURSE/Prototype02/*.userprefs
+/COURSE/Prototype02/Temp
