@@ -1,0 +1,25 @@
+<Level name="Level009">
+
+	<Unit name="AlienCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="SceneBackground001" 
+		  prefabName="Common/Prefabs/SceneBackground001">
+	</Unit>
+	
+	<Unit name="MainCharacter" 
+		  prefabName="Common/Prefabs/MainCharacter03">
+		<Position3D x="0" y="1" z="-4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit0" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="-4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit0" componentName="AllienCollector"/>
+	
+	
+</Level>

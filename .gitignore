@@ -209,3 +209,12 @@ UpgradeLog*.XML
 /COURSE/TransformDemonstration01/Library/ScriptAssemblies
 /COURSE/TransformDemonstration01/Library/metadata
 /COURSE/TransformDemonstration01/Temp
+/COURSE/LevelGeneration04/*.csproj
+/COURSE/LevelGeneration04/*.csproj
+/COURSE/LevelGeneration04/*.sln
+/COURSE/LevelGeneration04/*.sln
+/COURSE/LevelGeneration04/*.pidb
+/COURSE/LevelGeneration04/*.userprefs
+/COURSE/LevelGeneration04/Temp
+/COURSE/LevelGeneration04/Library/ScriptAssemblies
+/COURSE/LevelGeneration04/Library/metadata
