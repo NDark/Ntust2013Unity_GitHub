@@ -218,3 +218,5 @@ UpgradeLog*.XML
 /COURSE/LevelGeneration04/Temp
 /COURSE/LevelGeneration04/Library/ScriptAssemblies
 /COURSE/LevelGeneration04/Library/metadata
+/COURSE/Prototype02/Library/ScriptAssemblies
+/COURSE/Prototype02/Library/metadata

@@ -1,0 +1,351 @@
+<Level name="Level009">
+
+	<Unit name="AlienCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="MissleCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="SceneBackground001" 
+		  prefabName="Common/Prefabs/SceneBackground001">
+	</Unit>
+	
+	<Unit name="MainCharacter" 
+		  prefabName="Common/Prefabs/MainCharacter03">
+		<Position3D x="0" y="1" z="-4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="MainCharacter" componentName="MainCharacterController08"/>
+	
+	
+	<Unit name="AlienUnit0" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="-6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit0" componentName="AllienCollector"/>
+	<Component name="AlienUnit0" componentName="GameUnitData01"/>
+	<Component name="AlienUnit0" componentName="RegisterToMainUpdate02"/>
+
+	
+	<Unit name="AlienUnit1" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit1" componentName="AllienCollector"/>
+	<Component name="AlienUnit1" componentName="GameUnitData01"/>
+	<Component name="AlienUnit1" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit2" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit2" componentName="AllienCollector"/>
+	<Component name="AlienUnit2" componentName="GameUnitData01"/>
+	<Component name="AlienUnit2" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit3" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="-1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit3" componentName="AllienCollector"/>
+	<Component name="AlienUnit3" componentName="GameUnitData01"/>
+	<Component name="AlienUnit3" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit4" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="0" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit4" componentName="AllienCollector"/>
+	<Component name="AlienUnit4" componentName="GameUnitData01"/>
+	<Component name="AlienUnit4" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit5" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit5" componentName="AllienCollector"/>
+	<Component name="AlienUnit5" componentName="GameUnitData01"/>
+	<Component name="AlienUnit5" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit6" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit6" componentName="AllienCollector"/>
+	<Component name="AlienUnit6" componentName="GameUnitData01"/>
+	<Component name="AlienUnit6" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit7" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit7" componentName="AllienCollector"/>
+	<Component name="AlienUnit7" componentName="GameUnitData01"/>
+	<Component name="AlienUnit7" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit8" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit8" componentName="AllienCollector"/>
+	<Component name="AlienUnit8" componentName="GameUnitData01"/>
+	<Component name="AlienUnit8" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit9" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="-6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit9" componentName="AllienCollector"/>
+	<Component name="AlienUnit9" componentName="GameUnitData01"/>
+	<Component name="AlienUnit9" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit10" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit10" componentName="AllienCollector"/>
+	<Component name="AlienUnit10" componentName="GameUnitData01"/>
+	<Component name="AlienUnit10" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit11" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit11" componentName="AllienCollector"/>
+	<Component name="AlienUnit11" componentName="GameUnitData01"/>
+	<Component name="AlienUnit11" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit12" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="-1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit12" componentName="AllienCollector"/>
+	<Component name="AlienUnit12" componentName="GameUnitData01"/>
+	<Component name="AlienUnit12" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit13" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="0" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit13" componentName="AllienCollector"/>
+	<Component name="AlienUnit13" componentName="GameUnitData01"/>
+	<Component name="AlienUnit13" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit14" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit14" componentName="AllienCollector"/>
+	<Component name="AlienUnit14" componentName="GameUnitData01"/>
+	<Component name="AlienUnit14" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit15" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit15" componentName="AllienCollector"/>
+	<Component name="AlienUnit15" componentName="GameUnitData01"/>
+	<Component name="AlienUnit15" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit16" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit16" componentName="AllienCollector"/>
+	<Component name="AlienUnit16" componentName="GameUnitData01"/>
+	<Component name="AlienUnit16" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit17" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit17" componentName="AllienCollector"/>
+	<Component name="AlienUnit17" componentName="GameUnitData01"/>
+	<Component name="AlienUnit17" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit18" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="-6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit18" componentName="AllienCollector"/>
+	<Component name="AlienUnit18" componentName="GameUnitData01"/>
+	<Component name="AlienUnit18" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit19" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit19" componentName="AllienCollector"/>
+	<Component name="AlienUnit19" componentName="GameUnitData01"/>
+	<Component name="AlienUnit19" componentName="RegisterToMainUpdate02"/>
+	
+	<Unit name="AlienUnit20" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit20" componentName="AllienCollector"/>
+	<Component name="AlienUnit20" componentName="GameUnitData01"/>
+	<Component name="AlienUnit20" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit21" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="-1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit21" componentName="AllienCollector"/>
+	<Component name="AlienUnit21" componentName="GameUnitData01"/>
+	<Component name="AlienUnit21" componentName="RegisterToMainUpdate02"/>
+
+
+	<Unit name="AlienUnit22" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="0" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit22" componentName="AllienCollector"/>
+	<Component name="AlienUnit22" componentName="GameUnitData01"/>
+	<Component name="AlienUnit22" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit23" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit23" componentName="AllienCollector"/>
+	<Component name="AlienUnit23" componentName="GameUnitData01"/>
+	<Component name="AlienUnit23" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit24" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit24" componentName="AllienCollector"/>
+	<Component name="AlienUnit24" componentName="GameUnitData01"/>
+	<Component name="AlienUnit24" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit25" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit25" componentName="AllienCollector"/>
+	<Component name="AlienUnit25" componentName="GameUnitData01"/>
+	<Component name="AlienUnit25" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit26" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit26" componentName="AllienCollector"/>
+	<Component name="AlienUnit26" componentName="GameUnitData01"/>
+	<Component name="AlienUnit26" componentName="RegisterToMainUpdate02"/>
+
+
+	<Unit name="AlienUnit27" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="-6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit27" componentName="AllienCollector"/>
+	<Component name="AlienUnit27" componentName="GameUnitData01"/>
+	<Component name="AlienUnit27" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit28" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit28" componentName="AllienCollector"/>
+	<Component name="AlienUnit28" componentName="GameUnitData01"/>
+	<Component name="AlienUnit28" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit29" 
+		  prefabName="Common/Prefabs/AlienUnit02">
+		<Position3D x="-3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit29" componentName="AllienCollector"/>
+	<Component name="AlienUnit29" componentName="GameUnitData01"/>
+	<Component name="AlienUnit29" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit30" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="-1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit30" componentName="AllienCollector"/>
+	<Component name="AlienUnit30" componentName="GameUnitData01"/>
+	<Component name="AlienUnit30" componentName="RegisterToMainUpdate02"/>
+
+
+	<Unit name="AlienUnit31" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="0" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit31" componentName="AllienCollector"/>
+	<Component name="AlienUnit31" componentName="GameUnitData01"/>
+	<Component name="AlienUnit31" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit32" 
+		  prefabName="Common/Prefabs/AlienUnit03">
+		<Position3D x="1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit32" componentName="AllienCollector"/>
+	<Component name="AlienUnit32" componentName="GameUnitData01"/>
+	<Component name="AlienUnit32" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit33" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit33" componentName="AllienCollector"/>
+	<Component name="AlienUnit33" componentName="GameUnitData01"/>
+	<Component name="AlienUnit33" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit34" 
+		  prefabName="Common/Prefabs/AlienUnit04">
+		<Position3D x="4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit34" componentName="AllienCollector"/>
+	<Component name="AlienUnit34" componentName="GameUnitData01"/>
+	<Component name="AlienUnit34" componentName="RegisterToMainUpdate02"/>
+
+	<Unit name="AlienUnit35" 
+		  prefabName="Common/Prefabs/AlienUnit01">
+		<Position3D x="6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="AlienUnit35" componentName="AllienCollector"/>
+	<Component name="AlienUnit35" componentName="GameUnitData01"/>
+	<Component name="AlienUnit35" componentName="RegisterToMainUpdate02"/>
+
+</Level>
