@@ -2,15 +2,16 @@
  * @file FindAverageFromObjects02.cs
  * @author NDark
  * @date 20130712 . file started.
+ * @date 20130718 . modify class member to public.
  */
 using UnityEngine;
 using System.Collections;
 
 public class FindAverageFromObjects02 : MonoBehaviour 
 {
-	GameObject m_BallParent = null ;
+	public GameObject m_BallParent = null ;
 	
-	GameObject [] m_Balls = null ;
+	public GameObject [] m_Balls = null ;
 	// Use this for initialization
 	void Start () 
 	{
