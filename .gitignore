@@ -227,3 +227,11 @@ UpgradeLog*.XML
 /COURSE/Prototype02/*.pidb
 /COURSE/Prototype02/*.userprefs
 /COURSE/Prototype02/Temp
+/COURSE/MinimapManager01/*.csproj
+/COURSE/MinimapManager01/*.csproj
+/COURSE/MinimapManager01/*.sln
+/COURSE/MinimapManager01/*.sln
+/COURSE/MinimapManager01/*.pidb
+/COURSE/MinimapManager01/*.userprefs
+/COURSE/MinimapManager01/Library/ScriptAssemblies
+/COURSE/MinimapManager01/Library/metadata
