@@ -244,3 +244,5 @@ UpgradeLog*.XML
 /COURSE/OnGUI01/*.sln
 /COURSE/OnGUI01/*.sln
 /COURSE/OnGUI01/*.csproj
+/COURSE/OnGUI01/*.pidb
+/COURSE/OnGUI01/*.userprefs
