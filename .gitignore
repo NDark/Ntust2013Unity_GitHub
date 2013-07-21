@@ -235,3 +235,12 @@ UpgradeLog*.XML
 /COURSE/MinimapManager01/*.userprefs
 /COURSE/MinimapManager01/Library/ScriptAssemblies
 /COURSE/MinimapManager01/Library/metadata
+/COURSE/OnGUI01/Temp
+/COURSE/OnGUI01/Library/ScriptAssemblies
+/COURSE/OnGUI01/Library/metadata
+/COURSE/GUITexture01/Library/metadata
+/COURSE/GUITexture01/Library/ScriptAssemblies
+/COURSE/OnGUI01/*.csproj
+/COURSE/OnGUI01/*.sln
+/COURSE/OnGUI01/*.sln
+/COURSE/OnGUI01/*.csproj
