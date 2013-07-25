@@ -246,3 +246,9 @@ UpgradeLog*.XML
 /COURSE/OnGUI01/*.csproj
 /COURSE/OnGUI01/*.pidb
 /COURSE/OnGUI01/*.userprefs
+/COURSE/GUITexture01/*.csproj
+/COURSE/GUITexture01/*.csproj
+/COURSE/GUITexture01/*.sln
+/COURSE/GUITexture01/*.sln
+/COURSE/GUITexture01/*.pidb
+/COURSE/GUITexture01/*.userprefs
