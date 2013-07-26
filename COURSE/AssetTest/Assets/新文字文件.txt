@@ -1,2 +1,0 @@
-http://forum.unity3d.com/threads/49034-Problem-with-UnityEditor
-http://docs.unity3d.com/Documentation/ScriptReference/BuildPipeline.BuildStreamedSceneAssetBundle.html

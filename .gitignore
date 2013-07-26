@@ -268,3 +268,12 @@ UpgradeLog*.XML
 /COURSE/Prototype01_Empty/*.sln
 /COURSE/Prototype01_Empty/Library/ScriptAssemblies
 /COURSE/Prototype01_Empty/Library/metadata
+/COURSE/AssetTest/*.csproj
+/COURSE/AssetTest/*.csproj
+/COURSE/AssetTest/*.csproj
+/COURSE/AssetTest/*.sln
+/COURSE/AssetTest/*.sln
+/COURSE/AssetTest/*.csproj
+/COURSE/AssetTest/Temp
+/COURSE/AssetTest/Library/ScriptAssemblies
+/COURSE/AssetTest/Library/metadata
