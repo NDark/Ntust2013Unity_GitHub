@@ -277,3 +277,12 @@ UpgradeLog*.XML
 /COURSE/AssetTest/Temp
 /COURSE/AssetTest/Library/ScriptAssemblies
 /COURSE/AssetTest/Library/metadata
+/COURSE/CollisionDemonstration01/*.csproj
+/COURSE/CollisionDemonstration01/*.pidb
+/COURSE/CollisionDemonstration01/*.csproj
+/COURSE/CollisionDemonstration01/*.sln
+/COURSE/CollisionDemonstration01/*.userprefs
+/COURSE/CollisionDemonstration01/*.sln
+/COURSE/CollisionDemonstration01/Temp
+/COURSE/CollisionDemonstration01/Library/metadata
+/COURSE/CollisionDemonstration01/Library/ScriptAssemblies
