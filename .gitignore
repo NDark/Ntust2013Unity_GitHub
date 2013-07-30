@@ -294,3 +294,12 @@ UpgradeLog*.XML
 /COURSE/Skybox01/Temp
 /COURSE/Skybox01/Library/ScriptAssemblies
 /COURSE/Skybox01/Library/metadata
+/COURSE/Skybox01_Empty/*.csproj
+/COURSE/Skybox01_Empty/*.csproj
+/COURSE/Skybox01_Empty/*.csproj
+/COURSE/Skybox01_Empty/*.csproj
+/COURSE/Skybox01_Empty/*.sln
+/COURSE/Skybox01_Empty/*.sln
+/COURSE/Skybox01_Empty/Temp
+/COURSE/Skybox01_Empty/Library/metadata
+/COURSE/Skybox01_Empty/Library/ScriptAssemblies
