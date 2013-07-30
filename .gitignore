@@ -287,3 +287,10 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration01/Library/metadata
 /COURSE/CollisionDemonstration01/Library/ScriptAssemblies
 /COURSE/GUITexture01/Temp
+/COURSE/Skybox01/*.csproj
+/COURSE/Skybox01/*.sln
+/COURSE/Skybox01/*.sln
+/COURSE/Skybox01/*.csproj
+/COURSE/Skybox01/Temp
+/COURSE/Skybox01/Library/ScriptAssemblies
+/COURSE/Skybox01/Library/metadata
