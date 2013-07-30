@@ -303,3 +303,15 @@ UpgradeLog*.XML
 /COURSE/Skybox01_Empty/Temp
 /COURSE/Skybox01_Empty/Library/metadata
 /COURSE/Skybox01_Empty/Library/ScriptAssemblies
+/COURSE/Skybox01/*.pidb
+/COURSE/Skybox01/*.userprefs
+/COURSE/Skybox01/*.pidb
+/COURSE/Skybox02/Library/ScriptAssemblies
+/COURSE/Skybox02/Library/metadata
+/COURSE/Skybox02/*.csproj
+/COURSE/Skybox02/*.csproj
+/COURSE/Skybox02/*.csproj
+/COURSE/Skybox02/*.csproj
+/COURSE/Skybox02/*.sln
+/COURSE/Skybox02/*.sln
+/COURSE/Skybox02/Temp
