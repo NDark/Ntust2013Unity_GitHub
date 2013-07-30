@@ -315,3 +315,6 @@ UpgradeLog*.XML
 /COURSE/Skybox02/*.sln
 /COURSE/Skybox02/*.sln
 /COURSE/Skybox02/Temp
+/COURSE/Skybox01_Empty/*.userprefs
+/COURSE/Skybox01_Empty/*.pidb
+/COURSE/Skybox01_Empty/*.pidb
