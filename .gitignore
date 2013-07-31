@@ -342,3 +342,6 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration02/*.sln
 /COURSE/CollisionDemonstration02/*.sln
 /COURSE/CollisionDemonstration02/Temp
+/COURSE/CollisionDemonstration02/*.pidb
+/COURSE/CollisionDemonstration02/*.pidb
+/COURSE/CollisionDemonstration02/*.userprefs
