@@ -333,3 +333,5 @@ UpgradeLog*.XML
 /COURSE/Skybox02_Empty/*.pidb
 /COURSE/Skybox02_Empty/*.pidb
 /COURSE/Skybox02_Empty/*.userprefs
+/COURSE/CollisionDemonstration02/Library/ScriptAssemblies
+/COURSE/CollisionDemonstration02/Library/metadata
