@@ -348,3 +348,7 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration03/Temp
 /COURSE/CollisionDemonstration03/Library/ScriptAssemblies
 /COURSE/CollisionDemonstration03/Library/metadata
+/COURSE/CollisionDemonstration03/*.csproj
+/COURSE/CollisionDemonstration03/*.csproj
+/COURSE/CollisionDemonstration03/*.sln
+/COURSE/CollisionDemonstration03/*.sln
