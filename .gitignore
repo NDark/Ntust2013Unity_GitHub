@@ -352,3 +352,5 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration03/*.csproj
 /COURSE/CollisionDemonstration03/*.sln
 /COURSE/CollisionDemonstration03/*.sln
+/COURSE/CollisionDemonstration03/*.pidb
+/COURSE/CollisionDemonstration03/*.userprefs
