@@ -354,3 +354,6 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration03/*.sln
 /COURSE/CollisionDemonstration03/*.pidb
 /COURSE/CollisionDemonstration03/*.userprefs
+/COURSE/CollisionDemonstration04/Temp
+/COURSE/CollisionDemonstration04/Library/metadata
+/COURSE/CollisionDemonstration04/Library/ScriptAssemblies
