@@ -17,7 +17,7 @@
 		<Position3D x="0" y="1" z="-4" />
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
-	<Component name="MainCharacter" componentName="MainCharacterController07"/>
+	<Component name="MainCharacter" componentName="MainCharacterController08"/>
 	
 	<Unit name="AlienUnit0" 
 		  prefabName="Common/Prefabs/AlienUnit01">
