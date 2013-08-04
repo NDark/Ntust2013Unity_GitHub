@@ -375,3 +375,9 @@ UpgradeLog*.XML
 /COURSE/GUITexture02/Temp
 /COURSE/GUITexture02/Library/metadata
 /COURSE/GUITexture02/Library/ScriptAssemblies
+/COURSE/GUITexture02/*.sln
+/COURSE/GUITexture02/*.csproj
+/COURSE/GUITexture02/*.pidb
+/COURSE/GUITexture02/*.csproj
+/COURSE/GUITexture02/*.sln
+/COURSE/GUITexture02/*.userprefs
