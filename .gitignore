@@ -372,3 +372,6 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration05/*.userprefs
 /COURSE/CollisionDemonstration04/*.userprefs
 /COURSE/CollisionDemonstration04/*.pidb
+/COURSE/GUITexture02/Temp
+/COURSE/GUITexture02/Library/metadata
+/COURSE/GUITexture02/Library/ScriptAssemblies
