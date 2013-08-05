@@ -381,3 +381,12 @@ UpgradeLog*.XML
 /COURSE/GUITexture02/*.csproj
 /COURSE/GUITexture02/*.sln
 /COURSE/GUITexture02/*.userprefs
+/COURSE/Prototype03/Library/metadata
+/COURSE/Prototype03/Library/ScriptAssemblies
+/COURSE/Prototype03/*.csproj
+/COURSE/Prototype03/*.csproj
+/COURSE/Prototype03/*.sln
+/COURSE/Prototype03/*.sln
+/COURSE/Prototype03/*.pidb
+/COURSE/Prototype03/*.userprefs
+/COURSE/Prototype03/Temp
