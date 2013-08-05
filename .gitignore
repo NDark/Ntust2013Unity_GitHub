@@ -390,3 +390,12 @@ UpgradeLog*.XML
 /COURSE/Prototype03/*.pidb
 /COURSE/Prototype03/*.userprefs
 /COURSE/Prototype03/Temp
+/COURSE/Prototype04/*.csproj
+/COURSE/Prototype04/*.csproj
+/COURSE/Prototype04/*.sln
+/COURSE/Prototype04/*.sln
+/COURSE/Prototype04/*.pidb
+/COURSE/Prototype04/*.userprefs
+/COURSE/Prototype04/Temp
+/COURSE/Prototype04/Library/metadata
+/COURSE/Prototype04/Library/ScriptAssemblies

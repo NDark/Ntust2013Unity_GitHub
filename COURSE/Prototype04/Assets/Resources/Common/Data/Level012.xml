@@ -1,0 +1,244 @@
+<Level name="Level009">
+
+	<Unit name="AlienCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="MissleCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="SceneBackground001" 
+		  prefabName="Common/Prefabs/SceneBackground001">
+	</Unit>
+	
+	<Unit name="MainCharacter" 
+		  prefabName="Common/Prefabs/MainCharacter03">
+		<Position3D x="0" y="1" z="-4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="MainCharacter" componentName="MainCharacterController09"/>
+	
+	
+	<Unit name="AlienUnit0" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	
+	<Unit name="AlienUnit1" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	
+	<Unit name="AlienUnit2" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit3" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit4" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit5" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit6" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit7" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit8" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit9" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit10" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit11" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit12" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit13" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit14" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit15" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit16" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit17" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit18" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit19" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit20" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit21" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit22" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit23" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit24" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit25" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit26" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit27" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit28" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit29" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit30" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit31" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit32" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit33" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit34" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit35" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+</Level>
