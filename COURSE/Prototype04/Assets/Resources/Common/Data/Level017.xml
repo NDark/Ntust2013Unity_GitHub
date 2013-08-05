@@ -7,12 +7,17 @@
 	<Unit name="MissleCollector" 
 		  prefabName="Common/Prefabs/DummyObject">
 	</Unit>
+	
 
+	<Unit name="GUICollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
 	
 	<Unit name="SceneBackground001" 
 		  prefabName="Common/Prefabs/SceneBackground001">
 	</Unit>
 	
+
 	<Unit name="MainCharacter" 
 		  prefabName="Common/Prefabs/MainCharacter03">
 		<Position3D x="0" y="1" z="-4" />
@@ -279,5 +284,42 @@
 	<Component name="AlienUnit34" componentName="OnCollideAddScriptOnObj02"/>
 	<Component name="AlienUnit35" componentName="OnCollideAddScriptOnObj02"/>
 	
+	
+	<Component name="AlienUnit0" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit1" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit2" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit3" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit4" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit5" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit6" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit7" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit8" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit9" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit10" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit11" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit12" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit13" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit14" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit15" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit16" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit17" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit18" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit19" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit20" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit21" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit22" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit23" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit24" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit25" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit26" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit27" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit28" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit29" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit30" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit31" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit32" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit33" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit34" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit35" componentName="GUI_UnitHP01"/>
 	
 </Level>
