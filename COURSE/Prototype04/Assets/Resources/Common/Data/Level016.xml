@@ -241,4 +241,43 @@
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 
+	<Component name="AlienUnit0" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit1" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit2" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit3" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit4" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit5" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit6" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit7" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit8" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit9" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit10" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit11" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit12" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit13" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit14" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit15" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit16" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit17" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit18" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit19" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit20" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit21" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit22" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit23" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit24" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit25" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit26" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit27" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit28" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit29" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit30" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit31" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit32" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit33" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit34" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit35" componentName="OnCollideAddScriptOnObj02"/>
+	
+	
+	
 </Level>
