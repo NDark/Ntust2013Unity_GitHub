@@ -399,3 +399,11 @@ UpgradeLog*.XML
 /COURSE/Prototype04/Temp
 /COURSE/Prototype04/Library/metadata
 /COURSE/Prototype04/Library/ScriptAssemblies
+/COURSE/CollisionDemonstration06/*.csproj
+/COURSE/CollisionDemonstration06/*.csproj
+/COURSE/CollisionDemonstration06/*.sln
+/COURSE/CollisionDemonstration06/*.sln
+/COURSE/CollisionDemonstration06/*.pidb
+/COURSE/CollisionDemonstration06/*.userprefs
+/COURSE/CollisionDemonstration06/Library/ScriptAssemblies
+/COURSE/CollisionDemonstration06/Library/metadata
