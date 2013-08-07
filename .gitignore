@@ -417,3 +417,10 @@ UpgradeLog*.XML
 /COURSE/ObjectAnimation01/Temp
 /COURSE/ObjectAnimation01/Library/ScriptAssemblies
 /COURSE/ObjectAnimation01/Library/metadata
+/COURSE/CollisionDemonstration07/*.sln
+/COURSE/CollisionDemonstration07/*.sln
+/COURSE/CollisionDemonstration07/*.csproj
+/COURSE/CollisionDemonstration07/*.csproj
+/COURSE/CollisionDemonstration07/Temp
+/COURSE/CollisionDemonstration07/Library/ScriptAssemblies
+/COURSE/CollisionDemonstration07/Library/metadata
