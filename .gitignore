@@ -408,3 +408,12 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration06/Library/ScriptAssemblies
 /COURSE/CollisionDemonstration06/Library/metadata
 /COURSE/CollisionDemonstration06/Temp
+/COURSE/ObjectAnimation01/*.csproj
+/COURSE/ObjectAnimation01/*.csproj
+/COURSE/ObjectAnimation01/*.sln
+/COURSE/ObjectAnimation01/*.sln
+/COURSE/ObjectAnimation01/*.pidb
+/COURSE/ObjectAnimation01/*.userprefs
+/COURSE/ObjectAnimation01/Temp
+/COURSE/ObjectAnimation01/Library/ScriptAssemblies
+/COURSE/ObjectAnimation01/Library/metadata
