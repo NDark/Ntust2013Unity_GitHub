@@ -424,3 +424,5 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration07/Temp
 /COURSE/CollisionDemonstration07/Library/ScriptAssemblies
 /COURSE/CollisionDemonstration07/Library/metadata
+/COURSE/CollisionDemonstration07/*.userprefs
+/COURSE/CollisionDemonstration07/*.pidb
