@@ -426,3 +426,11 @@ UpgradeLog*.XML
 /COURSE/CollisionDemonstration07/Library/metadata
 /COURSE/CollisionDemonstration07/*.userprefs
 /COURSE/CollisionDemonstration07/*.pidb
+/COURSE/GUITexture03/*.csproj
+/COURSE/GUITexture03/*.csproj
+/COURSE/GUITexture03/*.sln
+/COURSE/GUITexture03/*.sln
+/COURSE/GUITexture03/*.pidb
+/COURSE/GUITexture03/*.userprefs
+/COURSE/GUITexture03/Library/ScriptAssemblies
+/COURSE/GUITexture03/Library/metadata
