@@ -2,3 +2,4 @@ http://forum.unity3d.com/threads/49034-Problem-with-UnityEditor
 http://docs.unity3d.com/Documentation/ScriptReference/BuildPipeline.BuildStreamedSceneAssetBundle.html
 http://zhuyunblog.diandian.com/post/2012-11-11/40041525661
 http://www.csdn123.com/html/blogs/20130415/2821.htm
+http://answers.unity3d.com/questions/14651/folders-inside-an-assetbundle.html
