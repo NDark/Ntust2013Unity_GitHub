@@ -47,6 +47,9 @@ public class GUITextureColor01 : MonoBehaviour
 	
 	private void Fading()
 	{
-		m_TargetGUITexture.color = Color.Lerp( m_TargetGUITexture.color , m_TargetColor , m_FadeSpeed ) ;
+		m_TargetGUITexture.color = 
+			Color.Lerp( m_TargetGUITexture.color , 
+						m_TargetColor , 
+						m_FadeSpeed ) ;
 	}	
 }
