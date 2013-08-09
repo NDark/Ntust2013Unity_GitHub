@@ -445,3 +445,4 @@ UpgradeLog*.XML
 /COURSE/NavMesh01/*.userprefs
 /COURSE/NavMesh01/Library/ScriptAssemblies
 /COURSE/NavMesh01/Library/metadata
+/COURSE/NavMesh01/Temp
