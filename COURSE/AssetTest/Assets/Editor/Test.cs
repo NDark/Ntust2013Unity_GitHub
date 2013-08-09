@@ -17,8 +17,14 @@ public class ExportAssetBundles {
 	static void ExportSelected()
 	{
 		Debug.Log( "ExportSelected()" + Selection.activeObject.name ) ;
+		for( int i = 0 ; i < Selection.objects.Length ; ++i )
+		{
+			Debug.Log( Selection.objects[ i ] ) ;
+		}
 		// Build the resource file from the active selection.
 		BuildPipeline.BuildAssetBundle(
-			Selection.activeObject, Selection.objects, "BuildAssetBundle.unity3d" ) ;
+			Selection.activeObject, 
+			Selection.objects, 
+			"BuildAssetBundle"+Selection.activeObject.name+".unity3d" ) ;
 	}	
 }
