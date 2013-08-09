@@ -461,3 +461,5 @@ UpgradeLog*.XML
 /COURSE/Prototype03_Empty/*.userprefs
 /COURSE/Prototype03_Empty/Library/ScriptAssemblies
 /COURSE/Prototype03_Empty/Library/metadata
+/COURSE/Billboard01/*.pidb
+/COURSE/Billboard01/*.userprefs
