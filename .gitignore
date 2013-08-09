@@ -463,3 +463,12 @@ UpgradeLog*.XML
 /COURSE/Prototype03_Empty/Library/metadata
 /COURSE/Billboard01/*.pidb
 /COURSE/Billboard01/*.userprefs
+/COURSE/Prototype03_Empty/Temp
+/COURSE/Prototype04_Empty/*.csproj
+/COURSE/Prototype04_Empty/*.csproj
+/COURSE/Prototype04_Empty/*.sln
+/COURSE/Prototype04_Empty/*.sln
+/COURSE/Prototype04_Empty/*.userprefs
+/COURSE/Prototype04_Empty/*.pidb
+/COURSE/Prototype04_Empty/Library/ScriptAssemblies
+/COURSE/Prototype04_Empty/Library/metadata
