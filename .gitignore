@@ -434,3 +434,14 @@ UpgradeLog*.XML
 /COURSE/GUITexture03/*.userprefs
 /COURSE/GUITexture03/Library/ScriptAssemblies
 /COURSE/GUITexture03/Library/metadata
+/COURSE/NavMesh01/*.sln
+/COURSE/NavMesh01/*.csproj
+/COURSE/NavMesh01/*.pidb
+/COURSE/NavMesh01/*.csproj
+/COURSE/NavMesh01/*.pidb
+/COURSE/NavMesh01/*.csproj
+/COURSE/NavMesh01/*.csproj
+/COURSE/NavMesh01/*.sln
+/COURSE/NavMesh01/*.userprefs
+/COURSE/NavMesh01/Library/ScriptAssemblies
+/COURSE/NavMesh01/Library/metadata
