@@ -446,3 +446,10 @@ UpgradeLog*.XML
 /COURSE/NavMesh01/Library/ScriptAssemblies
 /COURSE/NavMesh01/Library/metadata
 /COURSE/NavMesh01/Temp
+/COURSE/Billboard01/*.csproj
+/COURSE/Billboard01/*.csproj
+/COURSE/Billboard01/*.sln
+/COURSE/Billboard01/*.sln
+/COURSE/Billboard01/Temp
+/COURSE/Billboard01/Library/metadata
+/COURSE/Billboard01/Library/ScriptAssemblies
