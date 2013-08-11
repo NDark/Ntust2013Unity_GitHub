@@ -24,6 +24,7 @@
 		<OrientationEuler x="0" y="0" z="0" />
 	</Unit>
 	<Component name="MainCharacter" componentName="MainCharacterController09"/>
+	<Component name="MainCharacter" componentName="OnCollideSuicide"/>
 	
 	
 	<Unit name="AlienUnit0" 
