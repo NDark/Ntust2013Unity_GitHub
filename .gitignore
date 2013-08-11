@@ -482,3 +482,4 @@ UpgradeLog*.XML
 /COURSE/LevelLoad01/*.userprefs
 /COURSE/LevelLoad01/Library/ScriptAssemblies
 /COURSE/LevelLoad01/Library/metadata
+/COURSE/LevelLoad01/Temp
