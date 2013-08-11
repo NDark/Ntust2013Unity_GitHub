@@ -1,0 +1,240 @@
+<Level name="Level006">
+
+	<Unit name="ChessBoardObj" 
+			prefabName="Common/Prefabs/ChessBoard">
+		<Position3D x="5.0" y="0" z="5" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn001" 
+			prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="0.65" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	
+	<Unit name="ChessPawn002" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="1.9" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+
+	<Unit name="ChessPawn003" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="3.15" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn004" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="4.4" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn005" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="5.65" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn006" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="6.9" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn007" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="8.15" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn008" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="9.4" y="1" z="1.9" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+
+	<Unit name="ChessPawn009" prefabName="Common/Prefabs/ChessRook">
+		<Position3D x="0.65" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn010" prefabName="Common/Prefabs/ChessKnight">
+		<Position3D x="1.9" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn011" prefabName="Common/Prefabs/ChessBishop">
+		<Position3D x="3.15" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn012" prefabName="Common/Prefabs/ChessQueen">
+		<Position3D x="4.4" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn013" prefabName="Common/Prefabs/ChessKing">
+		<Position3D x="5.65" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn014" prefabName="Common/Prefabs/ChessBishop">
+		<Position3D x="6.9" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn015" prefabName="Common/Prefabs/ChessKnight">
+		<Position3D x="8.15" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn016" prefabName="Common/Prefabs/ChessRook">
+		<Position3D x="9.4" y="1" z="0.65" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>		
+		
+	
+	<Unit name="ChessPawn017" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="0.65" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn018" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="1.9" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn019" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="3.15" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn020" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="4.4" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn021" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="5.65" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn022" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="6.9" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn023" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="8.15" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn024" prefabName="Common/Prefabs/ChessPawn02">
+		<Position3D x="9.4" y="1" z="8.15" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn025" prefabName="Common/Prefabs/ChessRook">
+		<Position3D x="0.65" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+	
+	<Unit name="ChessPawn026" prefabName="Common/Prefabs/ChessKnight">
+		<Position3D x="1.9" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn027" prefabName="Common/Prefabs/ChessBishop">
+		<Position3D x="3.15" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>
+
+	<Unit name="ChessPawn028" prefabName="Common/Prefabs/ChessQueen">
+		<Position3D x="4.4" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>	
+	
+	<Unit name="ChessPawn029" prefabName="Common/Prefabs/ChessKing">
+		<Position3D x="5.65" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+
+	<Unit name="ChessPawn030" prefabName="Common/Prefabs/ChessBishop">
+		<Position3D x="6.9" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+	
+	<Unit name="ChessPawn031" prefabName="Common/Prefabs/ChessKnight">
+		<Position3D x="8.15" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>			
+	
+	<Unit name="ChessPawn032" prefabName="Common/Prefabs/ChessRook">
+		<Position3D x="9.4" y="1" z="9.4" />
+		<OrientationEuler x="0" y="180" z="0" />
+	</Unit>		
+			
+	<Component name="ChessPawn001" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn002" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn003" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn004" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn005" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn006" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn007" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn008" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn009" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn010" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn011" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn012" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn013" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn014" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn015" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn016" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn017" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn018" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn019" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn020" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn021" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn022" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn023" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn024" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn025" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn026" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn027" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn028" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn029" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn030" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn031" componentName="OnMouseSelection04" />
+	<Component name="ChessPawn032" componentName="OnMouseSelection04" />
+	
+		
+	<Component name="ChessPawn001" componentName="ChessUnitData01" />
+	<Component name="ChessPawn002" componentName="ChessUnitData01" />
+	<Component name="ChessPawn003" componentName="ChessUnitData01" />
+	<Component name="ChessPawn004" componentName="ChessUnitData01" />
+	<Component name="ChessPawn005" componentName="ChessUnitData01" />
+	<Component name="ChessPawn006" componentName="ChessUnitData01" />
+	<Component name="ChessPawn007" componentName="ChessUnitData01" />
+	<Component name="ChessPawn008" componentName="ChessUnitData01" />
+	<Component name="ChessPawn009" componentName="ChessUnitData01" />
+	<Component name="ChessPawn010" componentName="ChessUnitData01" />
+	<Component name="ChessPawn011" componentName="ChessUnitData01" />
+	<Component name="ChessPawn012" componentName="ChessUnitData01" />
+	<Component name="ChessPawn013" componentName="ChessUnitData01" />
+	<Component name="ChessPawn014" componentName="ChessUnitData01" />
+	<Component name="ChessPawn015" componentName="ChessUnitData01" />
+	<Component name="ChessPawn016" componentName="ChessUnitData01" />
+	<Component name="ChessPawn017" componentName="ChessUnitData01" />
+	<Component name="ChessPawn018" componentName="ChessUnitData01" />
+	<Component name="ChessPawn019" componentName="ChessUnitData01" />
+	<Component name="ChessPawn020" componentName="ChessUnitData01" />
+	<Component name="ChessPawn021" componentName="ChessUnitData01" />
+	<Component name="ChessPawn022" componentName="ChessUnitData01" />
+	<Component name="ChessPawn023" componentName="ChessUnitData01" />
+	<Component name="ChessPawn024" componentName="ChessUnitData01" />
+	<Component name="ChessPawn025" componentName="ChessUnitData01" />
+	<Component name="ChessPawn026" componentName="ChessUnitData01" />
+	<Component name="ChessPawn027" componentName="ChessUnitData01" />
+	<Component name="ChessPawn028" componentName="ChessUnitData01" />
+	<Component name="ChessPawn029" componentName="ChessUnitData01" />
+	<Component name="ChessPawn030" componentName="ChessUnitData01" />
+	<Component name="ChessPawn031" componentName="ChessUnitData01" />
+	<Component name="ChessPawn032" componentName="ChessUnitData01" />	
+</Level>
