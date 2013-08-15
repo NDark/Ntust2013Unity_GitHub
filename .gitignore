@@ -483,3 +483,12 @@ UpgradeLog*.XML
 /COURSE/LevelLoad01/Library/ScriptAssemblies
 /COURSE/LevelLoad01/Library/metadata
 /COURSE/LevelLoad01/Temp
+/COURSE/DamageEffect01/*.csproj
+/COURSE/DamageEffect01/*.csproj
+/COURSE/DamageEffect01/*.sln
+/COURSE/DamageEffect01/*.sln
+/COURSE/DamageEffect01/*.pidb
+/COURSE/DamageEffect01/*.userprefs
+/COURSE/DamageEffect01/Temp
+/COURSE/DamageEffect01/Library/metadata
+/COURSE/DamageEffect01/Library/ScriptAssemblies
