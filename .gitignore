@@ -492,3 +492,12 @@ UpgradeLog*.XML
 /COURSE/DamageEffect01/Temp
 /COURSE/DamageEffect01/Library/metadata
 /COURSE/DamageEffect01/Library/ScriptAssemblies
+/COURSE/DollyZoom01/*.csproj
+/COURSE/DollyZoom01/*.csproj
+/COURSE/DollyZoom01/*.sln
+/COURSE/DollyZoom01/*.sln
+/COURSE/DollyZoom01/*.pidb
+/COURSE/DollyZoom01/*.userprefs
+/COURSE/DollyZoom01/Temp
+/COURSE/DollyZoom01/Library/metadata
+/COURSE/DollyZoom01/Library/ScriptAssemblies
