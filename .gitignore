@@ -501,3 +501,11 @@ UpgradeLog*.XML
 /COURSE/DollyZoom01/Temp
 /COURSE/DollyZoom01/Library/metadata
 /COURSE/DollyZoom01/Library/ScriptAssemblies
+/COURSE/CutSceneCamera01/*.sln
+/COURSE/CutSceneCamera01/*.sln
+/COURSE/CutSceneCamera01/*.csproj
+/COURSE/CutSceneCamera01/*.csproj
+/COURSE/CutSceneCamera01/*.pidb
+/COURSE/CutSceneCamera01/*.userprefs
+/COURSE/CutSceneCamera01/Library/ScriptAssemblies
+/COURSE/CutSceneCamera01/Library/metadata
