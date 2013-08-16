@@ -1,0 +1,12 @@
+<Level name="Level009">
+
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_PlayAudio" 
+			AudioName="AlertAudio" >
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="3"/>
+</ConditionEvent>		
+	
+</Level>
