@@ -527,3 +527,4 @@ UpgradeLog*.XML
 /COURSE/GUIDemonstration05/Library/ScriptAssemblies
 /COURSE/GUIDemonstration05/*.pidb
 /COURSE/GUIDemonstration05/*.userprefs
+/COURSE/EventManager01/Temp

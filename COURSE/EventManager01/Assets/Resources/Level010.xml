@@ -7,6 +7,27 @@
 	<Condition 
 			ConditionName="Condition_Time" 
 			StartTime="3"/>
-</ConditionEvent>		
+</ConditionEvent>
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_ShowAMessage" 
+			MessageContent="Message Content from XML" >
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="6"/>
+</ConditionEvent>
+
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_ShowAGUIObj" 
+			GUIObjName="GUI_YouLose" >
+	<Condition 
+			ConditionName="Condition_Collision" 
+			TriggerName="TriggerBox001"
+			PositionStr="0,0.5,0"
+			ScaleStr="1,1,1"
+			CollisionPrefabName="Cube" />
+</ConditionEvent>
+
 	
 </Level>
