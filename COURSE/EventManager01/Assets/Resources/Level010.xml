@@ -30,4 +30,52 @@
 </ConditionEvent>
 
 	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="GoogleHandsomeObj" 
+			ScriptName="RotateAroundGlobalX" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="12"/>
+</ConditionEvent>	
+
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_EnableScriptToGameObject" 
+			GameObjectName="GoogleHandsomeObj" 
+			ScriptName="RotateAroundGlobalX" 
+			Enable="false" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="15"/>
+</ConditionEvent>	
+
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_MoveGameObject" 
+			GameObjectName="GoogleHandsomeObj" 
+			>
+	<Position3D x="4" y="0.5" z="3" />
+	<OrientationEuler x="0" y="0" z="0" />		
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="18"/>
+</ConditionEvent>	
+	
+	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_CreateGameObject" 
+			name="TreeObj" 
+		  	prefabName="PlaneInGameObject01"
+			>
+
+	<Position3D x="0" y="5" z="4" />
+	<OrientationEuler x="0" y="0" z="0" />
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="25"/>
+</ConditionEvent>		
 </Level>
