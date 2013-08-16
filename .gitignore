@@ -518,3 +518,10 @@ UpgradeLog*.XML
 /COURSE/EventManager01/*.sln
 /COURSE/EventManager01/Library/ScriptAssemblies
 /COURSE/EventManager01/Library/metadata
+/COURSE/GUIDemonstration05/*.csproj
+/COURSE/GUIDemonstration05/*.csproj
+/COURSE/GUIDemonstration05/*.sln
+/COURSE/GUIDemonstration05/*.sln
+/COURSE/GUIDemonstration05/Temp
+/COURSE/GUIDemonstration05/Library/metadata
+/COURSE/GUIDemonstration05/Library/ScriptAssemblies
