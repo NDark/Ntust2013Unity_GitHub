@@ -510,3 +510,11 @@ UpgradeLog*.XML
 /COURSE/CutSceneCamera01/Library/ScriptAssemblies
 /COURSE/CutSceneCamera01/Library/metadata
 /COURSE/CutSceneCamera01/Temp
+/COURSE/EventManager01/*.csproj
+/COURSE/EventManager01/*.pidb
+/COURSE/EventManager01/*.csproj
+/COURSE/EventManager01/*.sln
+/COURSE/EventManager01/*.userprefs
+/COURSE/EventManager01/*.sln
+/COURSE/EventManager01/Library/ScriptAssemblies
+/COURSE/EventManager01/Library/metadata
