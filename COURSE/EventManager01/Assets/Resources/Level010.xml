@@ -71,11 +71,28 @@
 			name="TreeObj" 
 		  	prefabName="PlaneInGameObject01"
 			>
-
 	<Position3D x="0" y="5" z="4" />
 	<OrientationEuler x="0" y="0" z="0" />
 	<Condition 
 			ConditionName="Condition_Time" 
 			StartTime="25"/>
-</ConditionEvent>		
+</ConditionEvent>	
+
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_PlayAnimation" 
+			GameObjectName="Wall" 
+		  	AnimationName="WallDown01"
+			>
+
+	<Position3D x="0" y="5" z="4" />
+	<OrientationEuler x="0" y="0" z="0" />
+	<Condition 
+			ConditionName="Condition_Collision" 
+			TriggerName="TriggerBox002"
+			PositionStr="-5,0.5,0"
+			ScaleStr="1,1,1"
+			CollisionPrefabName="Cube" />
+</ConditionEvent>
+	
+	
 </Level>
