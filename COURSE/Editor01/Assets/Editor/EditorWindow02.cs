@@ -44,9 +44,11 @@ public class EditorWindow02 : EditorWindow
 	public int m_IntValue = 0 ;
 	public bool m_FoldOut1 = false ;
 	public bool m_FoldOut2 = false ;
-	public int m_IntPopupSelectValue = 0 ;
+	public int m_IntPopupOptionValue = 0 ;
 	string [] m_DisplayOption = { "Plan A" , "Plan B" } ;
-	int [] m_DisplayOptionValue = { 0 , 1 } ;
+	int [] m_DisplayOptionValue = { 3 , 4 } ;
+	
+	public int m_GenericPopupIndexValue = 0 ;
 	
 	
 	
@@ -54,9 +56,26 @@ public class EditorWindow02 : EditorWindow
 	public float m_MinSliderValue = 0 ;
 	public float m_MaxSliderValue = 0 ;
 	public int m_LayerValue = 0 ;
+	public string m_TagStr = "" ;
 	public int m_MaskValue = 0 ;
 	
+	public float m_FloatSliderValue = 0 ;
+	
 	public GameObject m_SelectObj = null ;
+	
+	public string m_PasswordString = "" ;
+		
+	public Rect m_RectFieldValue = new Rect( 0 , 0 , 100 , 200 ) ;
+	
+	public string m_TextAreaContent ;
+	public string m_TextFieldContent ;
+	
+	public Vector2 m_Vector2 = Vector2.right ;
+	public Vector3 m_Vector3 = Vector3.forward ;
+	public Vector4 m_Vector4 = Vector4.one ;
+	
+
+	public bool m_Toggle = false ;
 	// the content of your window draw here.
 	void OnGUI()
 	{
@@ -66,10 +85,27 @@ public class EditorWindow02 : EditorWindow
 		EditorGUILayout.HelpBox( "Help Box MessageType.None" , MessageType.None ) ;
 		EditorGUILayout.HelpBox( "Help Box MessageType.Warning" , MessageType.Warning ) ;
 		
-		EditorGUILayout.LabelField( "This is a label" ) ;
+		EditorGUILayout.Space() ;
+		
+		EditorGUILayout.LabelField( "This is a label, the length is unlimited." ) ;
 		EditorGUILayout.LabelField( "The Lord of the Rings" , "The Fellowship of the Ring." ) ;
+		EditorGUILayout.PrefixLabel( "Prefix Label , the same as LabelField at EditorGUILayout" ) ;
+		EditorGUILayout.SelectableLabel( "Selectable Label, Select me please." ) ;
+		
+		
 		
 		m_Bound = EditorGUILayout.BoundsField( "This is Bound , James Bound." , m_Bound ) ;
+		
+		m_RectFieldValue = EditorGUILayout.RectField( "RectField" ,  m_RectFieldValue ) ;
+			
+		
+		EditorGUILayout.Separator() ;
+		
+		m_Vector2 = EditorGUILayout.Vector2Field( "Vector2" , m_Vector2 ) ;
+		m_Vector3 = EditorGUILayout.Vector3Field( "Vector3" , m_Vector3 ) ;
+		m_Vector4 = EditorGUILayout.Vector4Field( "Vector4" , m_Vector4 ) ;
+			
+		EditorGUILayout.Separator() ;
 		
 		m_Color = EditorGUILayout.ColorField( "ColorField" , m_Color ) ;
 		
@@ -81,17 +117,30 @@ public class EditorWindow02 : EditorWindow
 		
 		m_FloatValue = EditorGUILayout.FloatField( "Float Field" , m_FloatValue ) ;
 		
+		EditorGUILayout.Separator() ;
+		
 		if( true == ( m_FoldOut1 = EditorGUILayout.Foldout( m_FoldOut1 , "Fold Out" ) ) )
 		// m_FoldOut = EditorGUILayout.Foldout( m_FoldOut , "Fold Out" ) ;
 		{
-			m_IntValue = EditorGUILayout.IntField( "IntValue" , m_IntValue ) ;
-		
-			m_IntPopupSelectValue = EditorGUILayout.IntPopup( m_IntPopupSelectValue , m_DisplayOption , m_DisplayOptionValue ) ;
 			
+		
+			m_IntPopupOptionValue = EditorGUILayout.IntPopup( "IntPopup" , 
+															  m_IntPopupOptionValue , 
+															  m_DisplayOption , 
+															  m_DisplayOptionValue ) ;
+			EditorGUILayout.IntField( "IntPopup Value" , m_IntPopupOptionValue ) ;
+			
+			
+			m_GenericPopupIndexValue = EditorGUILayout.Popup( "Popup" , m_GenericPopupIndexValue , m_DisplayOption ) ;			
+			EditorGUILayout.IntField( "Popup Value" , m_GenericPopupIndexValue ) ;
+			
+				
 			m_MaskValue = EditorGUILayout.MaskField( "This is a mask" , m_MaskValue , m_DisplayOption ) ;
 			
 			EditorGUILayout.IntField( "m_MaskValue" , m_MaskValue ) ;			
 		}
+		
+		EditorGUILayout.Separator() ;
 		
 		if( 0 != Selection.objects.Length )
 		{
@@ -99,7 +148,11 @@ public class EditorWindow02 : EditorWindow
 			{
 				m_IntSliderValue = EditorGUILayout.IntSlider( m_IntSliderValue , 0 , 10 ) ;
 				
+				m_FloatSliderValue = EditorGUILayout.Slider( m_FloatSliderValue , -5.0f , 5.0f ) ;
+					
 				m_LayerValue = EditorGUILayout.LayerField( "This is a layer" , m_LayerValue ) ;
+				
+				m_TagStr = EditorGUILayout.TagField( "This is a tag" , m_TagStr ) ;
 				
 				EditorGUILayout.MinMaxSlider( ref m_MinSliderValue , ref m_MaxSliderValue , 10 , 100 ) ;
 				
@@ -108,11 +161,27 @@ public class EditorWindow02 : EditorWindow
 				EditorGUILayout.FloatField( "m_MaxSliderValue" , m_MaxSliderValue ) ;
 				
 			}
-			
 		}
 		
+		EditorGUILayout.Separator() ;
+		
 		if( null != Selection.activeObject )
+		{
 			m_SelectObj = (GameObject) EditorGUILayout.ObjectField( Selection.activeObject , typeof(GameObject) ) ;
+		}
+	
+		EditorGUILayout.Separator() ;
+		
+		m_PasswordString = EditorGUILayout.PasswordField( m_PasswordString ) ;
+		EditorGUILayout.LabelField( "Password String" , m_PasswordString ) ;
+		
+		EditorGUILayout.Separator() ;
+	
+		if( true == ( m_Toggle = EditorGUILayout.Toggle( "Toggle TextField&TextArea" , m_Toggle ) ) )
+		{
+			m_TextAreaContent = EditorGUILayout.TextArea( m_TextAreaContent , GUILayout.Height( 60) ) ;
+			m_TextFieldContent = EditorGUILayout.TextField( "TextField"  , m_TextFieldContent , GUILayout.Height( 60) ) ;
+		}
 	
 		
 	}
