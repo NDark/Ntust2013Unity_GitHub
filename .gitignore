@@ -556,3 +556,4 @@ UpgradeLog*.XML
 /COURSE/Editor01/*.userprefs
 /COURSE/Editor01/Library/ScriptAssemblies
 /COURSE/Editor01/Library/metadata
+/COURSE/Editor01/Temp
