@@ -545,3 +545,14 @@ UpgradeLog*.XML
 /DEPENDENCY/2DGameplayTutorialProject/*.csproj
 /DEPENDENCY/2DGameplayTutorialProject/*.userprefs
 /DEPENDENCY/2DGameplayTutorialProject/*.pidb
+/COURSE/Editor01/*.csproj
+/COURSE/Editor01/*.csproj
+/COURSE/Editor01/*.csproj
+/COURSE/Editor01/*.csproj
+/COURSE/Editor01/*.sln
+/COURSE/Editor01/*.sln
+/COURSE/Editor01/*.pidb
+/COURSE/Editor01/*.pidb
+/COURSE/Editor01/*.userprefs
+/COURSE/Editor01/Library/ScriptAssemblies
+/COURSE/Editor01/Library/metadata
