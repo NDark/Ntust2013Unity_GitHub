@@ -61,7 +61,7 @@ public class EditorWindow02 : EditorWindow
 	
 	public float m_FloatSliderValue = 0 ;
 	
-	public GameObject m_SelectObj = null ;
+	public Transform m_SelectTransform = null ;
 	
 	public string m_PasswordString = "" ;
 		
@@ -167,7 +167,10 @@ public class EditorWindow02 : EditorWindow
 		
 		if( null != Selection.activeObject )
 		{
-			m_SelectObj = (GameObject) EditorGUILayout.ObjectField( Selection.activeObject , typeof(GameObject) ) ;
+			m_SelectTransform = (Transform) 
+				EditorGUILayout.ObjectField( "ObjectField" ,
+					Selection.activeTransform , 
+					typeof(Transform) ) ;
 		}
 	
 		EditorGUILayout.Separator() ;
