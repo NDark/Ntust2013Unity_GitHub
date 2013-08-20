@@ -1,3 +1,8 @@
+/**
+@file AlienAIController01.cs
+@author NDark
+@date 20130820 . file started.
+*/
 using UnityEngine;
 using System.Collections;
 
@@ -21,14 +26,14 @@ public class AlienAIController01 : MonoBehaviour
 		Vector3 mainCharacterForward = m_MainCharacter.transform.forward ;
 		Vector3 toMainCharacter = m_MainCharacter.transform.position - this.gameObject.transform.position ;
 		
-		FollowTheMainCharacter02 script = this.gameObject.GetComponent<FollowTheMainCharacter02>() ;
+		FollowTheMainCharacter03 script = this.gameObject.GetComponent<FollowTheMainCharacter03>() ;
 		
 		float angle = Vector3.Angle( mainCharacterForward , toMainCharacter ) ;
 		if( angle < 90 )
 		{
 			if( null == script )
 			{
-				script = this.gameObject.AddComponent<FollowTheMainCharacter02>() ;
+				script = this.gameObject.AddComponent<FollowTheMainCharacter03>() ;
 				script.m_MainCharacter = this.m_MainCharacter ;
 			}
 			script.enabled = true ;
@@ -46,11 +51,11 @@ public class AlienAIController01 : MonoBehaviour
 		
 		if( null == m_MainCharacter )
 		{
-			Debug.LogError( "FollowTheMainCharacter02:InitializeMainCharacterObjectPtr() null == m_MainCharacter" ) ;
+			Debug.LogError( "FollowTheMainCharacter03:InitializeMainCharacterObjectPtr() null == m_MainCharacter" ) ;
 		}
 		else
 		{
-			Debug.Log( "FollowTheMainCharacter02:InitializeMainCharacterObjectPtr() end." ) ;
+			Debug.Log( "FollowTheMainCharacter03:InitializeMainCharacterObjectPtr() end." ) ;
 		}
 	}
 }

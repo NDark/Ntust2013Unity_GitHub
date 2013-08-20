@@ -1,0 +1,351 @@
+<Level name="Level009">
+
+	<Unit name="AlienCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="MissleCollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+
+	<Unit name="GUICollector" 
+		  prefabName="Common/Prefabs/DummyObject">
+	</Unit>
+	
+	<Unit name="SceneBackground001" 
+		  prefabName="Common/Prefabs/SceneBackground001">
+	</Unit>
+	
+
+	<Unit name="MainCharacter" 
+		  prefabName="Common/Prefabs/MainCharacter03">
+		<Position3D x="0" y="1" z="-4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	<Component name="MainCharacter" componentName="MainCharacterController09"/>
+	<Component name="MainCharacter" componentName="OnCollideSuicide"/>
+	
+	
+	<Unit name="AlienUnit0" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	
+	<Unit name="AlienUnit1" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	
+	<Unit name="AlienUnit2" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit3" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit4" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit5" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit6" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit7" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit8" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="1" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit9" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit10" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit11" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit12" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit13" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit14" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit15" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit16" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit17" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="2" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit18" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit19" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit20" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+	
+	<Unit name="AlienUnit21" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit22" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit23" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit24" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit25" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit26" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="3" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit27" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="-6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit28" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit29" 
+		  prefabName="Common/Prefabs/AlienUnit02_WithComponent">
+		<Position3D x="-3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit30" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="-1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+
+	<Unit name="AlienUnit31" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="0" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit32" 
+		  prefabName="Common/Prefabs/AlienUnit03_WithComponent">
+		<Position3D x="1.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit33" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="3" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit34" 
+		  prefabName="Common/Prefabs/AlienUnit04_WithComponent">
+		<Position3D x="4.5" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Unit name="AlienUnit35" 
+		  prefabName="Common/Prefabs/AlienUnit01_WithComponent">
+		<Position3D x="6" y="1" z="4" />
+		<OrientationEuler x="0" y="0" z="0" />
+	</Unit>
+
+	<Component name="AlienUnit0" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit1" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit2" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit3" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit4" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit5" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit6" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit7" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit8" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit9" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit10" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit11" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit12" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit13" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit14" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit15" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit16" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit17" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit18" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit19" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit20" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit21" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit22" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit23" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit24" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit25" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit26" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit27" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit28" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit29" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit30" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit31" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit32" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit33" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit34" componentName="OnCollideAddScriptOnObj02"/>
+	<Component name="AlienUnit35" componentName="OnCollideAddScriptOnObj02"/>
+	
+	
+	<Component name="AlienUnit0" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit1" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit2" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit3" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit4" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit5" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit6" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit7" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit8" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit9" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit10" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit11" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit12" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit13" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit14" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit15" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit16" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit17" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit18" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit19" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit20" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit21" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit22" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit23" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit24" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit25" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit26" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit27" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit28" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit29" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit30" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit31" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit32" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit33" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit34" componentName="GUI_UnitHP01"/>
+	<Component name="AlienUnit35" componentName="GUI_UnitHP01"/>
+	
+	
+
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit0" 
+			ScriptName="FollowTheMainCharacter03" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="5"/>
+</ConditionEvent>	
+
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit0" 
+			ScriptName="FollowTheMainCharacter03" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="10"/>
+</ConditionEvent>	
+
+	
+</Level>

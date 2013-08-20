@@ -564,3 +564,14 @@ UpgradeLog*.XML
 /COURSE/ArtificialIntelligence01/Temp
 /COURSE/ArtificialIntelligence01/Library/ScriptAssemblies
 /COURSE/ArtificialIntelligence01/Library/metadata
+/COURSE/Prototype05/*.pidb
+/COURSE/Prototype05/*.userprefs
+/COURSE/Prototype05/*.csproj
+/COURSE/Prototype05/*.csproj
+/COURSE/Prototype05/*.sln
+/COURSE/Prototype05/*.sln
+/COURSE/Prototype05/Temp
+/COURSE/Prototype05/Library/metadata
+/COURSE/Prototype05/Library/ScriptAssemblies
+/COURSE/ArtificialIntelligence01/*.userprefs
+/COURSE/ArtificialIntelligence01/*.pidb
