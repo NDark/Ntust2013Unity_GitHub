@@ -323,28 +323,108 @@
 	<Component name="AlienUnit34" componentName="GUI_UnitHP01"/>
 	<Component name="AlienUnit35" componentName="GUI_UnitHP01"/>
 	
+	<Component name="AlienUnit0" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit1" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit2" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit3" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit4" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit5" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit6" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit7" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit8" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit9" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit10" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit11" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit12" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit13" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit14" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit15" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit16" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit17" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit18" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit19" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit20" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit21" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit22" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit23" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit24" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit25" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit26" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit27" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit28" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit29" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit30" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit31" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit32" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit33" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit34" componentName="AlientDetectAndReset01"/>
+	<Component name="AlienUnit35" componentName="AlientDetectAndReset01"/>
+	
 
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
 			GameObjectName="AlienUnit0" 
-			ScriptName="FollowTheMainCharacter03" 
+			ScriptName="AlienAIController02" 
 			SendMessageName="" 
 			>
 	<Condition 
 			ConditionName="Condition_Time" 
 			StartTime="5"/>
 </ConditionEvent>	
+	
 
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
 			GameObjectName="AlienUnit1" 
-			ScriptName="AlienAIController01" 
+			ScriptName="AlienAIController02" 
 			SendMessageName="" 
 			>
 	<Condition 
 			ConditionName="Condition_Time" 
-			StartTime="5"/>
-</ConditionEvent>	
+			StartTime="10"/>
+</ConditionEvent>
+
+
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit2" 
+			ScriptName="AlienAIController02" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="15"/>
+</ConditionEvent>
 
 	
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit3" 
+			ScriptName="AlienAIController02" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="20"/>
+</ConditionEvent>
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit4" 
+			ScriptName="AlienAIController02" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="20"/>
+</ConditionEvent>
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit5" 
+			ScriptName="AlienAIController02" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="20"/>
+</ConditionEvent>	
 </Level>

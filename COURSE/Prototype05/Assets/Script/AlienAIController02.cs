@@ -29,11 +29,11 @@ public class AlienAIController02 : MonoBehaviour
 			movementScript.enabled = false ;
 		}
 		
-		FollowTheMainCharacter03 script = this.gameObject.GetComponent<FollowTheMainCharacter03>() ;
-		if( null == script )
+		FollowTheMainCharacter03 followScript = this.gameObject.GetComponent<FollowTheMainCharacter03>() ;
+		if( null == followScript )
 		{
-			script = this.gameObject.AddComponent<FollowTheMainCharacter03>() ;
-			script.m_MainCharacter = this.m_MainCharacter ;
+			followScript = this.gameObject.AddComponent<FollowTheMainCharacter03>() ;
+			followScript.m_MainCharacter = this.m_MainCharacter ;
 		}
 		
 		Component.Destroy( this ) ;
