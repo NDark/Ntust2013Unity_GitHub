@@ -557,3 +557,10 @@ UpgradeLog*.XML
 /COURSE/Editor01/Library/ScriptAssemblies
 /COURSE/Editor01/Library/metadata
 /COURSE/Editor01/Temp
+/COURSE/ArtificialIntelligence01/*.sln
+/COURSE/ArtificialIntelligence01/*.sln
+/COURSE/ArtificialIntelligence01/*.csproj
+/COURSE/ArtificialIntelligence01/*.csproj
+/COURSE/ArtificialIntelligence01/Temp
+/COURSE/ArtificialIntelligence01/Library/ScriptAssemblies
+/COURSE/ArtificialIntelligence01/Library/metadata
