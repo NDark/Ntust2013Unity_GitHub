@@ -1,5 +1,9 @@
+/**
+@file AlienAIController01.cs
+@author NDark
+@date 20130820 . file started.
+*/
 using UnityEngine;
-using System.Collections;
 
 public class AlienAIController01 : MonoBehaviour 
 {
