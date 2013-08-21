@@ -4,7 +4,7 @@ using UnityEditor;
 
 public class ExportAssetBundles {
 	
-	
+	/*
 	[MenuItem ("Build/BuildWebplayerStreamed")]
 	static void BuildStreamedSceneAssetBundle()
 	{
@@ -12,7 +12,7 @@ public class ExportAssetBundles {
 		BuildPipeline.BuildStreamedSceneAssetBundle( 
 			levels, "BuildStreamedSceneAssetBundle.unity3d", BuildTarget.StandaloneWindows ); 
 	}
-	
+		
 	[MenuItem ("Build/BuildAsset")]
 	static void ExportSelected()
 	{
@@ -27,4 +27,5 @@ public class ExportAssetBundles {
 			Selection.objects, 
 			"BuildAssetBundle"+Selection.activeObject.name+".unity3d" ) ;
 	}	
+	//*/
 }
