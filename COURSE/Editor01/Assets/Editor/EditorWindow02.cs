@@ -76,6 +76,9 @@ public class EditorWindow02 : EditorWindow
 	
 
 	public bool m_Toggle = false ;
+	public bool m_ToggleGroup = false ;
+	
+	public Vector2 m_ScrollPos = Vector2.zero ;
 	// the content of your window draw here.
 	void OnGUI()
 	{
@@ -175,17 +178,23 @@ public class EditorWindow02 : EditorWindow
 	
 		EditorGUILayout.Separator() ;
 		
+				
 		m_PasswordString = EditorGUILayout.PasswordField( m_PasswordString ) ;
 		EditorGUILayout.LabelField( "Password String" , m_PasswordString ) ;
+		
+		
 		
 		EditorGUILayout.Separator() ;
 	
 		if( true == ( m_Toggle = EditorGUILayout.Toggle( "Toggle TextField&TextArea" , m_Toggle ) ) )
 		{
 			m_TextAreaContent = EditorGUILayout.TextArea( m_TextAreaContent , GUILayout.Height( 60) ) ;
-			m_TextFieldContent = EditorGUILayout.TextField( "TextField"  , m_TextFieldContent , GUILayout.Height( 60) ) ;
 		}
 	
+		m_ToggleGroup = EditorGUILayout.BeginToggleGroup( "Toggle Group" , m_ToggleGroup ) ;
+		m_TextFieldContent = EditorGUILayout.TextField( "TextField"  , m_TextFieldContent , GUILayout.Height( 60) ) ;		
+		EditorGUILayout.EndToggleGroup() ;
+		
 		
 	}
 

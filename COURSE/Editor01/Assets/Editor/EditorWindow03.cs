@@ -27,12 +27,28 @@ public class EditorWindow03 : EditorWindow
 	// Update is called once per frame
 	void Update () 
 	{
-	
 	}
 	
+	private bool m_Toggle1 = false ;
+	private float m_Value = 0 ;
 	// the content of your window draw here.
 	void OnGUI()
 	{
+		m_Toggle1 = EditorGUI.Toggle( new Rect( 0 , 0 , 15 , 15 ) , m_Toggle1 ) ;
+		if( true == m_Toggle1 )
+		{
+			if( null != Selection.activeObject &&
+				typeof( UnityEngine.Texture2D ) == Selection.activeObject.GetType() )
+			{
+				Texture selectTexure = (Texture) Selection.activeObject ;
+				Rect drawTextureRect =new Rect( 15 , 15 , selectTexure.width , selectTexure.height ) ;
+				EditorGUI.DrawPreviewTexture( drawTextureRect , selectTexure ) ;
+			}
+		}
+		
+		m_Value = EditorGUI.Slider( new Rect( 0 , 30 , 150 , 20 ) , m_Value , 0 , 100 ) ;
+		
+		EditorGUI.ProgressBar( new Rect( 0 , 70 , 150 , 50 ) , m_Value * 0.01f , "ProgressBar" ) ;
 		
 	}
 

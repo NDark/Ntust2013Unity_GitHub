@@ -595,3 +595,4 @@ UpgradeLog*.XML
 /COURSE/Network01/*.pidb
 /COURSE/Network01/*.userprefs
 /COURSE/AssetBundle01/Temp
+/COURSE/Network01/Temp
