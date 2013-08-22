@@ -588,3 +588,10 @@ UpgradeLog*.XML
 /COURSE/AssetBundle01/Library/ScriptAssemblies
 /COURSE/Network01/Library/metadata
 /COURSE/Network01/Library/ScriptAssemblies
+/COURSE/Network01/*.csproj
+/COURSE/Network01/*.csproj
+/COURSE/Network01/*.sln
+/COURSE/Network01/*.sln
+/COURSE/Network01/*.pidb
+/COURSE/Network01/*.userprefs
+/COURSE/AssetBundle01/Temp
