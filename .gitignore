@@ -586,3 +586,5 @@ UpgradeLog*.XML
 /COURSE/AssetBundle01/*.userprefs
 /COURSE/AssetBundle01/Library/metadata
 /COURSE/AssetBundle01/Library/ScriptAssemblies
+/COURSE/Network01/Library/metadata
+/COURSE/Network01/Library/ScriptAssemblies
