@@ -596,3 +596,12 @@ UpgradeLog*.XML
 /COURSE/Network01/*.userprefs
 /COURSE/AssetBundle01/Temp
 /COURSE/Network01/Temp
+/COURSE/Editor02/Temp
+/COURSE/Editor02/Library/metadata
+/COURSE/Editor02/Library/ScriptAssemblies
+/COURSE/Editor02/*.csproj
+/COURSE/Editor02/*.csproj
+/COURSE/Editor02/*.sln
+/COURSE/Editor02/*.sln
+/COURSE/Editor02/*.pidb
+/COURSE/Editor02/*.userprefs
