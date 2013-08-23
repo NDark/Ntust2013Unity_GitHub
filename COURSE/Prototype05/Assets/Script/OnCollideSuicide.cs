@@ -15,9 +15,11 @@ public class OnCollideSuicide : MonoBehaviour {
 	
 	void OnTriggerEnter( Collider other )
 	{
+		// Debug.Log( other.gameObject.name ) ;
 		if( -1 != other.gameObject.name.IndexOf( "Alien" ) )
 		{
 			GameObject.Destroy( this.gameObject ) ;
 		}
 	}
+	
 }
