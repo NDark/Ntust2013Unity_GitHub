@@ -609,3 +609,10 @@ UpgradeLog*.XML
 /COURSE/Shadow01/Library/ScriptAssemblies
 /COURSE/Prototype06/Library/ScriptAssemblies
 /COURSE/Prototype06/Library/metadata
+/COURSE/Prototype06/*.csproj
+/COURSE/Prototype06/*.csproj
+/COURSE/Prototype06/*.sln
+/COURSE/Prototype06/*.sln
+/COURSE/Prototype06/*.pidb
+/COURSE/Prototype06/*.userprefs
+/COURSE/Prototype06/Temp
