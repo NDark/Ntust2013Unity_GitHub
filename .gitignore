@@ -607,3 +607,5 @@ UpgradeLog*.XML
 /COURSE/Editor02/*.userprefs
 /COURSE/Shadow01/Library/metadata
 /COURSE/Shadow01/Library/ScriptAssemblies
+/COURSE/Prototype06/Library/ScriptAssemblies
+/COURSE/Prototype06/Library/metadata
