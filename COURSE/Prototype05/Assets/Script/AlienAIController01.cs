@@ -29,7 +29,7 @@ public class AlienAIController01 : MonoBehaviour
 		FollowTheMainCharacter03 script = this.gameObject.GetComponent<FollowTheMainCharacter03>() ;
 		
 		float angle = Vector3.Angle( mainCharacterForward , toMainCharacter ) ;
-		if( angle < 90 )
+		if( angle > 90 )
 		{
 			if( null == script )
 			{

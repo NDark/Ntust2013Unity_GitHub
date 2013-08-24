@@ -338,13 +338,23 @@
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
 			GameObjectName="AlienUnit1" 
-			ScriptName="AlienAIController01" 
+			ScriptName="FollowTheMainCharacter03" 
 			SendMessageName="" 
 			>
 	<Condition 
 			ConditionName="Condition_Time" 
-			StartTime="5"/>
+			StartTime="6"/>
 </ConditionEvent>	
 
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
+			GameObjectName="AlienUnit2" 
+			ScriptName="FollowTheMainCharacter03" 
+			SendMessageName="" 
+			>
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="7"/>
+</ConditionEvent>		
 	
 </Level>
