@@ -629,3 +629,6 @@ UpgradeLog*.XML
 /COURSE/Editor03/*.userprefs
 /COURSE/Editor03/Library/metadata
 /COURSE/Editor03/Library/ScriptAssemblies
+/COURSE/TripleTao/Temp
+/COURSE/TripleTao/Library/metadata
+/COURSE/TripleTao/Library/ScriptAssemblies
