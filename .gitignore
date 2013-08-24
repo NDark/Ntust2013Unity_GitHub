@@ -616,3 +616,5 @@ UpgradeLog*.XML
 /COURSE/Prototype06/*.pidb
 /COURSE/Prototype06/*.userprefs
 /COURSE/Prototype06/Temp
+/COURSE/GUITexture04/Library/metadata
+/COURSE/GUITexture04/Library/ScriptAssemblies
