@@ -1,6 +1,6 @@
 <Level name="Level009">
 
-	
+
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_PlayAudio" 
 			AudioName="AlertAudio" >
@@ -8,16 +8,8 @@
 			ConditionName="Condition_Time" 
 			StartTime="3"/>
 </ConditionEvent>
-	
-<ConditionEvent 
-			ConditionEventName="ConditionEvent_ShowAMessage" 
-			MessageContent="Message Content from XML" >
-	<Condition 
-			ConditionName="Condition_Time" 
-			StartTime="6"/>
-</ConditionEvent>
 
-	
+
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_ShowAGUIObj" 
 			GUIObjName="GUI_YouLose" >
@@ -29,6 +21,17 @@
 			CollisionPrefabName="Cube" />
 </ConditionEvent>
 
+	
+	<!--
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_ShowAMessage" 
+			MessageContent="Message Content from XML" >
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="6"/>
+</ConditionEvent>
+
+	
 	
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
@@ -94,5 +97,6 @@
 			CollisionPrefabName="Cube" />
 </ConditionEvent>
 	
+	-->
 	
 </Level>
