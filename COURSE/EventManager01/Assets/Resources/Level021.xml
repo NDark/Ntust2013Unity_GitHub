@@ -9,6 +9,13 @@
 			StartTime="3"/>
 </ConditionEvent>
 
+<ConditionEvent 
+			ConditionEventName="ConditionEvent_ShowAMessage" 
+			MessageContent="Message Content from XML" >
+	<Condition 
+			ConditionName="Condition_Time" 
+			StartTime="6"/>
+</ConditionEvent>
 
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_ShowAGUIObj" 
@@ -20,19 +27,8 @@
 			ScaleStr="1,1,1"
 			CollisionPrefabName="Cube" />
 </ConditionEvent>
-
 	
 	<!--
-<ConditionEvent 
-			ConditionEventName="ConditionEvent_ShowAMessage" 
-			MessageContent="Message Content from XML" >
-	<Condition 
-			ConditionName="Condition_Time" 
-			StartTime="6"/>
-</ConditionEvent>
-
-	
-	
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
 			GameObjectName="GoogleHandsomeObj" 
