@@ -1,0 +1,20 @@
+http://storage3d.com/storage/2009.03/63af9a525db4080950fd7834e9b70bf0.jpg
+http://good-wallpapers.com/wall.php?category=nature&id=4503&width=1600&ratio=1.33
+http://www.cityoflisbon-ia.gov/vertical/Sites/%7B8CDB492E-92D0-4DDE-9EFE-DF15166CB27B%7D/uploads/tree21.gif
+http://media-cdn.tripadvisor.com/media/photo-s/02/4c/03/50/meadow-lake-fishing-camp.jpg
+http://www.whitegadget.com/attachments/pc-wallpapers/85254d1320380902-house-house-wallpaper.jpg
+http://scenery-wallpapers.com/bodiam_castle_wallpaper_4-wallpapers.html
+http://www.onlineghibli.com/howls_castle/press/02b.jpg	
+
+3x3 platform 0 1 2 3 4 5 6 7 8
+space
+start 
+animation up down left right
+animation up merge down merge left merge right merge
+
+destroy
+upgrade => change texture
+
+select state 
+ready place (mouse over)
+in place anim

@@ -28,7 +28,7 @@
 			CollisionPrefabName="Cube" />
 </ConditionEvent>
 	
-	<!--
+
 <ConditionEvent 
 			ConditionEventName="ConditionEvent_AddScriptOnGameObject" 
 			GameObjectName="GoogleHandsomeObj" 
@@ -83,8 +83,6 @@
 		  	AnimationName="WallDown01"
 			>
 
-	<Position3D x="0" y="5" z="4" />
-	<OrientationEuler x="0" y="0" z="0" />
 	<Condition 
 			ConditionName="Condition_Collision" 
 			TriggerName="TriggerBox002"
@@ -93,6 +91,5 @@
 			CollisionPrefabName="Cube" />
 </ConditionEvent>
 	
-	-->
 	
 </Level>
