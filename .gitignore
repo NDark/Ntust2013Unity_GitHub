@@ -618,3 +618,14 @@ UpgradeLog*.XML
 /COURSE/Prototype06/Temp
 /COURSE/GUITexture04/Library/metadata
 /COURSE/GUITexture04/Library/ScriptAssemblies
+/COURSE/Editor03/*.sln
+/COURSE/Editor03/*.csproj
+/COURSE/Editor03/*.pidb
+/COURSE/Editor03/*.csproj
+/COURSE/Editor03/*.pidb
+/COURSE/Editor03/*.csproj
+/COURSE/Editor03/*.csproj
+/COURSE/Editor03/*.sln
+/COURSE/Editor03/*.userprefs
+/COURSE/Editor03/Library/metadata
+/COURSE/Editor03/Library/ScriptAssemblies
