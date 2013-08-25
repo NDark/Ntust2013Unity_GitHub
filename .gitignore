@@ -605,7 +605,6 @@ UpgradeLog*.XML
 /COURSE/Editor02/*.sln
 /COURSE/Editor02/*.pidb
 /COURSE/Editor02/*.userprefs
-/COURSE/Shadow01/Library/metadata
 /COURSE/Shadow01/Library/ScriptAssemblies
 /COURSE/Prototype06/Library/ScriptAssemblies
 /COURSE/Prototype06/Library/metadata
@@ -640,3 +639,4 @@ UpgradeLog*.XML
 /COURSE/GUIDemonstration06/*.userprefs
 /COURSE/GUIDemonstration06/Library/ScriptAssemblies
 /COURSE/GUIDemonstration06/Library/metadata
+/COURSE/Shadow01/Temp
