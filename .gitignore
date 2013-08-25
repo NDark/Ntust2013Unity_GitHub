@@ -632,3 +632,11 @@ UpgradeLog*.XML
 /COURSE/TripleTao/Temp
 /COURSE/TripleTao/Library/metadata
 /COURSE/TripleTao/Library/ScriptAssemblies
+/COURSE/GUIDemonstration06/*.sln
+/COURSE/GUIDemonstration06/*.sln
+/COURSE/GUIDemonstration06/*.csproj
+/COURSE/GUIDemonstration06/*.csproj
+/COURSE/GUIDemonstration06/*.pidb
+/COURSE/GUIDemonstration06/*.userprefs
+/COURSE/GUIDemonstration06/Library/ScriptAssemblies
+/COURSE/GUIDemonstration06/Library/metadata
