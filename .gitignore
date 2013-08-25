@@ -640,3 +640,12 @@ UpgradeLog*.XML
 /COURSE/GUIDemonstration06/Library/ScriptAssemblies
 /COURSE/GUIDemonstration06/Library/metadata
 /COURSE/Shadow01/Temp
+/COURSE/Shadow01/*.csproj
+/COURSE/Shadow01/*.csproj
+/COURSE/Shadow01/*.pidb
+/COURSE/Shadow01/*.pidb
+/COURSE/Shadow01/*.userprefs
+/COURSE/Shadow01/*.csproj
+/COURSE/Shadow01/*.csproj
+/COURSE/Shadow01/*.sln
+/COURSE/Shadow01/*.sln
