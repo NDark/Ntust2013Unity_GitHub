@@ -15,6 +15,8 @@ public class TripleTaoEditorWindow : EditorWindow
         EditorWindow.GetWindow<TripleTaoEditorWindow>() ;
     }		
 	
+	public GameObject m_GlobalSingleton = null ;
+	
 	public GameObject m_StageParent = null ;
 	public List<GameObject> m_StageBoards = new List<GameObject>() ;
 	
@@ -38,6 +40,11 @@ public class TripleTaoEditorWindow : EditorWindow
 	{
 		ClearAllStageBoards() ;
 		
+		if( null == m_StageParent )
+		{
+			m_StageParent = new GameObject("StageBoardParent") ;
+
+		}
 		for( int j = 0 ; j < m_HeightNum ; ++j )
 		{
 			for( int i = 0 ; i < m_WidthNum ; ++i )
@@ -55,16 +62,40 @@ public class TripleTaoEditorWindow : EditorWindow
 						m_StartPos.y , 
 						m_StartPos.z + j * m_SpaceOfBoards.z );
 					
+					if( i == m_WidthNum / 2 &&
+						j == m_HeightNum / 2 )
+					{
+						Camera.mainCamera.transform.position = 
+							new Vector3( obj.transform.position.x ,
+									 	 obj.transform.position.y + 10 ,
+										 obj.transform.position.z ) ;	
+						if( m_WidthNum > m_HeightNum )
+							Camera.mainCamera.orthographicSize = m_WidthNum / 2.0f ;
+						else 
+							Camera.mainCamera.orthographicSize = m_HeightNum / 2.0f ;
+					}
+					obj.transform.parent = m_StageParent.transform ;
+					m_StageBoards.Add( obj ) ;
 				}
 			}
 		}
+		
+		if( null == m_GlobalSingleton )
+		{
+			m_GlobalSingleton = GameObject.Find( "GlobalSingleton" ) ;
+		}
+		TripleTaoManager manager = m_GlobalSingleton.GetComponent<TripleTaoManager>() ;
+		// set parameter to manager
+		
+		
 	}
 	
 	private void ClearAllStageBoards()
 	{
 		foreach( GameObject obj in m_StageBoards )
 		{
-			GameObject.Destroy( obj ) ;
+			// can't use Destroy
+			GameObject.DestroyImmediate( obj ) ;
 		}
 		
 		m_StageBoards.Clear() ;

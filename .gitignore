@@ -653,3 +653,5 @@ UpgradeLog*.XML
 /COURSE/TripleTao/*.csproj
 /COURSE/TripleTao/*.sln
 /COURSE/TripleTao/*.sln
+/COURSE/TripleTao/*.pidb
+/COURSE/TripleTao/*.userprefs
