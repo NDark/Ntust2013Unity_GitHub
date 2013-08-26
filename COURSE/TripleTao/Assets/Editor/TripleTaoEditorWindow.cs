@@ -57,7 +57,7 @@ public class TripleTaoEditorWindow : EditorWindow
 				else 
 				{
 					GameObject obj = (GameObject) GameObject.Instantiate( prefab ) ;
-					obj.name = "StageBoard" + i + j ;
+					obj.name = "StageBoard:" + i + "," + j ;
 					obj.transform.position = new Vector3( m_StartPos.x + i * m_SpaceOfBoards.x ,
 						m_StartPos.y , 
 						m_StartPos.z + j * m_SpaceOfBoards.z );
@@ -74,6 +74,10 @@ public class TripleTaoEditorWindow : EditorWindow
 						else 
 							Camera.mainCamera.orthographicSize = m_HeightNum / 2.0f ;
 					}
+					
+					UnitData script = obj.AddComponent<UnitData>() ;
+					script.m_IndexI = i ;
+					script.m_IndexJ = j ;
 					obj.transform.parent = m_StageParent.transform ;
 					m_StageBoards.Add( obj ) ;
 				}
@@ -85,6 +89,8 @@ public class TripleTaoEditorWindow : EditorWindow
 			m_GlobalSingleton = GameObject.Find( "GlobalSingleton" ) ;
 		}
 		TripleTaoManager manager = m_GlobalSingleton.GetComponent<TripleTaoManager>() ;
+		manager.m_WidthNum = this.m_WidthNum ;
+		manager.m_HeightNum = this.m_HeightNum ;
 		// set parameter to manager
 		
 		
