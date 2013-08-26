@@ -78,7 +78,10 @@ public class TripleTaoEditorWindow : EditorWindow
 					UnitData script = obj.AddComponent<UnitData>() ;
 					script.m_IndexI = i ;
 					script.m_IndexJ = j ;
-					obj.transform.parent = m_StageParent.transform ;
+					
+					obj.AddComponent<OnMouseDownDropUnit>() ;
+					
+					obj.transform.parent = m_StageParent.transform ;					
 					m_StageBoards.Add( obj ) ;
 				}
 			}
