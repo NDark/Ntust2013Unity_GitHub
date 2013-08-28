@@ -24,6 +24,9 @@ public class TripleTaoEditorWindow : EditorWindow
 	public Vector3 m_SpaceOfBoards = new Vector3( 1.1f , 0 , 1.1f )  ;
 	public int m_WidthNum = 1 ;
 	public int m_HeightNum = 1 ;
+	
+	public Material[] m_Materials = new Material[ 1 ] ;
+	public bool m_ToggleMaterial = false ;
 	void OnGUI()
 	{
 		m_StartPos = EditorGUILayout.Vector3Field( "StartPos" , m_StartPos ) ;
@@ -34,6 +37,27 @@ public class TripleTaoEditorWindow : EditorWindow
 		{
 			RecreateStageBoard() ;
 		}
+		
+		m_ToggleMaterial = EditorGUILayout.Toggle( "Materials" , m_ToggleMaterial ) ;
+		int matNum = EditorGUILayout.IntField( "Material Num" , m_Materials.Length ) ;
+		if( m_Materials.Length != matNum )
+		{
+			m_Materials = new Material[ matNum ] ;
+		}
+		
+		if( true == m_ToggleMaterial && null != m_Materials )
+		{
+			for( int i = 0 ; i < m_Materials.Length ; ++i )
+			{
+				m_Materials[ i ] = (Material) EditorGUILayout.ObjectField( m_Materials[ i ] , typeof( Material ) , false ) ;
+			}
+		}
+		
+		if( true == GUILayout.Button( "Set Material" ) )
+		{
+			SetMaterial() ;
+			
+		}		
 	}
 	
 	private void RecreateStageBoard()
@@ -108,5 +132,10 @@ public class TripleTaoEditorWindow : EditorWindow
 		}
 		
 		m_StageBoards.Clear() ;
+	}
+	
+	private void SetMaterial()
+	{
+		
 	}
 }
