@@ -5,7 +5,9 @@
 */
 using UnityEngine;
 using UnityEditor ; // add this for editor
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
 public class TripleTaoEditorWindow : EditorWindow 
 {
@@ -27,6 +29,7 @@ public class TripleTaoEditorWindow : EditorWindow
 	
 	public Material[] m_Materials = new Material[ 1 ] ;
 	public bool m_ToggleMaterial = false ;
+	
 	void OnGUI()
 	{
 		m_StartPos = EditorGUILayout.Vector3Field( "StartPos" , m_StartPos ) ;
@@ -136,6 +139,17 @@ public class TripleTaoEditorWindow : EditorWindow
 	
 	private void SetMaterial()
 	{
+		StreamWriter sw = new StreamWriter( "Assets/Resources/MaterialDoc.txt" ) ;
 		
+		string content = "" ;
+		for( int i = 0 ; i < m_Materials.Length ; ++i )
+		{
+			content = content + "," + m_Materials[ i ].name.ToString()  ;
+			
+		}
+		sw.Write( content ) ;
+		sw.Close() ;
+		Debug.Log( "content" + content ) ;
 	}
+	
 }
