@@ -30,6 +30,8 @@ public class TripleTaoEditorWindow : EditorWindow
 	public Material[] m_Materials = new Material[ 1 ] ;
 	public bool m_ToggleMaterial = false ;
 	
+	public int m_PreserveIndexI = 0 ;
+	public int m_PreserveIndexJ = 0 ;
 	void OnGUI()
 	{
 		m_StartPos = EditorGUILayout.Vector3Field( "StartPos" , m_StartPos ) ;
@@ -59,24 +61,31 @@ public class TripleTaoEditorWindow : EditorWindow
 		if( true == GUILayout.Button( "Set Material" ) )
 		{
 			SetMaterial() ;
-			
 		}		
+		
+		m_PreserveIndexI = EditorGUILayout.IntField( "Preserve Index I" , m_PreserveIndexI ) ;
+		m_PreserveIndexJ = EditorGUILayout.IntField( "Preserve Index J" , m_PreserveIndexJ ) ;
 	}
 	
 	private void RecreateStageBoard()
 	{
 		ClearAllStageBoards() ;
 		
+		m_StageParent = GameObject.Find( "StageBoardParent" ) ;
 		if( null == m_StageParent )
 		{
 			m_StageParent = new GameObject("StageBoardParent") ;
-
 		}
+		
 		for( int j = 0 ; j < m_HeightNum ; ++j )
 		{
 			for( int i = 0 ; i < m_WidthNum ; ++i )
 			{
-				Object prefab = Resources.Load( "StageBoard" ) ;
+				string prefabName = "StageBoard" ;
+				if( m_PreserveIndexI == i && m_PreserveIndexJ == j )
+					prefabName = "StageBoardPreserve" ;
+				
+				Object prefab = Resources.Load( prefabName ) ;
 				if( null == prefab )
 				{
 					Debug.LogError( "null == prefab" ) ;
@@ -92,10 +101,22 @@ public class TripleTaoEditorWindow : EditorWindow
 					if( i == m_WidthNum / 2 &&
 						j == m_HeightNum / 2 )
 					{
+						Vector3 shiftVec = Vector3.zero ;
+						if( 0 == m_WidthNum % 2 )
+						{
+							shiftVec.x = m_SpaceOfBoards.x / 2.0f ;
+						}
+						if( 0 == m_HeightNum % 2 )
+						{
+							shiftVec.z = m_SpaceOfBoards.z / 2.0f ;
+						}
+						
+						
 						Camera.mainCamera.transform.position = 
-							new Vector3( obj.transform.position.x ,
+							new Vector3( obj.transform.position.x - shiftVec.x ,
 									 	 obj.transform.position.y + 10 ,
-										 obj.transform.position.z ) ;	
+										 obj.transform.position.z - shiftVec.z ) ;	
+						
 						if( m_WidthNum > m_HeightNum )
 							Camera.mainCamera.orthographicSize = m_WidthNum / 2.0f ;
 						else 
@@ -121,6 +142,7 @@ public class TripleTaoEditorWindow : EditorWindow
 		TripleTaoManager manager = m_GlobalSingleton.GetComponent<TripleTaoManager>() ;
 		manager.m_WidthNum = this.m_WidthNum ;
 		manager.m_HeightNum = this.m_HeightNum ;
+		manager.m_PreserveIndex = m_PreserveIndexJ * m_HeightNum + m_PreserveIndexI ;
 		// set parameter to manager
 		
 		
