@@ -655,3 +655,5 @@ UpgradeLog*.XML
 /COURSE/TripleTao/*.sln
 /COURSE/TripleTao/*.pidb
 /COURSE/TripleTao/*.userprefs
+/COURSE/RenderToTexture01/Library/metadata
+/COURSE/RenderToTexture01/Library/ScriptAssemblies
