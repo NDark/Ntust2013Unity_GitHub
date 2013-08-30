@@ -657,3 +657,12 @@ UpgradeLog*.XML
 /COURSE/TripleTao/*.userprefs
 /COURSE/RenderToTexture01/Library/metadata
 /COURSE/RenderToTexture01/Library/ScriptAssemblies
+/COURSE/MovieTexture01/*.csproj
+/COURSE/MovieTexture01/*.pidb
+/COURSE/MovieTexture01/*.csproj
+/COURSE/MovieTexture01/*.sln
+/COURSE/MovieTexture01/*.userprefs
+/COURSE/MovieTexture01/*.sln
+/COURSE/MovieTexture01/Temp
+/COURSE/MovieTexture01/Library/metadata
+/COURSE/MovieTexture01/Library/ScriptAssemblies
