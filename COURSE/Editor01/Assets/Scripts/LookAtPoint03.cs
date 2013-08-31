@@ -19,8 +19,6 @@ public class LookAtPoint03 : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		
-	
 		this.gameObject.transform.LookAt( m_TargetPosition ) ;
 	}
 	

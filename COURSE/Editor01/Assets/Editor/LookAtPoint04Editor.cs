@@ -6,6 +6,7 @@
 using UnityEngine;
 using UnityEditor;
 
+#if UNDERCONSTRUCTION
 // Attention!!! un-mark this line to see the change of m_BallTransform
 [CustomEditor (typeof(LookAtPoint04)), CanEditMultipleObjects ]
 public class LookAtPoint04Editor : Editor {
@@ -49,7 +50,8 @@ public class LookAtPoint04Editor : Editor {
 		
 		LookAtPoint04 finalTarget = (LookAtPoint04)target ;
 		finalTarget.m_TargetPosition = 
-				Handles.PositionHandle(  finalTarget.m_TargetPosition , Quaternion.identity );
+			Handles.PositionHandle( finalTarget.m_TargetPosition , 
+				Quaternion.identity );
 					
         if( GUI.changed )
 		{
@@ -59,8 +61,9 @@ public class LookAtPoint04Editor : Editor {
 	
 	public override void OnPreviewGUI( Rect r, GUIStyle background )
 	{
-        
-        EditorGUILayout.HelpBox( "" , MessageType.Error ) ;
-		EditorGUILayout.LabelField ("") ;
+        EditorGUILayout.HelpBox( "XD" , MessageType.Error ) ;
+		EditorGUILayout.LabelField ("XD") ;
 	}
 }
+
+#endif
