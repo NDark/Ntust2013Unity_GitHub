@@ -173,7 +173,7 @@ public class EditorWindow02 : EditorWindow
 			m_SelectTransform = (Transform) 
 				EditorGUILayout.ObjectField( "ObjectField" ,
 					Selection.activeTransform , 
-					typeof(Transform) ) ;
+					typeof(Transform) , false ) ;
 		}
 	
 		EditorGUILayout.Separator() ;

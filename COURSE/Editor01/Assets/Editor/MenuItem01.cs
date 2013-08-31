@@ -8,7 +8,7 @@ using UnityEditor;
 
 public class MenuItem01 : MonoBehaviour 
 {
-	[MenuItem ("MyMenu/Do Anything") ]
+	[MenuItem ("MyMenu/Do Anything")]
 	static void DoSomething() 
 	{
 		Debug.Log ("DoSomething.");
@@ -19,10 +19,13 @@ public class MenuItem01 : MonoBehaviour
 	{
 		if( null != Selection.activeTransform )
 		{
-			Transform[] transforms = Selection.activeTransform.gameObject.GetComponentsInChildren<Transform>() ;
+			Transform[] transforms = 
+				Selection.activeTransform.gameObject.GetComponentsInChildren<Transform>() ;
 			if( null != transforms )
 			{
-				Debug.Log ("Selected GameObject has " + transforms.Length + " children (include self).");
+				Debug.Log ("Selected GameObject has " + 
+					transforms.Length + 
+					" children (include self).");
 			}
 		}
 	}
@@ -34,12 +37,16 @@ public class MenuItem01 : MonoBehaviour
 		Rigidbody rigidbody = null ;
 		if( null != Selection.activeTransform )
 		{
-			rigidbody = Selection.activeTransform.gameObject.GetComponentInChildren<Rigidbody>() ;
+			rigidbody = 
+				Selection.activeTransform.gameObject.GetComponentInChildren<Rigidbody>() ;
 			if( null != rigidbody )
 			{
 				Debug.Log ("The GameObject has rigidbody.");
 			}
-			
+			else
+			{
+				Debug.Log ("The GameObject has no rigidbody.");
+			}
 		}
 	}	
 	
@@ -49,7 +56,8 @@ public class MenuItem01 : MonoBehaviour
 	{
 		if( null != Selection.activeTransform )
 		{
-			GameObject obj = Selection.activeTransform.gameObject ;
+			// GameObject obj = Selection.activeTransform.gameObject ;
+			GameObject obj = Selection.activeGameObject ;
 			if( null == obj.GetComponent( "GameUnitData02" ) )
 				obj.AddComponent( "GameUnitData02" ) ;
 			if( null == obj.GetComponent( "RegisterToMainUpdate03" ) )
@@ -58,7 +66,7 @@ public class MenuItem01 : MonoBehaviour
 				obj.AddComponent( "GUI_UnitHP01" ) ;
 			
 		}
-	}	
+	}
 	
 	// The menu item will be disabled if this function returns false.
 	[MenuItem ("MyMenu/Clean All Components" )]
@@ -66,8 +74,10 @@ public class MenuItem01 : MonoBehaviour
 	{
 		if( null != Selection.activeTransform )
 		{
-			GameObject obj = Selection.activeTransform.gameObject ;
-			Component [] allComponents = obj.GetComponents<Component>() ;
+			GameObject obj = 
+				Selection.activeTransform.gameObject ;
+			Component [] allComponents = 
+				obj.GetComponents<Component>() ;
 			foreach( Component component in allComponents )
 			{
 				// can't use this
@@ -76,7 +86,7 @@ public class MenuItem01 : MonoBehaviour
 			}
 		}
 	}		
-	
+	/*
 	// Use this for initialization
 	void Start () {
 	
@@ -86,4 +96,5 @@ public class MenuItem01 : MonoBehaviour
 	void Update () {
 	
 	}
+	*/
 }
