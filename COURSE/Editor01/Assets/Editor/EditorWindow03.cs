@@ -38,17 +38,28 @@ public class EditorWindow03 : EditorWindow
 		if( true == m_Toggle1 )
 		{
 			if( null != Selection.activeObject &&
-				typeof( UnityEngine.Texture2D ) == Selection.activeObject.GetType() )
+				typeof( Texture2D ) == 
+					Selection.activeObject.GetType() )
 			{
 				Texture selectTexure = (Texture) Selection.activeObject ;
-				Rect drawTextureRect =new Rect( 15 , 15 , selectTexure.width , selectTexure.height ) ;
-				EditorGUI.DrawPreviewTexture( drawTextureRect , selectTexure ) ;
+				Rect drawTextureRect = new Rect( 15 , 15 , 
+												 selectTexure.width , 
+												 selectTexure.height ) ;
+				// EditorGUILayout
+				EditorGUI.DrawPreviewTexture( drawTextureRect , 
+											  selectTexure ) ;
 			}
 		}
 		
-		m_Value = EditorGUI.Slider( new Rect( 0 , 30 , 150 , 20 ) , m_Value , 0 , 100 ) ;
+		m_Value = EditorGUI.Slider( new Rect( 0 , 30 , 150 , 20 ) , 
+									m_Value , 
+									0 , 
+									100 ) ;
 		
-		EditorGUI.ProgressBar( new Rect( 0 , 70 , 150 , 50 ) , m_Value * 0.01f , "ProgressBar" ) ;
+		// EditorGUILayout
+		EditorGUI.ProgressBar( new Rect( 0 , 70 , 150 , 50 ) , 
+							   m_Value * 0.01f , 
+							   "ProgressBar" ) ;
 		
 	}
 

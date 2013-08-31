@@ -9,7 +9,8 @@ using UnityEditor;
 // Attention!!! un-mark this line to see the change of m_BallTransform
 [CustomEditor (typeof(LookAtPoint02))]
 public class LookAtPoint02Editor : Editor {
-
+	
+	/*
 	// Use this for initialization
 	void Start () {
 	
@@ -19,7 +20,7 @@ public class LookAtPoint02Editor : Editor {
 	void Update () {
 	
 	}
-	
+	*/
 	// change layout of Inspector
     public override void OnInspectorGUI() 
 	{
@@ -42,8 +43,9 @@ public class LookAtPoint02Editor : Editor {
 	{
 		LookAtPoint02 targetWithType = (LookAtPoint02)target ;
 		
-        targetWithType.m_TargetPosition = Handles.PositionHandle( targetWithType.m_TargetPosition, 
-																  Quaternion.identity ) ;
+        targetWithType.m_TargetPosition = 
+			Handles.PositionHandle( targetWithType.m_TargetPosition, 
+								    Quaternion.identity ) ;
 		
         if (GUI.changed)
             EditorUtility.SetDirty (targetWithType);

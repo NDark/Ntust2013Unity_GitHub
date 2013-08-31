@@ -87,6 +87,7 @@ public class EditorWindow02 : EditorWindow
 	// the content of your window draw here.
 	void OnGUI()
 	{
+		// GUILayout.Button
 		m_FoldOut3 = EditorGUILayout.Foldout( m_FoldOut3 , "Fold Out 3" ) ;
 		if( true == m_FoldOut3 )
 		{
