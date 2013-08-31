@@ -18,7 +18,7 @@ public class EditorWindow02 : EditorWindow
 	{
         EditorWindow.GetWindow<EditorWindow02>() ;
     }		
-
+	/*
 	// Use this for initialization
 	void Start () {
 	
@@ -29,6 +29,7 @@ public class EditorWindow02 : EditorWindow
 	{
 	
 	}
+	*/
 	
 	public enum EnumTest
 	{
@@ -79,6 +80,7 @@ public class EditorWindow02 : EditorWindow
 	public bool m_ToggleGroup = false ;
 	
 	public Vector2 m_ScrollPos = Vector2.zero ;
+	
 	// the content of your window draw here.
 	void OnGUI()
 	{
@@ -91,13 +93,14 @@ public class EditorWindow02 : EditorWindow
 		EditorGUILayout.Space() ;
 		
 		EditorGUILayout.LabelField( "This is a label, the length is unlimited." ) ;
-		EditorGUILayout.LabelField( "The Lord of the Rings" , "The Fellowship of the Ring." ) ;
+		EditorGUILayout.LabelField( "The Lord of the Rings.........123456" , "The Fellowship of the Ring." ) ;
 		EditorGUILayout.PrefixLabel( "Prefix Label , the same as LabelField at EditorGUILayout" ) ;
 		EditorGUILayout.SelectableLabel( "Selectable Label, Select me please." ) ;
 		
 		
 		
 		m_Bound = EditorGUILayout.BoundsField( "This is Bound , James Bound." , m_Bound ) ;
+		// m_Bound.Contains
 		
 		m_RectFieldValue = EditorGUILayout.RectField( "RectField" ,  m_RectFieldValue ) ;
 			
@@ -114,6 +117,19 @@ public class EditorWindow02 : EditorWindow
 		
 		m_AnimationCurve = EditorGUILayout.CurveField( "Animation Curve" , m_AnimationCurve ) ;
 		
+		// int(32bit=4byte) 00000000 00000000 00000000 00000000
+		//   0   0
+		//   on  off
+		// nothing    00
+		// everything 11
+		// on         10
+		// off        01
+		// 
+		// current |(OR) off 
+		// 10      |     01 => 11
+		
+		// current &(AND) off
+		// 10      &      01   => 00
 		m_EnumTest1 = (EnumTest) EditorGUILayout.EnumMaskField( "Enum Mask Field" , m_EnumTest1 ) ;
 		
 		m_EnumTest2 = (EnumTest) EditorGUILayout.EnumPopup( "Enum Pop Up" , m_EnumTest2 ) ;
