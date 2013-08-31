@@ -24,16 +24,24 @@ public class LookAtPoint03Editor : Editor {
     public override void OnInspectorGUI() 
 	{
 		LookAtPoint03 finalTarget = (LookAtPoint03)target ;
+			
 		Vector3 onePos = 
 				EditorGUILayout.Vector3Field( "Look At Point" , 
 											   finalTarget.m_TargetPosition );
-			
+		
 		foreach( Object tar in targets )
 		{
+
+			
 			// Debug.Log( tar.name ) ;
 			// target is the class of ExecuteInEditMode01
 			LookAtPoint03 targetWithType = (LookAtPoint03)tar ;
 			
+			/*
+		Vector3 onePos = 
+				EditorGUILayout.Vector3Field( "Look At Point" , 
+											   targetWithType.m_TargetPosition );
+			*/
 			targetWithType.m_TargetPosition = onePos ;
 	        if( GUI.changed )
 			{
@@ -49,7 +57,8 @@ public class LookAtPoint03Editor : Editor {
 		
 		LookAtPoint03 finalTarget = (LookAtPoint03)target ;
 		finalTarget.m_TargetPosition = 
-				Handles.PositionHandle(  finalTarget.m_TargetPosition , Quaternion.identity );
+				Handles.PositionHandle( finalTarget.m_TargetPosition , 
+										Quaternion.identity );
 					
         if( GUI.changed )
 		{
