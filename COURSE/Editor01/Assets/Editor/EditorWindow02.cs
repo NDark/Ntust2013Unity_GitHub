@@ -43,8 +43,11 @@ public class EditorWindow02 : EditorWindow
 	public AnimationCurve m_AnimationCurve = new AnimationCurve() ;
 	public float m_FloatValue = 0 ;
 	public int m_IntValue = 0 ;
+	public bool m_FoldOut0 = false ;
 	public bool m_FoldOut1 = false ;
 	public bool m_FoldOut2 = false ;
+	public bool m_FoldOut3 = false ;
+	
 	public int m_IntPopupOptionValue = 0 ;
 	string [] m_DisplayOption = { "Plan A" , "Plan B" } ;
 	int [] m_DisplayOptionValue = { 3 , 4 } ;
@@ -84,11 +87,15 @@ public class EditorWindow02 : EditorWindow
 	// the content of your window draw here.
 	void OnGUI()
 	{
-		// HelpBox
-		EditorGUILayout.HelpBox( "Help Box MessageType.Error" , MessageType.Error ) ;
-		EditorGUILayout.HelpBox( "Help Box MessageType.Info" , MessageType.Info ) ;
-		EditorGUILayout.HelpBox( "Help Box MessageType.None" , MessageType.None ) ;
-		EditorGUILayout.HelpBox( "Help Box MessageType.Warning" , MessageType.Warning ) ;
+		m_FoldOut3 = EditorGUILayout.Foldout( m_FoldOut3 , "Fold Out 3" ) ;
+		if( true == m_FoldOut3 )
+		{
+			// HelpBox
+			EditorGUILayout.HelpBox( "Help Box MessageType.Error" , MessageType.Error ) ;
+			EditorGUILayout.HelpBox( "Help Box MessageType.Info" , MessageType.Info ) ;
+			EditorGUILayout.HelpBox( "Help Box MessageType.None" , MessageType.None ) ;
+			EditorGUILayout.HelpBox( "Help Box MessageType.Warning" , MessageType.Warning ) ;
+		}
 		
 		EditorGUILayout.Space() ;
 		
@@ -96,11 +103,13 @@ public class EditorWindow02 : EditorWindow
 		EditorGUILayout.LabelField( "The Lord of the Rings.........123456" , "The Fellowship of the Ring." ) ;
 		EditorGUILayout.PrefixLabel( "Prefix Label , the same as LabelField at EditorGUILayout" ) ;
 		EditorGUILayout.SelectableLabel( "Selectable Label, Select me please." ) ;
-		
-		
-		
+				
 		m_Bound = EditorGUILayout.BoundsField( "This is Bound , James Bound." , m_Bound ) ;
 		// m_Bound.Contains
+		
+		// EditorGUILayout.SelectableLabel( "Selectable Label, Select me please." ) ;
+		// m_Bound = EditorGUILayout.BoundsField( "This is Bound , James Bound." , m_Bound ) ;
+		
 		
 		m_RectFieldValue = EditorGUILayout.RectField( "RectField" ,  m_RectFieldValue ) ;
 			
@@ -138,8 +147,10 @@ public class EditorWindow02 : EditorWindow
 		
 		EditorGUILayout.Separator() ;
 		
+		m_FoldOut0 = EditorGUILayout.Foldout( m_FoldOut0 , "Fold Out 0" ) ;
+		
 		if( true == ( m_FoldOut1 = EditorGUILayout.Foldout( m_FoldOut1 , "Fold Out" ) ) )
-		// m_FoldOut = EditorGUILayout.Foldout( m_FoldOut , "Fold Out" ) ;
+		// m_FoldOut1 = EditorGUILayout.Foldout( m_FoldOut1 , "Fold Out" ) ;
 		{
 			
 		
@@ -150,11 +161,19 @@ public class EditorWindow02 : EditorWindow
 			EditorGUILayout.IntField( "IntPopup Value" , m_IntPopupOptionValue ) ;
 			
 			
-			m_GenericPopupIndexValue = EditorGUILayout.Popup( "Popup" , m_GenericPopupIndexValue , m_DisplayOption ) ;			
+			m_GenericPopupIndexValue = 
+				EditorGUILayout.Popup( "Popup" , 
+									   m_GenericPopupIndexValue , 
+									   m_DisplayOption ) ;			
 			EditorGUILayout.IntField( "Popup Value" , m_GenericPopupIndexValue ) ;
 			
-				
-			m_MaskValue = EditorGUILayout.MaskField( "This is a mask" , m_MaskValue , m_DisplayOption ) ;
+			// nothing          00000000 00000000 00000000 00000000 = 0
+			//          Plan A  00000000 00000000 00000000 00000001 = 1
+			// 			Plan B  00000000 00000000 00000000 00000010 = 2
+			// everything       10000000 00000000 00000000 00000000 = -1
+			m_MaskValue = EditorGUILayout.MaskField( "This is a mask" , 
+													 m_MaskValue , 
+													 m_DisplayOption ) ;
 			
 			EditorGUILayout.IntField( "m_MaskValue" , m_MaskValue ) ;			
 		}
@@ -163,20 +182,25 @@ public class EditorWindow02 : EditorWindow
 		
 		if( 0 != Selection.objects.Length )
 		{
-			if( true == ( m_FoldOut2 = EditorGUILayout.InspectorTitlebar( m_FoldOut2 , Selection.objects ) ) )
+			if( true == 
+				( m_FoldOut2 = EditorGUILayout.InspectorTitlebar( m_FoldOut2 , 
+																  Selection.objects ) ) )
 			{
 				m_IntSliderValue = EditorGUILayout.IntSlider( m_IntSliderValue , 0 , 10 ) ;
 				
-				m_FloatSliderValue = EditorGUILayout.Slider( m_FloatSliderValue , -5.0f , 5.0f ) ;
+				m_FloatSliderValue = EditorGUILayout.Slider( 
+					m_FloatSliderValue , -5.0f , 5.0f ) ;
 					
 				m_LayerValue = EditorGUILayout.LayerField( "This is a layer" , m_LayerValue ) ;
 				
 				m_TagStr = EditorGUILayout.TagField( "This is a tag" , m_TagStr ) ;
 				
-				EditorGUILayout.MinMaxSlider( ref m_MinSliderValue , ref m_MaxSliderValue , 10 , 100 ) ;
+				EditorGUILayout.MinMaxSlider( 
+					ref m_MinSliderValue , 
+					ref m_MaxSliderValue , 
+					10 , 100 ) ;
 				
 				EditorGUILayout.FloatField( "m_MinSliderValue" , m_MinSliderValue ) ;
-				
 				EditorGUILayout.FloatField( "m_MaxSliderValue" , m_MaxSliderValue ) ;
 				
 			}
@@ -186,12 +210,32 @@ public class EditorWindow02 : EditorWindow
 		
 		if( null != Selection.activeObject )
 		{
-			m_SelectTransform = (Transform) 
-				EditorGUILayout.ObjectField( "ObjectField" ,
-					Selection.activeTransform , 
-					typeof(Transform) , false ) ;
+			
+			Object anyObject = 
+				EditorGUILayout.ObjectField( "Transform ObjectField" ,
+											Selection.activeTransform , 
+											typeof(Transform) , 
+											true ) ;
+			if( typeof(Transform) == anyObject.GetType() )
+				m_SelectTransform = (Transform) anyObject ;
 		}
-	
+
+		if( null != Selection.activeObject )
+		{
+			Object anyObject = 
+				EditorGUILayout.ObjectField( "Material Field" ,
+											Selection.activeObject , 
+											typeof(Material) , 
+											false ) ;
+			
+			if( typeof(Material) == anyObject.GetType() )
+			{
+				Material mat = (Material) anyObject ;
+			}
+			else
+				Debug.LogError( anyObject.GetType() ) ;
+		}
+		
 		EditorGUILayout.Separator() ;
 		
 				
@@ -204,11 +248,16 @@ public class EditorWindow02 : EditorWindow
 	
 		if( true == ( m_Toggle = EditorGUILayout.Toggle( "Toggle TextField&TextArea" , m_Toggle ) ) )
 		{
-			m_TextAreaContent = EditorGUILayout.TextArea( m_TextAreaContent , GUILayout.Height( 60) ) ;
+			m_TextAreaContent = EditorGUILayout.TextArea( 
+				m_TextAreaContent 
+				// , GUILayout.Height( 60 ) 
+				) ;
 		}
 	
 		m_ToggleGroup = EditorGUILayout.BeginToggleGroup( "Toggle Group" , m_ToggleGroup ) ;
-		m_TextFieldContent = EditorGUILayout.TextField( "TextField"  , m_TextFieldContent , GUILayout.Height( 60) ) ;		
+			m_TextFieldContent = EditorGUILayout.TextField( "TextField"  , 
+				m_TextFieldContent , 
+				GUILayout.Height( 60 ) ) ;		
 		EditorGUILayout.EndToggleGroup() ;
 		
 		
