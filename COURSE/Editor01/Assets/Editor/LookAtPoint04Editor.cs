@@ -1,8 +1,28 @@
 /**
 @file LookAtPoint04Editor.cs
 @author NDark
+
+OnPreviewGUI doesn't work.
+ 
+read this link
+http://forum.unity3d.com/threads/71070-Unable-to-get-OnPreviewGUI-to-fire
+
+"This is actually an error in the documentation. 
+The previews are intentionally designed to work only with persistent object editors 
+for the time being, but the docs don't mention that. 
+They have already been updated but the full release isn't ready yet 
+so you won't see the changes immediately. 
+
+"Please note that, 
+according to the documentation, 
+inspector previews are limited to the primary editor of persistent objects: 
+GameObjectInspector, MaterialEditor, TextureInspector. 
+This means that it is currently not possible for a component to have its own inspector preview. 
+Here is an example:"
+
 @date 20130819 . file started
 */
+#define UNDERCONSTRUCTION
 using UnityEngine;
 using UnityEditor;
 
@@ -42,6 +62,7 @@ public class LookAtPoint04Editor : Editor {
 			}			
 		}
 		
+		// OnPreviewGUI(new Rect(0,0,300,300), new GUIStyle());
     }		
 	
 	// try modify your value of targetPosition
@@ -59,6 +80,9 @@ public class LookAtPoint04Editor : Editor {
 		}			
     }
 	
+	/*
+
+	 */
 	public override void OnPreviewGUI( Rect r, GUIStyle background )
 	{
         EditorGUILayout.HelpBox( "XD" , MessageType.Error ) ;

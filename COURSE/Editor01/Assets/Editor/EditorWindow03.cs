@@ -18,16 +18,6 @@ public class EditorWindow03 : EditorWindow
 	{
         EditorWindow.GetWindow<EditorWindow03>() ;
     }		
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	}
 	
 	private bool m_Toggle1 = false ;
 	private float m_Value = 0 ;

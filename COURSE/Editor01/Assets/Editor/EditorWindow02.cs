@@ -18,18 +18,6 @@ public class EditorWindow02 : EditorWindow
 	{
         EditorWindow.GetWindow<EditorWindow02>() ;
     }		
-	/*
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
-	}
-	*/
 	
 	public enum EnumTest
 	{
