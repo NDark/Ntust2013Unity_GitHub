@@ -1,6 +1,9 @@
 /**
 @file EditorUtility01.cs
 @author NDark
+
+http://docs.unity3d.com/Documentation/ScriptReference/EditorUtility.html
+
 @date 20130902 . file started
 */
 using UnityEngine;
@@ -54,6 +57,7 @@ public class EditorUtility01 : MonoBehaviour
 		}
 	}	
 	
+	
 	[MenuItem ("EditorUtility01/OpenFilePanel")]
 	static void OpenFilePanel() 
 	{
@@ -85,13 +89,4 @@ public class EditorUtility01 : MonoBehaviour
 		}
 	}
 	
-	[MenuItem ("EditorUtility01/SetObjectEnabled")]
-	static void SetObjectEnabled() 
-	{
-		if( null != Selection.activeObject )
-		{
-			EditorUtility.SetObjectEnabled( Selection.activeObject , m_Enable ) ;
-			m_Enable = ! m_Enable ;
-		}
-	}	
 }
