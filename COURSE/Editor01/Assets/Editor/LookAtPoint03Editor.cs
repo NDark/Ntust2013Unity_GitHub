@@ -10,15 +10,7 @@ using UnityEditor;
 [CustomEditor (typeof(LookAtPoint03)), CanEditMultipleObjects ]
 public class LookAtPoint03Editor : Editor {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 	
 	// change layout of Inspector
     public override void OnInspectorGUI() 
