@@ -668,3 +668,14 @@ UpgradeLog*.XML
 /COURSE/MovieTexture01/Library/ScriptAssemblies
 /COURSE/Water02/Temp
 /COURSE/RenderToTexture01/Temp
+/COURSE/AssetBundle02/*.csproj
+/COURSE/AssetBundle02/*.pidb
+/COURSE/AssetBundle02/*.csproj
+/COURSE/AssetBundle02/*.sln
+/COURSE/AssetBundle02/*.userprefs
+/COURSE/AssetBundle02/*.sln
+/COURSE/AssetBundle02/*.unity3d
+/COURSE/AssetBundle02/*.unity3d
+/COURSE/AssetBundle02/*.unity3d
+/COURSE/AssetBundle02/Library/ScriptAssemblies
+/COURSE/AssetBundle02/Library/metadata
