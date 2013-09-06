@@ -152,6 +152,7 @@ public class KandyCrusherEditorWindow : EditorWindow
 		{
 			manager.m_WidthNum = m_WidthNum ;
 			manager.m_HeightNum = m_HeightNum ;
+			manager.m_EmptyBoards = m_StageBoards ;
 		}
 	}
 	
