@@ -119,9 +119,10 @@ public class Handle02Editor : Editor
 										targetWithType.m_ControlPoint1.rotation ) ;			
 			
 			Handles.DrawBezier( targetWithType.m_StartPoint.position
-				, targetWithType.m_EndPoint.position 
-				, tangent0 
-				, tangent1 , m_Color1 , m_AATexture , m_ScaleSize ) ;
+								, targetWithType.m_EndPoint.position 
+								, tangent0 
+								, tangent1 , 
+								m_Color1 , m_AATexture , m_ScaleSize ) ;
 			break ;				
 		}
 		// */
