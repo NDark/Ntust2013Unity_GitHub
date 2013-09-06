@@ -682,3 +682,12 @@ UpgradeLog*.XML
 /COURSE/AssetBundle02/Temp
 /COURSE/KandyCrusher/Library/metadata
 /COURSE/KandyCrusher/Library/ScriptAssemblies
+/COURSE/KandyCrusher/*.csproj
+/COURSE/KandyCrusher/*.csproj
+/COURSE/KandyCrusher/*.pidb
+/COURSE/KandyCrusher/*.csproj
+/COURSE/KandyCrusher/*.csproj
+/COURSE/KandyCrusher/*.sln
+/COURSE/KandyCrusher/*.userprefs
+/COURSE/KandyCrusher/*.sln
+/COURSE/KandyCrusher/Temp
