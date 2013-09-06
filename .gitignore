@@ -679,3 +679,4 @@ UpgradeLog*.XML
 /COURSE/AssetBundle02/*.unity3d
 /COURSE/AssetBundle02/Library/ScriptAssemblies
 /COURSE/AssetBundle02/Library/metadata
+/COURSE/AssetBundle02/Temp
