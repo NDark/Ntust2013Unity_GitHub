@@ -14,7 +14,7 @@ public class EditorUtility01 : MonoBehaviour
 	[MenuItem ("EditorUtility01/DisplayDialog")]
 	static void DisplayDialog() 
 	{
-		if( true == EditorUtility.DisplayDialog( "Title" , "Message" , "OK" ) )
+		if( true == EditorUtility.DisplayDialog( "TitleCowbay" , "Message" , "OK" ) )
 		{
 			Debug.Log( "true == EditorUtility.DisplayDialog" ) ;
 		}
@@ -23,7 +23,7 @@ public class EditorUtility01 : MonoBehaviour
 	[MenuItem ("EditorUtility01/DisplayDialogComplex")]
 	static void DisplayDialogComplex() 
 	{
-		int result = -1 ; 
+		int result = -1 ; // 0 , 1 , 2 for each button
 		result = EditorUtility.DisplayDialogComplex( "Title" , "Message" , "0k" , "Cancer" , "olt" ) ;
 		{
 			Debug.Log( "DisplayDialogComplex() => result=" + result ) ;
@@ -37,7 +37,9 @@ public class EditorUtility01 : MonoBehaviour
 		Rect popupMenuRect = 
 			new Rect( 500 , 400 , 200 , 200 ) ;
 		
-		EditorUtility.DisplayPopupMenu( popupMenuRect , "Assets/" , null ) ;
+		EditorUtility.DisplayPopupMenu( popupMenuRect , 
+			"Assets/" , 
+			null ) ;
 			
 	}
 	
@@ -61,7 +63,10 @@ public class EditorUtility01 : MonoBehaviour
 	[MenuItem ("EditorUtility01/OpenFilePanel")]
 	static void OpenFilePanel() 
 	{
-		string result = EditorUtility.OpenFilePanel( "Title" , "Assets/Static/Materials" , "mat" ) ;
+		string result = EditorUtility.OpenFilePanel( 
+			"Title" , 
+			"Assets/Static/Materials" , 
+			"mat" ) ;
 		if( 0 != result.Length )
 		{
 			Debug.Log( result ) ;
@@ -71,7 +76,10 @@ public class EditorUtility01 : MonoBehaviour
 	[MenuItem ("EditorUtility01/OpenFolderPanel")]
 	static void OpenFolderPanel() 
 	{
-		string result = EditorUtility.OpenFolderPanel( "Title" , "Assets/Static" , "Materials" ) ;
+		string result = EditorUtility.OpenFolderPanel( 
+			"Title" , 
+			"Assets/Static" , 
+			"Materials" ) ;
 		if( 0 != result.Length )
 		{
 			Debug.Log( result ) ;
@@ -84,7 +92,9 @@ public class EditorUtility01 : MonoBehaviour
 	{
 		if( null != Selection.activeObject )
 		{
-			EditorUtility.SetObjectEnabled( Selection.activeObject , m_Enable ) ;
+			EditorUtility.SetObjectEnabled( 
+				Selection.activeObject , 
+				m_Enable ) ;
 			m_Enable = ! m_Enable ;
 		}
 	}
