@@ -1,11 +1,16 @@
 /*
 @file WWW05.cs
 @author NDark
+
+// Under construction
 @date 20130821 file started.
 */
 using UnityEngine;
 using System.Collections;
 
+// Under construction
+// Under construction
+// Under construction
 public class WWW05 : MonoBehaviour 
 {
 	public string m_Unity3DURL = "kobayashi.gadgetapp.net/KobayashiMaruCommander.unity3d" ;
