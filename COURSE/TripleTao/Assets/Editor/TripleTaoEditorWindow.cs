@@ -53,7 +53,7 @@ public class TripleTaoEditorWindow : EditorWindow
 														m_SpaceOfBoards ) ;
 		m_WidthNum = EditorGUILayout.IntField( "WidthNum" , 
 											   m_WidthNum ) ;
-		m_HeightNum= EditorGUILayout.IntField( "HeightNum" , 
+		m_HeightNum = EditorGUILayout.IntField( "HeightNum" , 
 											   m_HeightNum ) ;
 		
 		
@@ -162,6 +162,7 @@ public class TripleTaoEditorWindow : EditorWindow
 										 obj.transform.position.z - shiftVec.z ) ;	
 						
 						// orthogonal size by max of width and height
+						// @todo consider space of board
 						if( m_WidthNum > m_HeightNum )
 							Camera.mainCamera.orthographicSize = m_WidthNum / 2.0f ;
 						else 
@@ -182,9 +183,9 @@ public class TripleTaoEditorWindow : EditorWindow
 					
 					// clear to list
 					m_StageBoards.Add( obj ) ;
-				}// end of for i
-			}// end of for j
-		}
+				}
+			}// end of for i
+		}// end of for j
 		
 		// set width, height, and preserver index to TripleTaoManager
 		if( null == m_GlobalSingleton )
@@ -247,7 +248,6 @@ public class TripleTaoEditorWindow : EditorWindow
 		for( int i = 0 ; i < m_Materials.Length ; ++i )
 		{
 			content = content + "," + m_Materials[ i ].name.ToString()  ;
-			
 		}
 		sw.Write( content ) ;
 		sw.Close() ;
