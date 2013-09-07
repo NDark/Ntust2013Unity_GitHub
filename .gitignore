@@ -692,3 +692,12 @@ UpgradeLog*.XML
 /COURSE/KandyCrusher/*.sln
 /COURSE/KandyCrusher/Temp
 /COURSE/Editor03/Temp
+/COURSE/Water01/Assembly-CSharp.csproj
+/COURSE/Water01/Assembly-CSharp.pidb
+/COURSE/Water01/Assembly-CSharp-firstpass.csproj
+/COURSE/Water01/Assembly-CSharp-firstpass.pidb
+/COURSE/Water01/Assembly-CSharp-firstpass-vs.csproj
+/COURSE/Water01/Assembly-CSharp-vs.csproj
+/COURSE/Water01/Water01.sln
+/COURSE/Water01/Water01.userprefs
+/COURSE/Water01/Water01-csharp.sln
