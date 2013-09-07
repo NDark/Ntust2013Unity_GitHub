@@ -713,3 +713,7 @@ UpgradeLog*.XML
 /COURSE/ImageEffect01/*.unityproj
 /COURSE/ImageEffect01/*.sln
 /COURSE/ImageEffect01/*.sln
+
+/COURSE/ImageEffect01/*.userprefs
+
+/COURSE/ImageEffect01/*.pidb
