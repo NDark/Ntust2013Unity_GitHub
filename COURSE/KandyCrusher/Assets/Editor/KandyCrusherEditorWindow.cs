@@ -2,6 +2,8 @@
 @file KandyCrusherEditorWindow.cs
 @author NDark
 @date 20130906 file started.
+@date 20130908 by NDark . add code of UnitData at RecreateEmptyBoard()
+
 */
 using UnityEngine;
 using UnityEditor ; // add this for editor
@@ -127,6 +129,9 @@ public class KandyCrusherEditorWindow : EditorWindow
 							Camera.mainCamera.orthographicSize = m_HeightNum / 2.0f ;
 					}
 					
+					UnitData unitData = obj.AddComponent<UnitData>() ;
+					unitData.m_IndexI = i ;
+					unitData.m_IndexJ = j ;
 					// parent is m_StageBoardParent
 					obj.transform.parent = m_StageBoardParent.transform ;					
 					
@@ -170,18 +175,7 @@ public class KandyCrusherEditorWindow : EditorWindow
 		m_StageBoardParent = GameObject.Find( "StageBoardParent" ) ;
 		if( null != m_StageBoardParent )
 		{
-			for( int j = 0 ; j < m_HeightNum ; ++j )
-			{
-				for( int i = 0 ; i < m_WidthNum ; ++i )
-				{
-					string objName = "EmptyUnit:" + i + "," + j ;					
-					Transform trans = m_StageBoardParent.transform.FindChild( objName ) ;
-					if( null != trans )
-					{
-						GameObject.DestroyImmediate( trans.gameObject ) ;
-					}
-				}
-			}
+			GameObject.DestroyImmediate( m_StageBoardParent ) ;
 		}
 
 	}
