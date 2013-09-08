@@ -206,7 +206,8 @@ public class TripleTaoEditorWindow : EditorWindow
 		{
 			manager.m_WidthNum = this.m_WidthNum ;
 			manager.m_HeightNum = this.m_HeightNum ;
-			manager.m_PreserveIndex = m_PreserveIndexJ * m_HeightNum + m_PreserveIndexI ;
+			manager.m_PreserveIndex = m_PreserveIndexJ * m_WidthNum + m_PreserveIndexI ;
+			manager.m_PreservePos = m_StageBoards[ manager.m_PreserveIndex ].transform.position ;
 		}
 		
 	}
