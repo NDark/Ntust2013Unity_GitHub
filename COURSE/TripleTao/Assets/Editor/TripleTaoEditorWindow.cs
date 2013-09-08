@@ -3,6 +3,10 @@
 @author NDark
 @date 20130826 file started.
 @date 20130831 rename class member m_StageParent to m_StageParent
+@date 20130908 by NDark 
+. destroy parent at ClearAllStageBoards()
+. fix error of camera size
+
 */
 using UnityEngine;
 using UnityEditor ; // add this for editor
@@ -164,9 +168,9 @@ public class TripleTaoEditorWindow : EditorWindow
 						// orthogonal size by max of width and height
 						// @todo consider space of board
 						if( m_WidthNum > m_HeightNum )
-							Camera.mainCamera.orthographicSize = m_WidthNum / 2.0f ;
+							Camera.mainCamera.orthographicSize = m_WidthNum * m_SpaceOfBoards.x / 2.0f ;
 						else 
-							Camera.mainCamera.orthographicSize = m_HeightNum / 2.0f ;
+							Camera.mainCamera.orthographicSize = m_HeightNum * m_SpaceOfBoards.z / 2.0f ;
 					}
 					
 					
@@ -209,6 +213,8 @@ public class TripleTaoEditorWindow : EditorWindow
 	
 	private void ClearAllStageBoards()
 	{
+		Debug.Log( "ClearAllStageBoards()" ) ;
+		
 		foreach( GameObject obj in m_StageBoards )
 		{
 			// can't use Destroy
@@ -221,18 +227,7 @@ public class TripleTaoEditorWindow : EditorWindow
 		m_StageBoardParent = GameObject.Find( "StageBoardParent" ) ;
 		if( null != m_StageBoardParent )
 		{
-			for( int j = 0 ; j < m_HeightNum ; ++j )
-			{
-				for( int i = 0 ; i < m_WidthNum ; ++i )
-				{
-					string objName = "StageBoard:" + i + "," + j ;					
-					Transform trans = m_StageBoardParent.transform.FindChild( objName ) ;
-					if( null != trans )
-					{
-						GameObject.DestroyImmediate( trans.gameObject ) ;
-					}
-				}
-			}
+			GameObject.DestroyImmediate( m_StageBoardParent ) ;
 		}
 		
 
