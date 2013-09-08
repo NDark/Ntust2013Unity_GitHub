@@ -133,7 +133,9 @@ public class KandyCrusherEditorWindow : EditorWindow
 					unitData.m_IndexI = i ;
 					unitData.m_IndexJ = j ;
 					// parent is m_StageBoardParent
-					obj.transform.parent = m_StageBoardParent.transform ;					
+					obj.transform.parent = m_StageBoardParent.transform ;	
+					
+					obj.AddComponent<CheckInput>() ;
 					
 					// clear to list
 					m_StageBoards.Add( obj ) ;
