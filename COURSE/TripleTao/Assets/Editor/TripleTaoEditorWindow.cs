@@ -166,7 +166,6 @@ public class TripleTaoEditorWindow : EditorWindow
 										 obj.transform.position.z - shiftVec.z ) ;	
 						
 						// orthogonal size by max of width and height
-						// @todo consider space of board
 						if( m_WidthNum > m_HeightNum )
 							Camera.mainCamera.orthographicSize = m_WidthNum * m_SpaceOfBoards.x / 2.0f ;
 						else 
