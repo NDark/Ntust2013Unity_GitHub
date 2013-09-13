@@ -96,7 +96,8 @@ public class CameraScrollingCS : MonoBehaviour {
 		
 		// Interpolate between the current camera position and the goal position.
 		// See the documentation on Vector3.Lerp () for more information.
-		transform.position = Vector3.Lerp (transform.position, goalPosition, Time.deltaTime * springiness);	
+		transform.position = Vector3.Lerp( transform.position, goalPosition, 
+										   Time.deltaTime * springiness);	
 	}
 	
 	
