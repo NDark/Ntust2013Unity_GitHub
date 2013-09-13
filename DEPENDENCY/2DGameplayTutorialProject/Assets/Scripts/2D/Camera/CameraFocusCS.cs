@@ -29,7 +29,9 @@ public class CameraFocusCS : MonoBehaviour {
 		
 		// tell all targets (except the first one) to switch off.
 		for (int i=0; i < targets.Length; i++) 
-			targets[i].gameObject.SendMessage ("SetControllable", (i == 0), SendMessageOptions.DontRequireReceiver);
+			targets[i].gameObject.SendMessage ( "SetControllable", 
+												(i == 0), 
+												SendMessageOptions.DontRequireReceiver);
 	}
 	
 	
@@ -67,9 +69,15 @@ public class CameraFocusCS : MonoBehaviour {
 	
 		// If the user has selected a new character, we'll send new SetControllable messages to turn on the other character. 
 		// Then we'll change who the CameraScrolling script is tracking.
-		if (GUI.changed && targets[selected] != cameraScrolling.GetTarget ()) {
-			targets[selected].gameObject.SendMessage ("SetControllable", true, SendMessageOptions.DontRequireReceiver);
-			cameraScrolling.GetTarget ().gameObject.SendMessage ("SetControllable", false, SendMessageOptions.DontRequireReceiver);
+		if( GUI.changed && 
+			targets[selected] != cameraScrolling.GetTarget ()) 
+		{
+			targets[selected].gameObject.SendMessage( "SetControllable", 
+													  true, 
+													  SendMessageOptions.DontRequireReceiver);
+			cameraScrolling.GetTarget ().gameObject.SendMessage ( "SetControllable", 
+																  false, 
+																  SendMessageOptions.DontRequireReceiver);
 			cameraScrolling.SetTarget (targets[selected]);
 		}
 		
