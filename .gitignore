@@ -730,3 +730,11 @@ UpgradeLog*.XML
 /COURSE/ModelAnimation01/Library/metadata
 /DEPENDENCY/2DGameplayTutorialProject/Temp
 /COURSE/ModelAnimation01/Temp
+/COURSE/ObjectAnimation02/*.csproj
+/COURSE/ObjectAnimation02/*.pidb
+/COURSE/ObjectAnimation02/*.csproj
+/COURSE/ObjectAnimation02/*.sln
+/COURSE/ObjectAnimation02/*.userprefs
+/COURSE/ObjectAnimation02/*.sln
+/COURSE/ObjectAnimation02/Library/metadata
+/COURSE/ObjectAnimation02/Library/ScriptAssemblies
