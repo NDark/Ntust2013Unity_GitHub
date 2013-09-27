@@ -749,3 +749,6 @@ UpgradeLog*.XML
 /COURSE/ModelAnimationEffect01/Library/ScriptAssemblies
 
 /COURSE/ModelAnimationEffect01/*.userprefs
+/COURSE/ModelAnimationEffect01/*.pidb
+/COURSE/ModelAvatar01/Library/metadata
+/COURSE/ModelAvatar01/Library/ScriptAssemblies
