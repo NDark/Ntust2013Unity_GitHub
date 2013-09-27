@@ -738,3 +738,12 @@ UpgradeLog*.XML
 /COURSE/ObjectAnimation02/*.sln
 /COURSE/ObjectAnimation02/Library/metadata
 /COURSE/ObjectAnimation02/Library/ScriptAssemblies
+/COURSE/ModelAnimationEffect01/Temp
+/COURSE/ModelAnimationEffect01/*.sln
+/COURSE/ModelAnimationEffect01/*.csproj
+/COURSE/ModelAnimationEffect01/*.csproj
+/COURSE/ModelAnimationEffect01/*.csproj
+/COURSE/ModelAnimationEffect01/*.csproj
+/COURSE/ModelAnimationEffect01/*.sln
+/COURSE/ModelAnimationEffect01/Library/metadata
+/COURSE/ModelAnimationEffect01/Library/ScriptAssemblies
