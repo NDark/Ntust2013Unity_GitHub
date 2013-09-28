@@ -7,7 +7,7 @@
 import          System.Data;  // we import our  data class
 import          Mono.Data.Sqlite; // we import sqlite
  
-class dbAccess {
+public class dbAccess {
     // variables for basic query access
     private var connection : String;
     private var dbcon : IDbConnection;
