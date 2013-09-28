@@ -783,3 +783,6 @@ UpgradeLog*.XML
 /COURSE/Particle01/Temp
 /COURSE/Particle01/Library/ScriptAssemblies
 /COURSE/Particle01/Library/metadata
+
+/COURSE/Particle01/*.unityproj
+/COURSE/Particle01/*.unityproj
