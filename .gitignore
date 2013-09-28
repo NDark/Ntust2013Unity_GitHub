@@ -776,3 +776,10 @@ UpgradeLog*.XML
 /COURSE/Database01/Temp
 /COURSE/Database01/Library/ScriptAssemblies
 /COURSE/Database01/Library/metadata
+/COURSE/Particle01/*.csproj
+/COURSE/Particle01/*.csproj
+/COURSE/Particle01/*.sln
+/COURSE/Particle01/*.sln
+/COURSE/Particle01/Temp
+/COURSE/Particle01/Library/ScriptAssemblies
+/COURSE/Particle01/Library/metadata
