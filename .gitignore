@@ -786,3 +786,5 @@ UpgradeLog*.XML
 
 /COURSE/Particle01/*.unityproj
 /COURSE/Particle01/*.unityproj
+/COURSE/Particle01/*.userprefs
+/COURSE/Particle01/*.pidb
