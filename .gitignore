@@ -788,3 +788,11 @@ UpgradeLog*.XML
 /COURSE/Particle01/*.unityproj
 /COURSE/Particle01/*.userprefs
 /COURSE/Particle01/*.pidb
+/DEPENDENCY/HeatDistortionExample/*.csproj
+/DEPENDENCY/HeatDistortionExample/*.pidb
+/DEPENDENCY/HeatDistortionExample/*.csproj
+/DEPENDENCY/HeatDistortionExample/*.sln
+/DEPENDENCY/HeatDistortionExample/*.userprefs
+/DEPENDENCY/HeatDistortionExample/*.sln
+/DEPENDENCY/HeatDistortionExample/Library/ScriptAssemblies
+/DEPENDENCY/HeatDistortionExample/Library/metadata
