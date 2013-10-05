@@ -803,3 +803,7 @@ UpgradeLog*.XML
 /COURSE/ObjectAnimation03/*.csproj
 /COURSE/ObjectAnimation03/*.sln
 /COURSE/ObjectAnimation03/*.sln
+
+/COURSE/ObjectAnimation03/*.pidb
+
+/COURSE/ObjectAnimation03/*.userprefs
