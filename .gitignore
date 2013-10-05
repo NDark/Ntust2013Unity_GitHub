@@ -796,3 +796,6 @@ UpgradeLog*.XML
 /DEPENDENCY/HeatDistortionExample/*.sln
 /DEPENDENCY/HeatDistortionExample/Library/ScriptAssemblies
 /DEPENDENCY/HeatDistortionExample/Library/metadata
+/COURSE/ObjectAnimation03/Library/ScriptAssemblies
+/COURSE/ObjectAnimation03/Library/metadata
+/COURSE/ObjectAnimation03/Temp
