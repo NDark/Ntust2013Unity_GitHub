@@ -807,3 +807,11 @@ UpgradeLog*.XML
 /COURSE/ObjectAnimation03/*.pidb
 
 /COURSE/ObjectAnimation03/*.userprefs
+/COURSE/CollisionDemonstration08/*.csproj
+/COURSE/CollisionDemonstration08/*.pidb
+/COURSE/CollisionDemonstration08/*.csproj
+/COURSE/CollisionDemonstration08/*.sln
+/COURSE/CollisionDemonstration08/*.userprefs
+/COURSE/CollisionDemonstration08/*.sln
+/COURSE/CollisionDemonstration08/Library/ScriptAssemblies
+/COURSE/CollisionDemonstration08/Library/metadata
