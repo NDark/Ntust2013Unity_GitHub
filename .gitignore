@@ -824,3 +824,7 @@ UpgradeLog*.XML
 /COURSE/TowerOfWhat/Library/metadata
 /COURSE/TowerOfWhat/Library/ScriptAssemblies
 /COURSE/TowerOfWhat/Temp
+
+/COURSE/TowerOfWhat/*.pidb
+
+/COURSE/TowerOfWhat/*.userprefs
