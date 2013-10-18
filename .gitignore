@@ -828,3 +828,12 @@ UpgradeLog*.XML
 /COURSE/TowerOfWhat/*.pidb
 
 /COURSE/TowerOfWhat/*.userprefs
+/COURSE/MinimapManager02/Temp
+/COURSE/MinimapManager02/Library/metadata
+/COURSE/MinimapManager02/Library/ScriptAssemblies
+/COURSE/MinimapManager02/*.sln
+/COURSE/MinimapManager02/*.csproj
+/COURSE/MinimapManager02/*.pidb
+/COURSE/MinimapManager02/*.csproj
+/COURSE/MinimapManager02/*.sln
+/COURSE/MinimapManager02/*.userprefs
