@@ -1,4 +1,4 @@
-Shader "DiscardS	hader" {
+Shader "DiscardShader" {
    Properties {
       _MainTex ("RGBA Texture Image", 2D) = "white" {} 
    }
@@ -51,6 +51,7 @@ Shader "DiscardS	hader" {
             {
             	discard;
             }
+            
             return textureColor;
          }
  
