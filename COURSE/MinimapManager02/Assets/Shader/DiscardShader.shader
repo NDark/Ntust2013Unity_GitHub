@@ -1,4 +1,4 @@
-Shader "Cg texturing with alpha discard" {
+Shader "DiscardS	hader" {
    Properties {
       _MainTex ("RGBA Texture Image", 2D) = "white" {} 
    }
@@ -29,7 +29,12 @@ Shader "Cg texturing with alpha discard" {
             vertexOutput output;
  
  			float4 clipSpace = mul (UNITY_MATRIX_MVP, input.vertex );
+ 			
+ 			// to -1 ~ 1 
  			clipSpace.xy /= clipSpace.w;
+ 			
+ 			// we don't normalize to screen coordiate
+ 			// p.xy = 0.5*(p.xy+1.0) * _ScreenParams.xy;
  			output.screenPos = clipSpace.xy ;
 	
             output.tex = input.texcoord;
