@@ -1,6 +1,17 @@
 ﻿/*
 @file TextureSetPixel.cs
 @author NDark
+
+Attention!!!
+ 
+In The import setting of the texture of "RedRect128".
+1. The Texture Type must be set to "Advanced"
+2. Read/Write Enabled must be checked.
+3. The Format of this texture must be set to ARGB32, RGB24 or Alpha8.
+
+check this link:
+http://docs.unity3d.com/Documentation/ScriptReference/Texture2D.SetPixel.html
+
 @date 20131121 file started.
 */
 using UnityEngine;
@@ -14,6 +25,7 @@ public class TextureSetPixel : MonoBehaviour
 	void Start () 
 	{
 		m_Tex2D = (Texture2D) this.guiTexture.texture ;
+		Debug.Log( m_Tex2D.GetType().ToString() ) ;
 	}
 	
 	// Update is called once per frame
