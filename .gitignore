@@ -841,3 +841,9 @@ UpgradeLog*.XML
 /COURSE/TextureSetPixel/*.csproj
 /COURSE/TextureSetPixel/*.sln
 /COURSE/TextureSetPixel/*.sln
+/COURSE/ConversationManager/*.sln
+/COURSE/ConversationManager/*.csproj
+/COURSE/ConversationManager/*.csproj
+/COURSE/ConversationManager/*.sln
+/COURSE/ConversationManager/Temp
+/COURSE/ConversationManager/Library/ScriptAssemblies
