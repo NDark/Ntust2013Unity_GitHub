@@ -837,3 +837,7 @@ UpgradeLog*.XML
 /COURSE/MinimapManager02/*.csproj
 /COURSE/MinimapManager02/*.sln
 /COURSE/MinimapManager02/*.userprefs
+/COURSE/TextureSetPixel/*.csproj
+/COURSE/TextureSetPixel/*.csproj
+/COURSE/TextureSetPixel/*.sln
+/COURSE/TextureSetPixel/*.sln
