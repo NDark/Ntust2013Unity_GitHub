@@ -1,17 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ConversationManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ConversationGUISystem.cs">
     <Files>
-      <File FileName="Assets\Scripts\ConversationManager.cs" Line="313" Column="17" />
+      <File FileName="Assets\Scripts\ConversationManagerLoader.cs" Line="86" Column="1" />
+      <File FileName="Assets\Scripts\ConversationManager.cs" Line="150" Column="7" />
       <File FileName="Assets\Scripts\ConversationManagerLoader.cs" Line="82" Column="7" />
-      <File FileName="Assets\Scripts\ConversationGUISystem.cs" Line="54" Column="24" />
+      <File FileName="Assets\Scripts\ConversationGUISystem.cs" Line="119" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="ConversationManager.cs" selected="True" />
+              <Node name="ConversationGUISystem.cs" selected="True" />
             </Node>
           </Node>
         </State>
