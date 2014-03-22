@@ -1,23 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ConversationGUISystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\InfoCategory.cs">
     <Files>
-      <File FileName="Assets\Scripts\ConversationManagerLoader.cs" Line="86" Column="1" />
-      <File FileName="Assets\Scripts\ConversationManager.cs" Line="150" Column="7" />
-      <File FileName="Assets\Scripts\ConversationManagerLoader.cs" Line="82" Column="7" />
-      <File FileName="Assets\Scripts\ConversationGUISystem.cs" Line="119" Column="6" />
+      <File FileName="Assets\Scripts\InfoProperty.cs" Line="21" Column="29" />
+      <File FileName="Assets\Scripts\InfoCategory.cs" Line="8" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="ConversationGUISystem.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
