@@ -1,0 +1,12 @@
+<root>
+<StaticObject Name="MapZone01" PrefabName="MapZonePrefab">
+	<Position3D x="0" y="0" z="0"/>
+	<OrientationEuler x="0" y="0" z="0" />
+</StaticObject>
+
+<StaticObject Name="MapZone02" PrefabName="MapZonePrefab">
+	<Position3D x="-1" y="0" z="0"/>
+	<OrientationEuler x="0" y="0" z="0" />
+</StaticObject>
+
+</root>
