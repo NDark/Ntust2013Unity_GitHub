@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\KobayashiMaruCommander\trunk\Assets\Script\Singleton\LevelGenerator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelGenerator.cs">
     <Files>
-      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="10" Column="45" />
-      <File FileName="..\..\..\KobayashiMaruCommander\trunk\Assets\Script\Singleton\LevelGenerator.cs" Line="778" Column="24" />
+      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="103" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
