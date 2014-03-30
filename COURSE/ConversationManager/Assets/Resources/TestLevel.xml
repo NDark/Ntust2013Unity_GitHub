@@ -115,6 +115,114 @@
 	<Position3D x="-9" y="9" z="0"/>
 </StaticObject>
 
+<StaticObject Name="MainCharacter" PrefabName="PlayerPrefab" TextureName="SBahn">
+	<Position3D x="0" y="0" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor01" PrefabName="AnchorPrefab" >
+	<Position3D x="-0.27" y="0.13" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor02" PrefabName="AnchorPrefab" >
+	<Position3D x="-0.99" y="0.149" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor03" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.39" y="0.19" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor04" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.33" y="1" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor05" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.22" y="2.33" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor06" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.16" y="3.32" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor07" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.08" y="4.35" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor08" PrefabName="AnchorPrefab" >
+	<Position3D x="-1.08" y="4.44" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor09" PrefabName="AnchorPrefab" >
+	<Position3D x="-2.48" y="4.54" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor10" PrefabName="AnchorPrefab" >
+	<Position3D x="-3.04" y="4.58" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor11" PrefabName="AnchorPrefab" >
+	<Position3D x="-4.71" y="4.69" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor12" PrefabName="AnchorPrefab" >
+	<Position3D x="-5.7" y="4.77" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor13" PrefabName="AnchorPrefab" >
+	<Position3D x="-6.71" y="4.82" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor14" PrefabName="AnchorPrefab" >
+	<Position3D x="-7.39" y="4.77" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor15" PrefabName="AnchorPrefab" >
+	<Position3D x="-7.54" y="4.61" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor16" PrefabName="AnchorPrefab" >
+	<Position3D x="-7.68" y="4.50" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor17" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.45" y="5.34" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor18" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.76" y="5.45" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor19" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.78" y="6.28" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor20" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.84" y="6.66" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor21" PrefabName="AnchorPrefab" >
+	<Position3D x="-9.16" y="7.27" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor22" PrefabName="AnchorPrefab" >
+	<Position3D x="-9.18" y="7.35" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor23" PrefabName="AnchorPrefab" >
+	<Position3D x="-9.09" y="7.40" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor24" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.58" y="7.96" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor25" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.64" y="8.02" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="Anchor26" PrefabName="AnchorPrefab" >
+	<Position3D x="-8.60" y="8.10" z="-1"/>
+</StaticObject>
+
 </root>
 
 
