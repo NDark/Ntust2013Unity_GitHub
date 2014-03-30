@@ -13,7 +13,7 @@ using System.Xml ;
 public static class ParseUtility  
 {
 
-	public static bool ParseStaticObject( 
+	public static bool ParseMapZoneObject( 
 #if USE_XML
 	                              XmlNode _node ,
 #endif // USE_XML
@@ -21,14 +21,19 @@ public static class ParseUtility
 	                               ref string _unitName ,
 	                              ref string _prefabTemplateName , 
 	                              ref Vector3 _position , 
-	                              ref Quaternion _orientation )
+	                              ref Quaternion _orientation , ref string _TextureName )
 	{
 		#if USE_XML
-		return XMLParseLevelUtility.ParseStaticObject( _node , 
-		                                              ref _unitName ,
-		                                              ref _prefabTemplateName , 
-		                                              ref _position , 
-		                                              ref _orientation ) ;
+		bool ret = XMLParseLevelUtility.ParseStaticObject( _node , 
+		                                                   ref _unitName ,
+		                                                   ref _prefabTemplateName , 
+		                                                   ref _position , 
+		                                                   ref _orientation ) ;
+
+		if( null != _node.Attributes[ "TextureName" ] )
+			_TextureName = _node.Attributes[ "TextureName" ].Value ;
+
+		return ret ;
 		#endif // USE_XML
 	}
 
