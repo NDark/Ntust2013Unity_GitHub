@@ -80,10 +80,45 @@
 </StaticObject>
 
 <StaticObject Name="MapZoneObject21" PrefabName="MapZonePrefab" TextureName="MapZone21">
-	<Position3D x="-9" y="6.5" z="0"/>
+	<Position3D x="-8.75" y="7.25" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject22" PrefabName="MapZonePrefab" TextureName="MapZone22">
+	<Position3D x="-9.75" y="7.25" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject23" PrefabName="MapZonePrefab" TextureName="MapZone23">
+	<Position3D x="-9.5" y="7" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject24" PrefabName="MapZonePrefab" TextureName="MapZone24">
+	<Position3D x="-9.25" y="6.75" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject25" PrefabName="MapZonePrefab" TextureName="MapZone25">
+	<Position3D x="-8.75" y="8.25" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject26" PrefabName="MapZonePrefab" TextureName="MapZone26">
+	<Position3D x="-9.25" y="8.25" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject27" PrefabName="MapZonePrefab" TextureName="MapZone27">
+	<Position3D x="-8" y="7.75" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject28" PrefabName="MapZonePrefab" TextureName="MapZone28">
+	<Position3D x="-8" y="8.75" z="0"/>
+</StaticObject>
+
+<StaticObject Name="MapZoneObject29" PrefabName="MapZonePrefab" TextureName="MapZone29">
+	<Position3D x="-9" y="9" z="0"/>
 </StaticObject>
 
 </root>
+
+
+
 
 
 
