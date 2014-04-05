@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\TestLevel.xml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Agent_WaitToDrive.cs">
     <Files>
-      <File FileName="Assets\Resources\TestLevel.xml" Line="227" Column="27" />
-      <File FileName="Assets\Scripts\Agent_GotoGladiatores.cs" Line="286" Column="1" />
+      <File FileName="Assets\Resources\TestLevel.xml" Line="237" Column="41" />
+      <File FileName="Assets\Scripts\Agent_GotoGladiatores.cs" Line="19" Column="15" />
+      <File FileName="Assets\Scripts\Agent_WaitToDrive.cs" Line="114" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

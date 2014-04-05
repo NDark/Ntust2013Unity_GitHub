@@ -30,7 +30,8 @@ public class Agent_WaitToDrive : AgentBase
 		infoDataCenter.WriteProperty( aCategory , "OBJECT_NAME" , oName ) ;
 		infoDataCenter.WriteProperty( aCategory , "STATE" , "Condition" ) ;
 		infoDataCenter.WriteProperty( aCategory , "ASSIGNMENT" , "WaitForMainCharacter" ) ;
-		
+
+
 	}
 	
 	// Update is called once per frame
@@ -70,15 +71,19 @@ public class Agent_WaitToDrive : AgentBase
 
 
 		string assignmentStr = infoDataCenter.ReadProperty( aCategory , "ASSIGNMENT" ) ;
+
 		if( "WaitForMainCharacter" == assignmentStr )
 		{
+			ShowYourself( false ) ;
 			Vector3 mainCharObjPos = m_MainCharacter.transform.position ;
 			Vector3 anchor22ObjPos = m_Anchor22.transform.position ;
 			Vector3 distanceVec = mainCharObjPos - anchor22ObjPos ;
 			distanceVec.z = 0 ;
 			if( distanceVec.magnitude < m_CloseDistance )
 			{
-				Debug.Log( "distanceVec < threashold" ) ;
+				// Debug.Log( "distanceVec < threashold" ) ;
+				ShowYourself( true ) ;
+
 				infoDataCenter.WriteProperty( aCategory , "ASSIGNMENT" , "GoToTarget" ) ;
 				string targetPositionStr = string.Format( "{0},{1},{2}" , 
 				                                  anchor22ObjPos.x , anchor22ObjPos.y , anchor22ObjPos.z ) ;
@@ -138,6 +143,12 @@ public class Agent_WaitToDrive : AgentBase
 				WriteAgentState( AgentState.Condition ) ;
 			}
 		}
+	}
+
+	private void ShowYourself( bool _Set )
+	{
+		if( null != m_GameObject.renderer )
+			m_GameObject.renderer.enabled = _Set ;
 	}
 	
 }
