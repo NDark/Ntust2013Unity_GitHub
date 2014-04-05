@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Zugfahrplan\Assets\Scripts\PlayerModeEditor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\TestLevel.xml">
     <Files>
-      <File FileName="..\..\..\Zugfahrplan\Assets\Scripts\PlayerModeEditor.cs" Line="10" Column="1" />
+      <File FileName="Assets\Resources\TestLevel.xml" Line="227" Column="27" />
+      <File FileName="Assets\Scripts\Agent_GotoGladiatores.cs" Line="286" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

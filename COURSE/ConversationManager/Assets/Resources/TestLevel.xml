@@ -234,7 +234,7 @@
 
 <StaticObject Name="MainCharacter" PrefabName="PlayerPrefab" TextureName="SBahn">
 	<!-- Position3D x="0" y="0" z="-1"/-->
-	<Position3D x="-9.18" y="7.35" z="-1"/>
+	<Position3D x="-9.16" y="7.27" z="-1"/>
 </StaticObject>
 </root>
 
