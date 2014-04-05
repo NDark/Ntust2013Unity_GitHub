@@ -221,20 +221,20 @@
 </StaticObject>
 
 <StaticObject Name="Gladiatores" PrefabName="GladiatoresPrefab" >
-	<Position3D x="-8.60" y="8.10" z="-1.1"/>
+	<Position3D x="-8.60" y="8.10" z="-1.0"/>
 </StaticObject>
 
 <StaticObject Name="CarObj" PrefabName="CarPrefab" >
-	<Position3D x="-9.29" y="7.51" z="-1.1"/>
+	<Position3D x="-9.29" y="7.51" z="-1.0"/>
 </StaticObject>
 
 <StaticObject Name="SignalObj" PrefabName="SignalPrefab" >
-	<Position3D x="-9.18" y="7.39" z="-1.1"/>
+	<Position3D x="-9.18" y="7.39" z="-1.0"/>
 </StaticObject>
 
 <StaticObject Name="MainCharacter" PrefabName="PlayerPrefab" TextureName="SBahn">
-	<!-- Position3D x="0" y="0" z="-1"/-->
-	<Position3D x="-9.16" y="7.27" z="-1"/>
+	<Position3D x="0" y="0" z="-1"/>
+	<!-- Position3D x="-9.16" y="7.27" z="-1"/ -->
 </StaticObject>
 </root>
 
