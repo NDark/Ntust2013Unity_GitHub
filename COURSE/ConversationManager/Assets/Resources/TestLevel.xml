@@ -115,6 +115,9 @@
 	<Position3D x="-9" y="9" z="0"/>
 </StaticObject>
 
+<StaticObject Name="MapZoneObject00" PrefabName="MapZone2Prefab" TextureName="Deutschmap2048">
+	<Position3D x="0.322" y="0.384" z="-0.1"/>
+</StaticObject>
 
 <StaticObject Name="Anchor01" PrefabName="AnchorPrefab" >
 	<Position3D x="-0.27" y="0.13" z="-1"/>
@@ -232,8 +235,17 @@
 	<Position3D x="-9.18" y="7.39" z="-1.0"/>
 </StaticObject>
 
-<StaticObject Name="MainCharacter" PrefabName="PlayerPrefab" TextureName="SBahn">
+
+<StaticObject Name="DeuscheMapAnchor01" PrefabName="AnchorPrefab" >
+	<Position3D x="0.049" y="0.113" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="DeuscheMapAnchor02" PrefabName="AnchorPrefab" >
 	<Position3D x="0" y="0" z="-1"/>
+</StaticObject>
+
+<StaticObject Name="MainCharacter" PrefabName="PlayerPrefab" TextureName="SBahn">
+	<Position3D x="0.101" y="0.248" z="-1"/>
 	<!-- Position3D x="-9.16" y="7.27" z="-1"/ -->
 </StaticObject>
 </root>
