@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FightSystem.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationCollisionOnEnter.cs">
     <Files>
-      <File FileName="Assets\Scripts\FightSystem.cs" Line="134" Column="52" />
-      <File FileName="Assets\Resources\FightSystemLevel.xml" Line="2" Column="21" />
+      <File FileName="Assets\Scripts\FightSystem.cs" Line="205" Column="1" />
+      <File FileName="Assets\Resources\FightSystemLevel.xml" Line="2" Column="49" />
+      <File FileName="Assets\Scripts\UnitDataParam.cs" Line="36" Column="40" />
+      <File FileName="Assets\Scripts\AnimationCollisionOnEnter.cs" Line="46" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
