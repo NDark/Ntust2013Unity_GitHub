@@ -5,7 +5,7 @@
  */
 using UnityEngine;
 
-public class Skill  
+public class Skill
 {
 	public string DisplayString
 	{
