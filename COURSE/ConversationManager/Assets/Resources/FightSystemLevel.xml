@@ -2,16 +2,16 @@
 <Unit Name="CharLeft" PrefabName="AnchorPrefab" >
 	<Position3D x="0" y="0" z="0"/>
 	<StandardParameterMap>
-	<HP />
-	<SP />
+	<HP min="0" max="10" />
+	<SP min="0" max="10" />
 	</StandardParameterMap>
 </Unit>
 
 <Unit Name="CharRight" PrefabName="AnchorPrefab" >
 	<Position3D x="0" y="0" z="0"/>
 	<StandardParameterMap>
-	<HP />
-	<SP />
+	<HP min="0" max="10" />
+	<SP min="0" max="10" />
 	</StandardParameterMap>
 </Unit>
 
