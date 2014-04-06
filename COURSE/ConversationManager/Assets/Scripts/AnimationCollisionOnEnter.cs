@@ -24,22 +24,26 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		// Debug.Log( "other" + other.name  ) ;
-		if( other.name != m_ParentName && 
-		   null != m_TargetPlayer )
+		if( other.name != m_ParentName )
 		{
-			UnitDataParam unitData = m_TargetPlayer.GetComponent<UnitDataParam>() ;
-			if( true == unitData.standardParameters.ContainsKey( "HP" ) )
+			if( null != m_TargetPlayer && 
+			   other.name == m_TargetPlayer.name )
 			{
-				float hpNow = unitData.standardParameters[ "HP" ].now ;
-				--hpNow ;
-				hpNow = unitData.standardParameters[ "HP" ].now = hpNow ;
+				UnitDataParam unitData = m_TargetPlayer.GetComponent<UnitDataParam>() ;
+				if( true == unitData.standardParameters.ContainsKey( "HP" ) )
+				{
+					float hpNow = unitData.standardParameters[ "HP" ].now ;
+					--hpNow ;
+					hpNow = unitData.standardParameters[ "HP" ].now = hpNow ;
 
-				FightSystem fs = GlobalSingleton.GetFightSystem() ;
-				string str = string.Format( "{0} 對 {1} 造成了 1 點傷害" , m_ParentName , m_TargetPlayer.name ) ;
-				fs.AddStatus( str ) ;
-				str = string.Format( "{0} 剩下 {1} 點生命值" , m_TargetPlayer.name , hpNow ) ;
-				fs.AddStatus( str ) ;
+					FightSystem fs = GlobalSingleton.GetFightSystem() ;
+					string str = string.Format( "{0} 對 {1} 造成了 1 點傷害" , m_ParentName , m_TargetPlayer.name ) ;
+					fs.AddStatus( str ) ;
+					str = string.Format( "{0} 剩下 {1} 點生命值" , m_TargetPlayer.name , hpNow ) ;
+					fs.AddStatus( str ) ;
+				}
 			}
+
 			GameObject.Destroy(this.gameObject);
 		}
 

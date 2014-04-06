@@ -3,7 +3,7 @@
 	<Position3D x="0" y="0" z="0"/>
 	<StandardParameterMap>
 	<HP min="0" max="10" />
-	<SP min="0" max="10" />
+	<SP min="0" max="10" init="0" />
 	</StandardParameterMap>
 </Unit>
 
@@ -11,7 +11,7 @@
 	<Position3D x="0" y="0" z="0"/>
 	<StandardParameterMap>
 	<HP min="0" max="10" />
-	<SP min="0" max="10" />
+	<SP min="0" max="10" init="0" />
 	</StandardParameterMap>
 </Unit>
 
