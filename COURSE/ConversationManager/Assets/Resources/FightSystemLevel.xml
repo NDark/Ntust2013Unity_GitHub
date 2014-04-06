@@ -1,7 +1,19 @@
 <root>
-<StaticObject Name="CharLeft" PrefabName="AnchorPrefab" >
+<Unit Name="CharLeft" PrefabName="AnchorPrefab" >
 	<Position3D x="0" y="0" z="0"/>
-</StaticObject>
+	<StandardParameterMap>
+	<HP />
+	<SP />
+	</StandardParameterMap>
+</Unit>
+
+<Unit Name="CharRight" PrefabName="AnchorPrefab" >
+	<Position3D x="0" y="0" z="0"/>
+	<StandardParameterMap>
+	<HP />
+	<SP />
+	</StandardParameterMap>
+</Unit>
 
 </root>
 
