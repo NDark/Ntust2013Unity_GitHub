@@ -1,0 +1,14 @@
+<root>
+	<!-- UnitDataCharLeft -->			
+	<UnitData UnitDataTemplateName="UnitDataCharLeft" >
+		<StandardParameterMap>
+			<HP min="0" max="10" />
+			<SP min="0" max="10" init="0" />
+		</StandardParameterMap>		
+	</UnitData>	
+	
+	<!-- UnitDataCharRight -->			
+	<UnitData UnitDataTemplateName="UnitDataCharRight" >
+
+	</UnitData>		
+</root>	

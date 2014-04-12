@@ -2,6 +2,7 @@
  * @file AnimationCollisionOnEnter.cs
  * @author NDark
  * @date 20140406 file started.
+ * @date 20140412 by NDark . 修改 m_TargetPlayer 與 other.name 不相同的錯誤.
  */
 using UnityEngine;
 
@@ -26,15 +27,15 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 		// Debug.Log( "other" + other.name  ) ;
 		if( other.name != m_ParentName )
 		{
-			if( null != m_TargetPlayer && 
-			   other.name == m_TargetPlayer.name )
+			if( null != m_TargetPlayer /* && 
+			   other.name == m_TargetPlayer.name*/ )
 			{
 				UnitDataParam unitData = m_TargetPlayer.GetComponent<UnitDataParam>() ;
 				if( true == unitData.standardParameters.ContainsKey( "HP" ) )
 				{
 					float hpNow = unitData.standardParameters[ "HP" ].now ;
 					--hpNow ;
-					hpNow = unitData.standardParameters[ "HP" ].now = hpNow ;
+					unitData.standardParameters[ "HP" ].now = hpNow ;
 
 					FightSystem fs = GlobalSingleton.GetFightSystem() ;
 					string str = string.Format( "{0} 對 {1} 造成了 1 點傷害" , m_ParentName , m_TargetPlayer.name ) ;

@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationCollisionOnEnter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelGenerator.cs">
     <Files>
-      <File FileName="Assets\Scripts\FightSystem.cs" Line="205" Column="1" />
-      <File FileName="Assets\Resources\FightSystemLevel.xml" Line="2" Column="49" />
-      <File FileName="Assets\Scripts\UnitDataParam.cs" Line="36" Column="40" />
-      <File FileName="Assets\Scripts\AnimationCollisionOnEnter.cs" Line="46" Column="1" />
+      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="49" Column="3" />
+      <File FileName="Assets\Scripts\ParseUtility.cs" Line="88" Column="59" />
+      <File FileName="Assets\Scripts\XMLParseLevelUtility.cs" Line="472" Column="46" />
+      <File FileName="Assets\Scripts\UnitData.cs" Line="93" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

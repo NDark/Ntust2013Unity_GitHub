@@ -2,6 +2,10 @@
 @file ParseUtility.cs
 @author NDark
 @date 20140329 . file created.
+@date 20140412 by NDark 
+. add class method ParseUnitDataTemplateData()
+. add argument of _UnitDataTemplateName at ParseUnit()
+
 */
 #define USE_XML
 // #define USE_XML
@@ -63,6 +67,7 @@ public static class ParseUtility
 	                                      #endif // USE_XML
 	                             ref string _UnitName , 
 	                             ref string _PrefabeName ,
+	                             ref string _UnitDataTemplateName ,
 	                             ref PosAnchor _PosAnchor , 
 	                             ref Quaternion _Orientation ,
 	                             ref Dictionary<string , StandardParameter> _StandardParamMap )
@@ -71,6 +76,7 @@ public static class ParseUtility
 		bool ret = XMLParseLevelUtility.ParseUnit( _node , 
 		                                          ref  _UnitName , 
 		                                          ref _PrefabeName ,
+		                                          ref _UnitDataTemplateName ,
 		                                          ref _PosAnchor , 
 		                                          ref _Orientation ,
 		                                          ref _StandardParamMap ) ;
@@ -80,4 +86,18 @@ public static class ParseUtility
 		#endif // USE_XML
 	}
 
+	public static bool ParseUnitDataTemplateData( 
+	                                     #if USE_XML
+	                                     XmlNode _node ,
+	                                     #endif // USE_XML
+                                         ref string _UnitDataTemplateName ,
+                                         ref UnitDataParam _Data )
+	{
+		#if USE_XML
+		bool ret = XMLParseLevelUtility.ParseUnitDataTemplateData( _node , 
+		                                                          ref _UnitDataTemplateName ,
+		                                                          ref _Data ) ;
+		return ret ;
+		#endif // USE_XML
+	}
 }
