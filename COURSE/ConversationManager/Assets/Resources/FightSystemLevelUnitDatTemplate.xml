@@ -1,6 +1,10 @@
 <root>
 	<!-- UnitDataCharLeft -->			
 	<UnitData UnitDataTemplateName="UnitDataCharLeft" >
+		<SkillZone>
+			<Skill Name="SaveSP" DisplayString="SaveSP" />	
+			<Skill Name="Hadoken" DisplayString="Hadoken" />	
+		</SkillZone>
 		<StandardParameterMap>
 			<HP min="0" max="10" />
 			<SP min="0" max="10" init="0" />
@@ -9,6 +13,9 @@
 	
 	<!-- UnitDataCharRight -->			
 	<UnitData UnitDataTemplateName="UnitDataCharRight" >
-
+		<SkillZone>
+			<Skill Name="SaveSP" DisplayString="SaveSP" />	
+			<Skill Name="Hadoken" DisplayString="Hadoken" />	
+		</SkillZone>
 	</UnitData>		
 </root>	

@@ -1,11 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelGenerator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\FightSystemLevelUnitDatTemplate.xml">
     <Files>
-      <File FileName="Assets\Scripts\LevelGenerator.cs" Line="49" Column="3" />
-      <File FileName="Assets\Scripts\ParseUtility.cs" Line="88" Column="59" />
-      <File FileName="Assets\Scripts\XMLParseLevelUtility.cs" Line="472" Column="46" />
-      <File FileName="Assets\Scripts\UnitData.cs" Line="93" Column="2" />
+      <File FileName="Assets\Resources\FightSystemLevelUnitDatTemplate.xml" Line="14" Column="9" />
+      <File FileName="Assets\Resources\FightSystemLevel.xml" Line="2" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
