@@ -60,14 +60,26 @@ public static class GlobalSingleton
 	}
 	private static FightSystem m_FightSystem = null ;
 
-	static public Dictionary<string,UnitData> GetUnitDataStructTable()
+	// 物件的設定,是由關卡讀取近來,物件資料會指向此
+	static public Dictionary<string,UnitDataSetting> GetUnitDataSettingTable()
 	{
-		if( null == m_UnitDataTemplateTable )
+		if( null == m_UnitDataSettingTable )
 		{
-			m_UnitDataTemplateTable = new Dictionary<string, UnitData>() ;
+			m_UnitDataSettingTable = new Dictionary<string, UnitDataSetting>() ;
 		}
-		return m_UnitDataTemplateTable ;
+		return m_UnitDataSettingTable ;
 	}
-	static private Dictionary<string,UnitData> m_UnitDataTemplateTable = new Dictionary<string, UnitData>() ;
+	static private Dictionary<string /* unitDataTemplateName */,UnitDataSetting> m_UnitDataSettingTable = null ;
+
+	// 物件的資料,注意過場可能需要洗掉,也可能需澳留下來,不要重複
+	static public Dictionary<string,UnitDataStruct> GetUnitDataStructTable()
+	{
+		if( null == m_UnitDataStructTable )
+		{
+			m_UnitDataStructTable = new Dictionary<string, UnitDataStruct>() ;
+		}
+		return m_UnitDataStructTable ;
+	}
+	static private Dictionary<string,UnitDataStruct> m_UnitDataStructTable = null ;
 
 }

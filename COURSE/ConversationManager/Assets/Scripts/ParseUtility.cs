@@ -91,12 +91,12 @@ public static class ParseUtility
 	                                     XmlNode _node ,
 	                                     #endif // USE_XML
                                          ref string _UnitDataTemplateName ,
-	                                             ref UnitData _Data )
+	                                             ref UnitDataSetting _DataSetting )
 	{
 		#if USE_XML
 		bool ret = XMLParseLevelUtility.ParseUnitDataTemplateData( _node , 
 		                                                          ref _UnitDataTemplateName ,
-		                                                          ref _Data ) ;
+		                                                          ref _DataSetting ) ;
 		return ret ;
 		#endif // USE_XML
 	}
