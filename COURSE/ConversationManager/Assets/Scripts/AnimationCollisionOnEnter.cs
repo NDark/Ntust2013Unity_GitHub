@@ -31,11 +31,11 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 			   other.name == m_TargetPlayer.name*/ )
 			{
 				UnitData unitData = m_TargetPlayer.GetComponent<UnitData>() ;
-				if( true == unitData.standardParameters.ContainsKey( "HP" ) )
+				if( true == unitData.m_UnitDataStruct.standardParameters.ContainsKey( "HP" ) )
 				{
-					float hpNow = unitData.standardParameters[ "HP" ].now ;
+					float hpNow = unitData.m_UnitDataStruct.standardParameters[ "HP" ].now ;
 					--hpNow ;
-					unitData.standardParameters[ "HP" ].now = hpNow ;
+					unitData.m_UnitDataStruct.standardParameters[ "HP" ].now = hpNow ;
 
 					FightSystem fs = GlobalSingleton.GetFightSystem() ;
 					string str = string.Format( "{0} 對 {1} 造成了 1 點傷害" , m_ParentName , m_TargetPlayer.name ) ;
