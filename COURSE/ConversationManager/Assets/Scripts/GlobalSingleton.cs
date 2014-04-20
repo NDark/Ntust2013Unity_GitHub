@@ -5,6 +5,8 @@
  * @date 20140406 by NDark . add class method GetFightSystem()
  */
 using UnityEngine;
+using System.Collections.Generic;
+
 
 public static class GlobalSingleton
 {
@@ -57,4 +59,15 @@ public static class GlobalSingleton
 		return m_FightSystem ;
 	}
 	private static FightSystem m_FightSystem = null ;
+
+	static public Dictionary<string,UnitData> GetUnitDataStructTable()
+	{
+		if( null == m_UnitDataTemplateTable )
+		{
+			m_UnitDataTemplateTable = new Dictionary<string, UnitData>() ;
+		}
+		return m_UnitDataTemplateTable ;
+	}
+	static private Dictionary<string,UnitData> m_UnitDataTemplateTable = new Dictionary<string, UnitData>() ;
+
 }
