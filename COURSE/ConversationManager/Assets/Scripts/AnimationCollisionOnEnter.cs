@@ -30,7 +30,7 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 			if( null != m_TargetPlayer /* && 
 			   other.name == m_TargetPlayer.name*/ )
 			{
-				UnitDataParam unitData = m_TargetPlayer.GetComponent<UnitDataParam>() ;
+				UnitData unitData = m_TargetPlayer.GetComponent<UnitData>() ;
 				if( true == unitData.standardParameters.ContainsKey( "HP" ) )
 				{
 					float hpNow = unitData.standardParameters[ "HP" ].now ;
