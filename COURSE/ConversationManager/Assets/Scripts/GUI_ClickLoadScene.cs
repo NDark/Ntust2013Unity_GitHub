@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GUI_ClickLoadScene : MonoBehaviour {
+public class GUI_ClickLoadScene : MonoBehaviour 
+{
+	public string m_LevelName = "" ;
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +17,13 @@ public class GUI_ClickLoadScene : MonoBehaviour {
 
 	void OnMouseDown()
 	{
+		if( 0 == m_LevelName.Length )
+			return ;
+
 		InfoDataCenter infoDataCenter = GlobalSingleton.GetInfoDataCenter() ;
 		infoDataCenter.Clear() ;
 
 		// Debug.Log( "OnMouseDown" ) ;
-		Application.LoadLevel( "BackToMap" ) ;
+		Application.LoadLevel( m_LevelName ) ;
 	}
 }
