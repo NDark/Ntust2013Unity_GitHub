@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UnitDataStruct.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Zugfahrplan\Assets\Scripts\LevelGeneratorStatic.cs">
     <Files>
-      <File FileName="Assets\Scripts\GlobalSingleton.cs" Line="75" Column="72" />
-      <File FileName="Assets\Scripts\FightSystem.cs" Line="126" Column="117" />
-      <File FileName="Assets\Scripts\UnitDataStruct.cs" Line="116" Column="2" />
+      <File FileName="..\..\..\Zugfahrplan\Assets\Scripts\LevelGeneratorStatic.cs" Line="403" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
