@@ -44,9 +44,9 @@ public class UnitDataStruct
 
 
 
-	public void ImportSkills( Dictionary< string , Skill > _Skills )
+	public void ImportSkillLabels( Dictionary< string , SkillLabel > _SkillLabels )
 	{
-		this.m_UnitDataSetting.ImportSkills( _Skills ) ;
+		this.m_UnitDataSetting.ImportSkillLabels( _SkillLabels ) ;
 	}
 
 	public GameObject m_ThisGameObject = null ;
@@ -71,9 +71,9 @@ public class UnitDataStruct
 		return standardParameters ;
 	}
 
-	public Dictionary< string , Skill > GetSkillTable()
+	public Dictionary< string , SkillLabel > GetSkillLabelTable()
 	{
-		return m_UnitDataSetting.m_Skills ;
+		return m_UnitDataSetting.m_SkillLabels ;
 	}
 
 	public void Import( UnitDataSetting _SettingSrc ) 

@@ -2,8 +2,8 @@
 	<!-- UnitDataCharLeft -->			
 	<UnitData UnitDataTemplateName="UnitDataCharLeft" >
 		<SkillZone>
-			<Skill Name="SaveSP" DisplayString="SaveSP" />	
-			<Skill Name="Hadoken" DisplayString="Hadoken" />	
+			<SkillLabel Label="SaveSP" Value="1" />	
+			<SkillLabel Label="Hadoken" Value="2" />	
 		</SkillZone>
 		<StandardParameterMap>
 			<HP min="0" max="10" />
@@ -14,8 +14,8 @@
 	<!-- UnitDataCharRight -->			
 	<UnitData UnitDataTemplateName="UnitDataCharRight" >
 		<SkillZone>
-			<Skill Name="SaveSP" DisplayString="SaveSP" />	
-			<Skill Name="Hadoken" DisplayString="Hadoken" />	
+			<SkillLabel Label="SaveSP" Value="3" />	
+			<SkillLabel Label="Hadoken" Value="4" />	
 		</SkillZone>
 	</UnitData>		
 </root>	

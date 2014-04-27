@@ -1,5 +1,6 @@
 <root>
 <SkillSetting Name="SaveSP" DisplayString="SaveSP" />	
+<SkillSetting Name="Hadoken" DisplayString="Hadoken" />
 
 </root>
 

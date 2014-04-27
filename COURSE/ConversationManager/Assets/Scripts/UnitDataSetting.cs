@@ -2,6 +2,7 @@
 @file UnitDataSetting.cs
 @author NDark
 @date 20140420 . file started.
+@date 20140427 by NDark . modify skill to skilllabel of m_SkillLabels
 
 */
 using UnityEngine;
@@ -69,29 +70,29 @@ public class UnitDataSetting
 	private Texture m_ProfileTexture = null ;
 	
 	
-	public void AssignSkill( string _SkillName, Skill _Skill )
+	public void AssignSkillLabel( string _SkillLabelKey , SkillLabel _SkillLabelObj )
 	{
-		if( true == m_Skills.ContainsKey( _SkillName )  )
+		if( true == m_SkillLabels.ContainsKey( _SkillLabelKey )  )
 		{
-			m_Skills[ _SkillName ] = _Skill ;
+			m_SkillLabels[ _SkillLabelKey ] = _SkillLabelObj ;
 		}
 		else
 		{
-			m_Skills.Add( _SkillName , _Skill ) ;
+			m_SkillLabels.Add( _SkillLabelKey , _SkillLabelObj ) ;
 		}
 	}
 	
-	public void ImportSkills( Dictionary< string , Skill > _Skills )
+	public void ImportSkillLabels( Dictionary< string , SkillLabel > _SkillLabels )
 	{
-		Dictionary< string , Skill >.Enumerator i = _Skills.GetEnumerator() ;
+		Dictionary< string , SkillLabel >.Enumerator i = _SkillLabels.GetEnumerator() ;
 		
 		while( i.MoveNext() )
 		{
 			// Debug.Log( "i.Current.Key=" + i.Current.Key ) ;
-			AssignSkill( i.Current.Key , i.Current.Value ) ;
+			AssignSkillLabel( i.Current.Key , i.Current.Value ) ;
 		}
 	}
-	public Dictionary< string , Skill > m_Skills = new Dictionary<string, Skill>() ;
+	public Dictionary< string , SkillLabel > m_SkillLabels = new Dictionary<string, SkillLabel>() ;
 	
 	
 	public Dictionary< string , StandardParameter > standardParameters = new Dictionary< string , StandardParameter >() ;
@@ -115,12 +116,7 @@ public class UnitDataSetting
 
 	public void Import( UnitDataSetting _Src ) 
 	{
-		Dictionary< string , Skill >.Enumerator skill = _Src.m_Skills.GetEnumerator() ;
-		while( skill.MoveNext() )
-		{
-			/* @todo skill new ? */
-			m_Skills.Add( skill.Current.Key , skill.Current.Value ) ;
-		}
+		ImportSkillLabels( _Src.m_SkillLabels ) ;
 		m_ProfileTexture = _Src.m_ProfileTexture ;
 		m_ProfileTextureName = _Src.m_ProfileTextureName ;
 		m_UnitType = _Src.m_UnitType ;
