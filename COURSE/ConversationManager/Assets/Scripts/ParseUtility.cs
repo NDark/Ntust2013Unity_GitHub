@@ -5,6 +5,8 @@
 @date 20140412 by NDark 
 . add class method ParseUnitDataTemplateData()
 . add argument of _UnitDataTemplateName at ParseUnit()
+@date 20140427 by NDark
+. add class method ParseSkillSetting()
 
 */
 #define USE_XML
@@ -97,6 +99,21 @@ public static class ParseUtility
 		bool ret = XMLParseLevelUtility.ParseUnitDataTemplateData( _node , 
 		                                                          ref _UnitDataTemplateName ,
 		                                                          ref _DataSetting ) ;
+		return ret ;
+		#endif // USE_XML
+	}
+
+	public static bool ParseSkillSetting( 
+	                                     #if USE_XML
+	                                     XmlNode _node ,
+	                                     #endif // USE_XML
+	                                     ref string _SkillName ,
+	                                     ref Skill _Skill )
+	{
+		#if USE_XML
+		bool ret = XMLParseLevelUtility.ParseSkillSetting( _node , 
+		                                                  ref _SkillName ,
+		                                                  ref _Skill ) ;
 		return ret ;
 		#endif // USE_XML
 	}

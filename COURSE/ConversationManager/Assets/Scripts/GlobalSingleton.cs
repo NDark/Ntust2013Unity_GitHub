@@ -3,6 +3,10 @@
  * @author NDark
  * @date 20140323 . file started.
  * @date 20140406 by NDark . add class method GetFightSystem()
+@date 20140427 by NDark
+. add class method GetSkillSettingTable()
+. add class member m_SkillSettingTable
+
  */
 using UnityEngine;
 using System.Collections.Generic;
@@ -59,6 +63,18 @@ public static class GlobalSingleton
 		return m_FightSystem ;
 	}
 	private static FightSystem m_FightSystem = null ;
+
+	// 技能的設定,是由關卡讀取進來,技能資料會從此取得設定
+	static public Dictionary<string,Skill> GetSkillSettingTable()
+	{
+		if( null == m_SkillSettingTable )
+		{
+			m_SkillSettingTable = new Dictionary<string, Skill>() ;
+		}
+		return m_SkillSettingTable ;
+	}
+	static private Dictionary<string /* unitDataTemplateName */,Skill > m_SkillSettingTable = null ;
+
 
 	// 物件的設定,是由關卡讀取近來,物件資料會指向此
 	static public Dictionary<string,UnitDataSetting> GetUnitDataSettingTable()
