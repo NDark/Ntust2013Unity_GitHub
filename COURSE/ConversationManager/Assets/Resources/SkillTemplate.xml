@@ -1,6 +1,6 @@
 <root>
-<SkillSetting Name="SaveSP" DisplayString="SaveSP" />	
-<SkillSetting Name="Hadoken" DisplayString="Hadoken" />
+<SkillSetting Name="SaveSP" DisplayString="蓄氣" />	
+<SkillSetting Name="Hadoken" DisplayString="波動拳" />
 
 </root>
 
