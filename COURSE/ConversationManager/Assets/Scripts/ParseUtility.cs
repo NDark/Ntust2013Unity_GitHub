@@ -135,4 +135,21 @@ public static class ParseUtility
 		return ret ;
 		#endif // USE_XML
 	}
+
+	public static bool ParseUnitDataStruct( 
+	                                  #if USE_XML
+	                                  XmlNode _node ,
+	                                  #endif // USE_XML
+	                                  ref string _UnitName , 
+	                                  ref string _UnitDataTemplateName )
+	{
+		#if USE_XML
+		bool ret = XMLParseLevelUtility.ParseUnitDataStruct( _node , 
+		                                               ref  _UnitName , 
+		                                               ref _UnitDataTemplateName ) ;
+		
+		
+		return ret ;
+		#endif // USE_XML
+	}
 }

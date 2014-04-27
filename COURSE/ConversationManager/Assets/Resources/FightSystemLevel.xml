@@ -1,13 +1,13 @@
 <root>
-<ExistUnit Name="FightSystemCharacterLeftObject" 
+<UnitDataStruct Name="FightSystemCharacterLeftObject" 
 	UnitDataTemplateName="UnitDataCharLeft" >
 	
-</ExistUnit>
+</UnitDataStruct>
 
-<ExistUnit Name="FightSystemCharacterRightObject" 
+<UnitDataStruct Name="FightSystemCharacterRightObject" 
 	UnitDataTemplateName="UnitDataCharRight" >
 
-</ExistUnit>
+</UnitDataStruct>
 
 </root>
 
