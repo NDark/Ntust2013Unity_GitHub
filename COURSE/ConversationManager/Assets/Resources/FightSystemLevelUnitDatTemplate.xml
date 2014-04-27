@@ -17,5 +17,9 @@
 			<SkillLabel Label="SaveSP" Value="3" />	
 			<SkillLabel Label="Hadoken" Value="4" />	
 		</SkillZone>
+		<StandardParameterMap>
+			<HP min="0" max="5" />
+			<SP min="0" max="5" init="0" />
+		</StandardParameterMap>		
 	</UnitData>		
 </root>	

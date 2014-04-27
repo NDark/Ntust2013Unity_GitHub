@@ -1,15 +1,13 @@
 <root>
-<Unit Name="CharLeft" PrefabName="AnchorPrefab" UnitDataTemplateName="UnitDataCharLeft" >
-	<Position3D x="0" y="0" z="0"/>
-</Unit>
+<ExistUnit Name="FightSystemCharacterLeftObject" 
+	UnitDataTemplateName="UnitDataCharLeft" >
+	
+</ExistUnit>
 
-<Unit Name="CharRight" PrefabName="AnchorPrefab" UnitDataTemplateName="UnitDataCharRight" >
-	<Position3D x="0" y="0" z="0"/>
-	<StandardParameterMap>
-		<HP min="0" max="5" />
-		<SP min="0" max="5" init="0" />
-	</StandardParameterMap>
-</Unit>
+<ExistUnit Name="FightSystemCharacterRightObject" 
+	UnitDataTemplateName="UnitDataCharRight" >
+
+</ExistUnit>
 
 </root>
 
