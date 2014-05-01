@@ -19,7 +19,7 @@ public class GUI_ClickFastForward : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		Time.timeScale = 3 ;
+		Time.timeScale = 10 ;
 		Time.fixedDeltaTime = m_StartPhyTime * Time.timeScale;
 	}
 }
