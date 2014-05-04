@@ -1,6 +1,21 @@
 <root>
-<SkillSetting Name="SaveSP" DisplayString="蓄氣" />	
-<SkillSetting Name="Hadoken" DisplayString="波動拳" />
+<SkillSetting Label="SaveSP" 
+Type="Active" 
+Target="Self" 
+DefenseProperty="" 
+AttactProperty="" 
+FyingSpeed="0" 
+AnimationPrefab="AnimationPrefab01"
+DisplayString="蓄氣" />	
+
+<SkillSetting Label="Hadoken" 
+Type="Active" 
+Target="Enemy" 
+DefenseProperty="Energy:1," 
+AttactProperty="Energy:1," 
+FyingSpeed="100" 
+AnimationPrefab="AnimationPrefab01"
+DisplayString="波動拳" />
 
 </root>
 
