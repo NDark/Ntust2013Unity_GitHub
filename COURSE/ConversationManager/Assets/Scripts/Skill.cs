@@ -92,7 +92,7 @@ public class EnegyProperty
 	{
 		string property = "" ;
 		string ret = "" ;
-		Dictionary<string,int>.Enumerator i = _Src.m_PropertyTable.GetEnumerator() ;
+		Dictionary<string,int>.Enumerator i = m_PropertyTable.GetEnumerator() ;
 		while( i.MoveNext() )
 		{
 			property = string.Format( "{0}:{1}" , i.Current.Key , i.Current.Value ) ;
