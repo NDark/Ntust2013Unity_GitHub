@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Zugfahrplan\Assets\Scripts\LevelGeneratorStatic.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SkillAnimation.cs">
     <Files>
-      <File FileName="..\..\..\Zugfahrplan\Assets\Scripts\LevelGeneratorStatic.cs" Line="23" Column="17" />
+      <File FileName="Assets\Scripts\SkillAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FightSystem.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

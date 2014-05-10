@@ -109,12 +109,12 @@ public static class ParseUtility
 	                                     XmlNode _node ,
 	                                     #endif // USE_XML
 	                                     ref string _SkillName ,
-	                                     ref Skill _Skill )
+	                                     ref SkillSetting _SkillSetting )
 	{
 		#if USE_XML
 		bool ret = XMLParseLevelUtility.ParseSkillSetting( _node , 
 		                                                  ref _SkillName ,
-		                                                  ref _Skill ) ;
+		                                                  ref _SkillSetting ) ;
 		return ret ;
 		#endif // USE_XML
 	}

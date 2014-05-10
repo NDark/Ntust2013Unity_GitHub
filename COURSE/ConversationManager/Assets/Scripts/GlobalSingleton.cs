@@ -65,15 +65,15 @@ public static class GlobalSingleton
 	private static FightSystem m_FightSystem = null ;
 
 	// 技能的設定,是由關卡讀取進來,技能資料會從此取得設定
-	static public Dictionary<string,Skill> GetSkillSettingTable()
+	static public Dictionary<string,SkillSetting> GetSkillSettingTable()
 	{
 		if( null == m_SkillSettingTable )
 		{
-			m_SkillSettingTable = new Dictionary<string, Skill>() ;
+			m_SkillSettingTable = new Dictionary<string, SkillSetting>() ;
 		}
 		return m_SkillSettingTable ;
 	}
-	static private Dictionary<string /* unitDataTemplateName */,Skill > m_SkillSettingTable = null ;
+	static private Dictionary<string /* unitDataTemplateName */,SkillSetting > m_SkillSettingTable = null ;
 
 
 	// 物件的設定,是由關卡讀取近來,物件資料會指向此
