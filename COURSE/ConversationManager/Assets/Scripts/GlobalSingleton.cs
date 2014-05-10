@@ -6,8 +6,9 @@
 @date 20140427 by NDark
 . add class method GetSkillSettingTable()
 . add class member m_SkillSettingTable
+@date 20140510 by NDark . add class method GetDamageSystem() and m_DamageSystem
 
- */
+*/
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -32,6 +33,25 @@ public static class GlobalSingleton
 	}
 	private static AgentManager m_AgentManger = null ;
 
+	public static DamageSystem GetDamageSystem()
+	{
+		if( null == m_DamageSystem )
+		{
+			GameObject gs = GameObject.Find( "GlobalSingleton" ) ;
+			if( null != gs )
+			{
+				m_DamageSystem = gs.GetComponent<DamageSystem>() ;
+			}
+		}
+		if( null == m_DamageSystem )
+		{
+			Debug.LogError( "GlobalSingleton::GetAgentManager(), null == m_DamageSystem" ) ;
+		}
+		return m_DamageSystem ;
+	}
+	private static DamageSystem m_DamageSystem = null ;
+	
+	
 	public static InfoDataCenter GetInfoDataCenter()
 	{
 		if( null == m_InfoDataCenter )

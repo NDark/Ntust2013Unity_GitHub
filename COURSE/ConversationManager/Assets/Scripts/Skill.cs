@@ -8,6 +8,9 @@
 . add class EnegyProperty
 . add class SkillProperty
 . add class SkillVariable
+. add class method GetKeys()
+. add class method AddPropertyToArmor()
+
 
  */
 using UnityEngine;
@@ -56,6 +59,13 @@ public class EnegyProperty
 		}
 	}
 	
+	public string [] GetKeys()
+	{
+		string [] array = new string[ m_PropertyTable.Count ] ;
+		m_PropertyTable.Keys.CopyTo( array , 0 ) ;
+		return array ;
+	}
+	
 	public int GetProperty( string _Key ) 
 	{
 		int ret = 0 ;
@@ -73,6 +83,61 @@ public class EnegyProperty
 		return result ;	
 	}		
 	
+	// return 的是攻擊能量還剩下多少
+	public int AddPropertyToArmor( string _Key , int _Value ) 
+	{
+		int propertyValue = GetProperty( _Key ) ;
+		int armorValue = GetProperty( "Armor" ) ;
+		
+		int retCost = armorValue + propertyValue + _Value ;
+		int finalArmor = retCost ;
+		if( _Value > 0 )
+		{
+			AssignProperty( _Key , propertyValue + _Value ) ;
+			retCost = 0 ;
+		}
+		else
+		{
+			// armor 1 property 1 , _Value -10
+			// final :
+			// armor 0 , property 0 , _Value -8
+					
+			// 假如是扣的
+			int costOnArmor = propertyValue + _Value ;
+			if( costOnArmor > 0 )
+			{
+				// armor 10 property 2 , _Value -1
+				// final :
+				// armor 10 , property 1 , _Value 0				
+				// 如果不動到armor
+				retCost = 0 ;// 攻擊被抵消了
+				AssignProperty( _Key , costOnArmor ) ;
+			}
+			else if( finalArmor > 0 ) 
+			{
+				// armor 10 property 2 , _Value -3
+				// final :
+				// armor 9 , property 0 , _Value 0 			
+				// armor 要修改
+				retCost = 0 ;// 攻擊被抵消了
+				AssignProperty( _Key , 0 ) ;
+				AssignProperty( "Armor" , finalArmor ) ;
+			}
+			else
+			{
+				// armor 10 property 2 , _Value -100
+				// final :
+				// armor 0 , property 0 , _Value -88				
+				// armor 也被扣光
+				AssignProperty( _Key , 0 ) ;
+				AssignProperty( "Armor" , 0 ) ;			
+			}
+			
+		}		
+		
+		return -1 * retCost ;	
+	}			
+	
 	public int AssignProperty( string _Key , int _Value ) 
 	{
 		int result = 0 ;
@@ -87,6 +152,20 @@ public class EnegyProperty
 		
 		return result ;
 	}	
+	
+	public int PositiveProperty()
+	{
+		int ret = 0 ;
+		Dictionary<string,int>.Enumerator i = m_PropertyTable.GetEnumerator() ;
+		while( i.MoveNext() )
+		{
+			if( i.Current.Value > 0 )
+			{
+				ret += i.Current.Value ;
+			}
+		}
+		return ret ;
+	}
 	
 	public string CreatePropertyString()
 	{
@@ -183,6 +262,30 @@ public class SkillVariable
 {
 	public SkillSetting m_SkillSetting = null ;
 	public SkillProperty m_SkillPropertyNow = new SkillProperty() ;
+	
+	public bool HasArmor()
+	{
+		bool ret = false ;
+		if( m_SkillPropertyNow.DefenseProperty.GetProperty( "Armor" ) > 0 )
+		{
+			ret = true ;
+		}
+		return ret ;
+	}
+	public bool HasAttactProperty()
+	{
+		bool ret = false ;
+		if( m_SkillPropertyNow.AttackProperty.PositiveProperty() > 0 )
+		{
+			ret = true ;
+		}
+		else
+		{
+			Debug.Log( "AttackProperty.PositiveProperty=" + m_SkillPropertyNow.AttackProperty.PositiveProperty() ) ;
+		}
+			
+		return ret ;
+	}	
 }
 
 

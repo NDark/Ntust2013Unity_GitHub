@@ -18,8 +18,8 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
 	}
 
 
@@ -28,6 +28,8 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 		Debug.Log( "OnTriggerEnter2D() , other=" + other.name  ) ;
 		if( other.name != m_ParentName )
 		{
+			GlobalSingleton.GetDamageSystem().Encounter( this.gameObject , other.gameObject ) ;
+			
 			UnitData unitData = other.GetComponent<UnitData>() ;
 			if( null != unitData )
 			{
@@ -46,7 +48,7 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 				}
 			}
 
-			GameObject.Destroy(this.gameObject);
+			
 		}
 
 	}
