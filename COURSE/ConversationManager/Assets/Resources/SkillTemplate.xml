@@ -20,11 +20,11 @@ DisplayString="波動拳" />
 <SkillSetting Label="FireBall" 
 Type="Active" 
 Target="Enemy" 
-DefenseProperty="Fire:1,Armor:1" 
+DefenseProperty="Fire:1,Energy:10,Armor:1" 
 AttactProperty="Fire:10," 
 FyingSpeed="100" 
-AnimationPrefab="AnimationPrefab01"
-DisplayString="波動拳" />
+AnimationPrefab="AnimationPrefab_Fireball"
+DisplayString="火球術" />
 
 </root>
 

@@ -3,7 +3,8 @@
 	<UnitData UnitDataTemplateName="UnitDataCharLeft" >
 		<SkillZone>
 			<SkillLabel Label="SaveSP" Value="1" />	
-			<SkillLabel Label="Hadoken" Value="2" />	
+			<SkillLabel Label="Hadoken" Value="2" />
+			<SkillLabel Label="FireBall" Value="4" />		
 		</SkillZone>
 		<StandardParameterMap>
 			<HP min="0" max="10" />
@@ -16,6 +17,7 @@
 		<SkillZone>
 			<SkillLabel Label="SaveSP" Value="3" />	
 			<SkillLabel Label="Hadoken" Value="4" />	
+			<SkillLabel Label="FireBall" Value="4" />	
 		</SkillZone>
 		<StandardParameterMap>
 			<HP min="0" max="5" />
