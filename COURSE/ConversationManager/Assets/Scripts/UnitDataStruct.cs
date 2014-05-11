@@ -2,6 +2,7 @@
 @file UnitDataStruct.cs
 @author NDark
 @date 20140420 . file started.
+@date 20140511 by NDark . add class member m_DefenseProperty
 
 */
 using UnityEngine;
@@ -20,6 +21,13 @@ public class UnitDataStruct
 	{
 		return this.m_UnitDataSetting.GetUnitType() ;
 	}
+	
+	public EnegyProperty DefenseProperty
+	{
+		get { return m_DefenseProperty ; }
+		set { m_DefenseProperty = value ; }
+	}
+	private EnegyProperty m_DefenseProperty = new EnegyProperty() ;
 
 
 	// 這個是 UnitDataStruct 本身的 StandardParameter (變數), 而不是 m_UnitDataSetting 內的資料

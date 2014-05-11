@@ -141,12 +141,14 @@ public static class ParseUtility
 	                                  XmlNode _node ,
 	                                  #endif // USE_XML
 	                                  ref string _UnitName , 
-	                                  ref string _UnitDataTemplateName )
+	                                  ref string _UnitDataTemplateName ,
+	                                  ref string _DefenseProperty )
 	{
 		#if USE_XML
 		bool ret = XMLParseLevelUtility.ParseUnitDataStruct( _node , 
 		                                               ref  _UnitName , 
-		                                               ref _UnitDataTemplateName ) ;
+		                                               ref _UnitDataTemplateName ,
+		                                               ref _DefenseProperty ) ;
 		
 		
 		return ret ;

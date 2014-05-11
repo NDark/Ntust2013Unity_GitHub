@@ -1,11 +1,13 @@
 <root>
 <UnitDataStruct Name="FightSystemCharacterLeftObject" 
-	UnitDataTemplateName="UnitDataCharLeft" >
+	UnitDataTemplateName="UnitDataCharLeft" 
+	DefenseProperty="Fire:1,Energy:1,Armor:10" >
 	
 </UnitDataStruct>
 
 <UnitDataStruct Name="FightSystemCharacterRightObject" 
-	UnitDataTemplateName="UnitDataCharRight" >
+	UnitDataTemplateName="UnitDataCharRight" 
+	DefenseProperty="Fire:1,Energy:1,Armor:10" >
 
 </UnitDataStruct>
 
