@@ -8,6 +8,7 @@ using UnityEngine;
 public class SkillAnimation : MonoBehaviour 
 {
 	public SkillVariable m_SkillVariable = null ;
+	public string m_ParentName = "" ;
 
 	// Use this for initialization
 	void Start () {

@@ -39,7 +39,98 @@ public class DamageSystem : MonoBehaviour
 		else
 		{
 			Debug.Log( "target is player" ) ;
+			PlayerDamage( sourceSkillAnim , unitData ) ;
 		}
+	}
+	
+	public void PlayerDamage( SkillAnimation _SkillAnim , UnitData _DefenderUnitData )
+	{
+		Debug.Log( "PlayerDamage()" ) ;
+		if( null == _SkillAnim || 
+		   null == _DefenderUnitData )
+		{
+			return ;
+		}
+		
+		int hpNow = 0 ;
+		Dictionary< string , StandardParameter > standardParamTable = 
+			_DefenderUnitData.m_UnitDataStruct.GetStandardParameterTable() ;			
+		if( true == standardParamTable.ContainsKey( "HP" ) )
+		{
+			hpNow = (int)standardParamTable[ "HP" ].now ;
+		}
+		
+		bool IsDamageToHP = false ;		
+		int totalDamagetoHP = 0 ;
+		EnegyProperty attactProperty = _SkillAnim.m_SkillVariable.m_SkillPropertyNow.AttackProperty ;
+		EnegyProperty defenseProperty = _DefenderUnitData.m_UnitDataStruct.DefenseProperty ;
+		Debug.Log( "_Attacker.attacktSkillProperty=" + attactProperty.CreatePropertyString() ) ;
+		Debug.Log( "_Defender.defenseProperty=" + defenseProperty.CreatePropertyString() ) ;
+		
+		string [] keys = attactProperty.GetKeys() ;
+		for( int i = 0 ; i < keys.Length ; ++i )
+		{
+			int attackPower = attactProperty.GetProperty( keys[ 0 ] ) ;
+			Debug.Log( "attackPower" + attackPower ) ;
+			int attckPowerRemain = 
+				defenseProperty.AddPropertyToArmor( keys[ 0 ] , -attackPower ) ;
+			
+			Debug.Log( "attckPowerRemain=" + attckPowerRemain ) ;
+			attactProperty.AssignProperty( keys[ 0 ] , attckPowerRemain ) ;
+			
+			Debug.Log( "_Attacker.AttackProperty for " + keys[ 0 ] + " = " + 
+			          attactProperty.GetProperty( keys[ 0 ] ) ) ;
+			Debug.Log( "_Defender.DefenseProperty for " + keys[ 0 ] + " = " + 
+						defenseProperty.GetProperty( keys[ 0 ] ) ) ;
+			
+			if( attckPowerRemain > 0 )
+			{
+				IsDamageToHP = true ;
+				int damageToHP = attckPowerRemain ;
+				
+				if( true == standardParamTable.ContainsKey( "HP" ) )
+				{
+					hpNow = (int)standardParamTable[ "HP" ].now ;
+					if( hpNow > attckPowerRemain )
+					{
+						hpNow -= damageToHP ;
+						totalDamagetoHP += damageToHP ;
+						attactProperty.AssignProperty( keys[ 0 ] , 0 ) ;
+					}
+					else
+					{
+						totalDamagetoHP += hpNow ;
+						attckPowerRemain = attckPowerRemain - hpNow ;
+						attactProperty.AssignProperty( keys[ 0 ] , attckPowerRemain ) ;
+						hpNow = 0 ;
+					}
+						
+					standardParamTable[ "HP" ].now = hpNow ;
+				}
+			}
+			
+		
+		}
+		
+		FightSystem fs = GlobalSingleton.GetFightSystem() ;
+		if( true == IsDamageToHP )
+		{
+			string str = string.Format( "{0} 對 {1} 造成了 {2} 點傷害" , 
+			                           _SkillAnim.m_ParentName , 
+			                           _DefenderUnitData.gameObject.name , 
+			                           totalDamagetoHP ) ;
+			fs.AddStatus( str ) ;
+			str = string.Format( "{0} 剩下 {1} 點生命值" , _DefenderUnitData.gameObject.name , hpNow ) ;
+			fs.AddStatus( str ) ;	
+		}
+		else
+		{
+			string str = string.Format( "{0} 對 {1} 沒有造成傷害" , 
+			                           _SkillAnim.m_ParentName , 
+			                           _DefenderUnitData.gameObject.name ) ;
+			fs.AddStatus( str ) ;
+		}
+			
 	}
 	
 	public void SkillDamage( SkillProperty _Attacker , SkillProperty _Defender )

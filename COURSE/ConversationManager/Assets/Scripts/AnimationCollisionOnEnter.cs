@@ -30,23 +30,7 @@ public class AnimationCollisionOnEnter : MonoBehaviour
 		{
 			GlobalSingleton.GetDamageSystem().Encounter( this.gameObject , other.gameObject ) ;
 			
-			UnitData unitData = other.GetComponent<UnitData>() ;
-			if( null != unitData )
-			{
-				Dictionary< string , StandardParameter > standardParamTable = unitData.m_UnitDataStruct.GetStandardParameterTable() ;
-				if( true == standardParamTable.ContainsKey( "HP" ) )
-				{
-					float hpNow = standardParamTable[ "HP" ].now ;
-					--hpNow ;
-					standardParamTable[ "HP" ].now = hpNow ;
 
-					FightSystem fs = GlobalSingleton.GetFightSystem() ;
-					string str = string.Format( "{0} 對 {1} 造成了 1 點傷害" , m_ParentName , other.name ) ;
-					fs.AddStatus( str ) ;
-					str = string.Format( "{0} 剩下 {1} 點生命值" , other.name , hpNow ) ;
-					fs.AddStatus( str ) ;
-				}
-			}
 
 			
 		}
