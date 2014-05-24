@@ -123,6 +123,10 @@
 	<Position3D x="-0.27" y="0.13" z="-1"/>
 </StaticObject>
 
+<StaticObject Name="Anchor011" PrefabName="AnchorPrefab" >
+	<Position3D x="-0.428" y="0.05" z="-1"/>
+</StaticObject>
+
 <StaticObject Name="Anchor02" PrefabName="AnchorPrefab" >
 	<Position3D x="-0.99" y="0.149" z="-1"/>
 </StaticObject>
