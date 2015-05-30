@@ -854,3 +854,9 @@ UpgradeLog*.XML
 /COURSE/NewGUI01/*.csproj
 /COURSE/NewGUI01/*.sln
 /COURSE/NewGUI01/*.sln
+/COURSE/Animation01/Library/ScriptAssemblies
+/COURSE/Animation01/*.csproj
+/COURSE/Animation01/*.sln
+/COURSE/Animation01/*.userprefs
+/COURSE/Animation01/*.sln
+/COURSE/Animation01/*.csproj
