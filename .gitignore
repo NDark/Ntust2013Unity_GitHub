@@ -847,3 +847,10 @@ UpgradeLog*.XML
 /COURSE/ConversationManager/*.sln
 /COURSE/ConversationManager/Temp
 /COURSE/ConversationManager/Library/ScriptAssemblies
+/COURSE/NewGUI01/Library/metadata
+/COURSE/NewGUI01/Library/ScriptAssemblies
+/COURSE/NewGUI01/Library/ShaderCache
+/COURSE/NewGUI01/*.csproj
+/COURSE/NewGUI01/*.csproj
+/COURSE/NewGUI01/*.sln
+/COURSE/NewGUI01/*.sln
