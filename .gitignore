@@ -861,3 +861,4 @@ UpgradeLog*.XML
 /COURSE/Animation01/*.sln
 /COURSE/Animation01/*.csproj
 /COURSE/Animation01/Temp
+/COURSE/Animation01/Library/metadata
