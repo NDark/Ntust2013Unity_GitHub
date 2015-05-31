@@ -860,3 +860,4 @@ UpgradeLog*.XML
 /COURSE/Animation01/*.userprefs
 /COURSE/Animation01/*.sln
 /COURSE/Animation01/*.csproj
+/COURSE/Animation01/Temp
