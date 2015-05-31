@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ZomInputController : MonoBehaviour 
+public class InputControllerSample : MonoBehaviour 
 {
 	bool m_IsCrouch = false ;
 	float m_Speed = 0 ;
@@ -40,7 +40,7 @@ public class ZomInputController : MonoBehaviour
 		}
 		else
 		{
-			m_Speed -= 0.1f ;
+			m_Speed -= 0.5f ;
 		}
 		if( m_Speed >= 5 ) 
 		{	
