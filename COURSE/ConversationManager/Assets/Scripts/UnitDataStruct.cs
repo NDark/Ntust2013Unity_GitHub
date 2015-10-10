@@ -65,7 +65,7 @@ public class UnitDataStruct
 	
 	public bool IsVisible()
 	{
-		return m_ThisGameObject.renderer.enabled ;
+		return m_ThisGameObject.GetComponent<Renderer>().enabled ;
 	}
 	
 	public UnitState GetUnitState()

@@ -127,7 +127,7 @@ public class Agent_WaitToDrive : AgentBase
 			if( distanceToTarget > m_BreakDistance )
 			{
 				// keep going
-				Rigidbody2D r2d = m_GameObject.rigidbody2D ;
+				Rigidbody2D r2d = m_GameObject.GetComponent<Rigidbody2D>() ;
 				if( null != r2d )
 				{
 					distanceVec.Normalize() ;
@@ -137,7 +137,7 @@ public class Agent_WaitToDrive : AgentBase
 			}
 			else
 			{
-				Rigidbody2D r2d = m_GameObject.rigidbody2D ;
+				Rigidbody2D r2d = m_GameObject.GetComponent<Rigidbody2D>() ;
 				r2d.velocity = Vector2.zero ;
 				infoDataCenter.WriteProperty( aCategory , "ASSIGNMENT" , "Wait" ) ;
 				WriteAgentState( AgentState.Condition ) ;
@@ -147,8 +147,8 @@ public class Agent_WaitToDrive : AgentBase
 
 	private void ShowYourself( bool _Set )
 	{
-		if( null != m_GameObject.renderer )
-			m_GameObject.renderer.enabled = _Set ;
+		if( null != m_GameObject.GetComponent<Renderer>() )
+			m_GameObject.GetComponent<Renderer>().enabled = _Set ;
 	}
 	
 }
