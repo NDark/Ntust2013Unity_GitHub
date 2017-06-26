@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/07_ThirdPerson02.unity
+- path: Assets/Scenes/06_CameraField02.unity
   isLoaded: 1
   isActive: 1
