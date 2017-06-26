@@ -1,6 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ConversationGUISystem.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ConversationGUISystem.cs" Line="56" Column="63" />
+      <File FileName="Assets\Scripts\ConversationManager.cs" Line="238" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
