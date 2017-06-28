@@ -28,14 +28,14 @@ public class AlienAIController01 : MonoBehaviour
 		Vector3 toMainCharacter = 
 			m_MainCharacter.transform.position - this.gameObject.transform.position ;
 		
-		AlienAIController01 script = this.gameObject.GetComponent<AlienAIController01>() ;
+		FollowTheMainCharacter02 script = this.gameObject.GetComponent<FollowTheMainCharacter02>() ;
 		
 		float angle = Vector3.Angle( mainCharacterForward , toMainCharacter ) ;
 		if( angle < 90 )
 		{
 			if( null == script )
 			{
-				script = this.gameObject.AddComponent<AlienAIController01>() ;
+				script = this.gameObject.AddComponent<FollowTheMainCharacter02>() ;
 				script.m_MainCharacter = this.m_MainCharacter ;
 			}
 			script.enabled = true ;
