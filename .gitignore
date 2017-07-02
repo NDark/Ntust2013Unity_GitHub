@@ -34,6 +34,8 @@ sysinfo.txt
 *.unitypackage
 
 
+.DS_Store
+
 /COURSE/CameraDemonstration01/*.csproj
 /COURSE/CameraDemonstration01/*.pidb
 /COURSE/CameraDemonstration01/*.sln
