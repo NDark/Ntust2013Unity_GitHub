@@ -91,7 +91,7 @@ public class LevelGeneration07 : MonoBehaviour
 						GameObject addObj = GameObject.Find( unitName ) ;
 						if( null != addObj )
 						{
-							UnityEngineInternal.APIUpdaterRuntimeServices.AddComponent( addObj, "Assets/Script/LevelGeneration07.cs (94,8)", componentName ) ;
+							addObj.AddComponent<LevelGeneration07>() ;
 						}
 						else
 						{
