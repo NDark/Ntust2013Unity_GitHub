@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ConversationGUISystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\Bitbucket\reallyreally\ClientProject\Assets\Scripts\ReallyReallySoapBox\SoapBoxSceneManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\ConversationGUISystem.cs" Line="56" Column="63" />
-      <File FileName="Assets\Scripts\ConversationManager.cs" Line="238" Column="50" />
+      <File FileName="..\..\..\..\Bitbucket\reallyreally\ClientProject\Assets\Scripts\ReallyReallySoapBox\SoapBoxSceneManager.cs" Line="646" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
