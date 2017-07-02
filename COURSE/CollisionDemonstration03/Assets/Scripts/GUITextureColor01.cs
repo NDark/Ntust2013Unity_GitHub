@@ -22,7 +22,7 @@ public class GUITextureColor01 : MonoBehaviour
 	{
 		m_StartTime = Time.timeSinceLevelLoad ;
 		m_EndTime = m_StartTime + m_ElapsedSec ;
-		m_TargetGUITexture = this.guiTexture ;
+		m_TargetGUITexture = this.GetComponent<GUITexture>() ;
 		m_OrgColor = m_TargetGUITexture.color ;
 	}
 	
