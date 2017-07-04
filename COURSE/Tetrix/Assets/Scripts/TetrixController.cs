@@ -53,12 +53,12 @@ public class TetrixController : MonoBehaviour
 		
 		m_NextCount = Time.time + m_CountInterval ;
 		
-		
-		
-		UpdateBlockDownward() ;
 		CheckBlockHasReachTheEnd() ;
 		
 		CheckRemoveALineOfBlocks() ;
+		
+		
+		UpdateBlockDownward() ;
 		
 	}
 	
@@ -106,13 +106,18 @@ public class TetrixController : MonoBehaviour
 		return ret ;
 	}
 	
-	bool CanThisBlockGoDown( GameObject _CurrentObj )
+	bool CanThisBlockGoDown( GameObject _TestBlock )
 	{
 		bool isOccupiedDownward = false ;
 		foreach( var obj in m_QueuedBlocks )
 		{
-			if( _CurrentObj.transform.position.y - 1 == obj.transform.position.y 
-			   && _CurrentObj.transform.position.x == obj.transform.position.x 
+			if( _TestBlock == obj )
+			{
+				continue ;
+			}
+			
+			if( _TestBlock.transform.position.y - 1 == obj.transform.position.y 
+			   && _TestBlock.transform.position.x == obj.transform.position.x 
 			)
 			{
 				isOccupiedDownward = true ;
@@ -124,7 +129,7 @@ public class TetrixController : MonoBehaviour
 			return false ;
 		}
 		
-		return ( _CurrentObj.transform.position.y > 0 ) ;
+		return ( _TestBlock.transform.position.y > 0 ) ;
 		
 	}
 	
@@ -164,6 +169,9 @@ public class TetrixController : MonoBehaviour
 				RemoveLine( h ) ;
 			}
 		}
+		
+		UpdateQueueBlockDownward() ;
+		
 	}
 	
 	void RemoveLine( int _Y )
@@ -197,6 +205,29 @@ public class TetrixController : MonoBehaviour
 		{
 			TryMoveRight() ;
 		}
+	}
+	
+	void UpdateQueueBlockDownward()
+	{
+		for( int h = 0 ; h < MAP_HEIGHT ; ++h )
+		{
+			foreach( var obj in this.m_QueuedBlocks )
+			{
+				if( obj.transform.position.y != h )
+				{
+					continue ;
+				}
+				
+				while( CanThisBlockGoDown( obj ) )
+				{
+					var pos = obj.transform.position ;
+					pos.y -= 1 ;
+					obj.transform.position = pos ;
+					
+				}
+			}
+		}
+		
 	}
 	
 	float m_NextCount = 0.0f ;
