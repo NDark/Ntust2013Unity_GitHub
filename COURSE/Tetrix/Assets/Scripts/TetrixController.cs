@@ -6,33 +6,61 @@ using UnityEngine;
 public class TetrixController : MonoBehaviour 
 {
 	public GameObject m_SampleBlock = null ;
-	public GameObject m_CurrentBlock = null ;
+	public List<GameObject> m_CurrentBlock = new List<GameObject>() ;
 	
 	public List<GameObject> m_QueuedBlocks = new List<GameObject>() ;
 	
 	void TryMoveLeft()
 	{
-		
-		Vector3 pos = m_CurrentBlock.transform.position ;
-		pos.x -= 1 ;
-		if( pos.x < 0 )
+		bool allowtoMove = true ;
+		foreach( var obj in m_CurrentBlock )
 		{
-			pos.x = 0 ;
+			Vector3 pos = obj.transform.position ;
+			if( pos.x - 1 < 0 )
+			{
+				allowtoMove = false ;
+				break ;
+			}
 		}
-		m_CurrentBlock.transform.position = pos ;
+		
+		if( false == allowtoMove )
+		{
+			return ;
+		}
+		
+		foreach( var obj in m_CurrentBlock )
+		{
+			Vector3 pos = obj.transform.position ;
+			pos.x -= 1 ;
+			obj.transform.position = pos ;
+		}
 		
 	}
 	
 	void TryMoveRight()
 	{
-		
-		Vector3 pos = m_CurrentBlock.transform.position ;
-		pos.x += 1 ;
-		if( pos.x >= MAP_WIDTH )
+		bool allowtoMove = true ;
+		foreach( var obj in m_CurrentBlock )
 		{
-			pos.x = MAP_WIDTH - 1 ;
+			Vector3 pos = obj.transform.position ;
+			if( pos.x + 1 >= MAP_WIDTH )
+			{
+				allowtoMove = false ;
+				break ;
+			}
 		}
-		m_CurrentBlock.transform.position = pos ;
+		
+		if( false == allowtoMove )
+		{
+			return ;
+		}
+		
+		foreach( var obj in m_CurrentBlock )
+		{
+			Vector3 pos = obj.transform.position ;
+			pos.x += 1 ;
+			obj.transform.position = pos ;
+		}
 		
 	}
 	
@@ -64,51 +92,62 @@ public class TetrixController : MonoBehaviour
 	
 	void UpdateBlockDownward()
 	{
-		if( null == m_CurrentBlock )
+		if( null == m_CurrentBlock 
+		   || m_CurrentBlock.Count <= 0 )
 		{
 			return ;
 		}
 		
-		Vector3 pos = m_CurrentBlock.transform.position ;
-		pos.y -= 1 ;
-		m_CurrentBlock.transform.position = pos ;
+		
+		foreach( var obj in m_CurrentBlock )
+		{
+			Vector3 pos = obj.transform.position ;
+			pos.y -= 1 ;
+			obj.transform.position = pos ;
+		}
 		
 		
 	}
 	
 	void CheckBlockHasReachTheEnd()
 	{
-		if( null == m_CurrentBlock )
+		if( null == m_CurrentBlock || m_CurrentBlock.Count <= 0 )
 		{
+			m_CurrentBlock = GenerateANewBlock() ;
 			return ;
 		}
 		
-		Vector3 pos = m_CurrentBlock.transform.position ;
 		if( this.CanThisBlockGoDown( m_CurrentBlock ) )
 		{
 			return ;
 		}
 		
-		m_QueuedBlocks.Add( m_CurrentBlock ) ;
+		foreach( var obj in m_CurrentBlock )
+		{
+			m_QueuedBlocks.Add( obj ) ;
+		}
 		
-		m_CurrentBlock = null ;
+		m_CurrentBlock.Clear() ;
 		
 		m_CurrentBlock = GenerateANewBlock() ;
 	}
 	
-	GameObject GenerateANewBlock()
+	List<GameObject> GenerateANewBlock()
 	{
-		GameObject ret = null ;
-		ret = GameObject.Instantiate( m_SampleBlock ) ;
-		var pos = ret.transform.position ;
+		List<GameObject> ret = new List<GameObject>() ;
+		var obj = GameObject.Instantiate( m_SampleBlock ) ;
+		var pos = obj.transform.position ;
 		pos.y = 5 ;
-		ret.transform.position = pos ;
+		obj.transform.position = pos ;
+		ret.Add( obj ) ;
 		return ret ;
 	}
 	
 	bool CanThisBlockGoDown( GameObject _TestBlock )
 	{
+		bool isReachBottom = false ;
 		bool isOccupiedDownward = false ;
+		
 		foreach( var obj in m_QueuedBlocks )
 		{
 			if( _TestBlock == obj )
@@ -118,18 +157,38 @@ public class TetrixController : MonoBehaviour
 			
 			if( _TestBlock.transform.position.y - 1 == obj.transform.position.y 
 			   && _TestBlock.transform.position.x == obj.transform.position.x 
-			)
+			   )
 			{
 				isOccupiedDownward = true ;
+				break ;
 			}
 		}
+		if( _TestBlock.transform.position.y <= 0 )
+		{
+			isReachBottom = true ;
+			return false ;
+		}
 		
-		if( isOccupiedDownward )
+		if( isOccupiedDownward || isReachBottom )
 		{
 			return false ;
 		}
 		
-		return ( _TestBlock.transform.position.y > 0 ) ;
+		return true ;
+		
+	}
+	
+	bool CanThisBlockGoDown( List<GameObject> _TestBlock )
+	{
+		foreach( var testBlock in _TestBlock )
+		{
+			if( false == this.CanThisBlockGoDown( testBlock ) ) 
+			{
+				return false ;
+			}
+		}
+		
+		return true ;
 		
 	}
 	
