@@ -5,7 +5,36 @@ using UnityEngine;
 
 public class TetrixController : MonoBehaviour 
 {
-	public GameObject m_Block = null ;
+	public GameObject m_SampleBlock = null ;
+	public GameObject m_CurrentBlock = null ;
+	
+	public List<GameObject> m_QueuedBlocks = new List<GameObject>() ;
+	
+	void TryMoveLeft()
+	{
+		
+		Vector3 pos = m_CurrentBlock.transform.position ;
+		pos.x -= 1 ;
+		if( pos.x < 0 )
+		{
+			pos.x = 0 ;
+		}
+		m_CurrentBlock.transform.position = pos ;
+		
+	}
+	
+	void TryMoveRight()
+	{
+		
+		Vector3 pos = m_CurrentBlock.transform.position ;
+		pos.x += 1 ;
+		if( pos.x >= MAP_WIDTH )
+		{
+			pos.x = MAP_WIDTH - 1 ;
+		}
+		m_CurrentBlock.transform.position = pos ;
+		
+	}
 	
 	// Use this for initialization
 	void Start () {
@@ -15,6 +44,8 @@ public class TetrixController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		CheckInput() ;
+		
 		if( Time.time < m_NextCount )
 		{
 			return ;
@@ -22,15 +53,150 @@ public class TetrixController : MonoBehaviour
 		
 		m_NextCount = Time.time + m_CountInterval ;
 		
+		
+		
 		UpdateBlockDownward() ;
+		CheckBlockHasReachTheEnd() ;
+		
+		CheckRemoveALineOfBlocks() ;
 		
 	}
 	
 	void UpdateBlockDownward()
 	{
-		Vector3 pos = m_Block.transform.position ;
+		if( null == m_CurrentBlock )
+		{
+			return ;
+		}
+		
+		Vector3 pos = m_CurrentBlock.transform.position ;
 		pos.y -= 1 ;
-		m_Block.transform.position = pos ;
+		m_CurrentBlock.transform.position = pos ;
+		
+		
+	}
+	
+	void CheckBlockHasReachTheEnd()
+	{
+		if( null == m_CurrentBlock )
+		{
+			return ;
+		}
+		
+		Vector3 pos = m_CurrentBlock.transform.position ;
+		if( this.CanThisBlockGoDown( m_CurrentBlock ) )
+		{
+			return ;
+		}
+		
+		m_QueuedBlocks.Add( m_CurrentBlock ) ;
+		
+		m_CurrentBlock = null ;
+		
+		m_CurrentBlock = GenerateANewBlock() ;
+	}
+	
+	GameObject GenerateANewBlock()
+	{
+		GameObject ret = null ;
+		ret = GameObject.Instantiate( m_SampleBlock ) ;
+		var pos = ret.transform.position ;
+		pos.y = 5 ;
+		ret.transform.position = pos ;
+		return ret ;
+	}
+	
+	bool CanThisBlockGoDown( GameObject _CurrentObj )
+	{
+		bool isOccupiedDownward = false ;
+		foreach( var obj in m_QueuedBlocks )
+		{
+			if( _CurrentObj.transform.position.y - 1 == obj.transform.position.y 
+			   && _CurrentObj.transform.position.x == obj.transform.position.x 
+			)
+			{
+				isOccupiedDownward = true ;
+			}
+		}
+		
+		if( isOccupiedDownward )
+		{
+			return false ;
+		}
+		
+		return ( _CurrentObj.transform.position.y > 0 ) ;
+		
+	}
+	
+	const int MAP_HEIGHT = 10 ;
+	const int MAP_WIDTH = 3 ;
+	bool [] tempOccupied = new bool[MAP_WIDTH] ;
+	void CheckRemoveALineOfBlocks()
+	{
+		for( int h = 0 ; h < MAP_HEIGHT ; ++h )
+		{
+			for( int w = 0 ; w < MAP_WIDTH ; ++w )
+			{
+				tempOccupied[w] = false ;
+			}
+			
+			foreach( var obj in this.m_QueuedBlocks )
+			{
+				int x = (int) obj.transform.position.x ;
+				if( obj.transform.position.y == h )
+				{
+					tempOccupied[ x ] = true ;
+				}
+			}
+			
+			bool removeLine = true ;
+			for( int w = 0 ; w < MAP_WIDTH ; ++w )
+			{
+				if( false == tempOccupied[ w ] )
+				{
+					// next line 
+					removeLine = false ;
+				}
+			}
+			
+			if( true == removeLine )
+			{
+				RemoveLine( h ) ;
+			}
+		}
+	}
+	
+	void RemoveLine( int _Y )
+	{
+		List<GameObject> removingObjs = new List<GameObject>() ;
+		foreach( var obj in this.m_QueuedBlocks )
+		{
+			if( obj.transform.position.y == _Y )
+			{
+				removingObjs.Add( obj ) ;
+			}
+		}
+		
+		foreach( var obj in removingObjs )
+		{
+			GameObject.Destroy( obj ) ;
+			m_QueuedBlocks.Remove( obj ) ;
+		}
+		removingObjs.Clear() ;
+		
+	}
+
+	void CheckInput()
+	{
+		if( Input.GetKeyDown( KeyCode.LeftArrow ) )
+		{
+			TryMoveLeft() ;
+		}
+		
+		if( Input.GetKeyDown( KeyCode.RightArrow ) )
+		{
+			TryMoveRight() ;
+		}
 	}
 	
 	float m_NextCount = 0.0f ;
