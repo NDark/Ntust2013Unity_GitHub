@@ -72,6 +72,11 @@ public class TetrixController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+		if( true  == m_IsGameOver )
+		{
+			return ;
+		}
+
 		CheckInput() ;
 		
 		if( Time.time < m_NextCount )
@@ -87,7 +92,10 @@ public class TetrixController : MonoBehaviour
 		
 		
 		UpdateBlockDownward() ;
-		
+
+		CheckBlockHasReachTheTop() ;
+
+
 	}
 	
 	void UpdateBlockDownward()
@@ -97,15 +105,14 @@ public class TetrixController : MonoBehaviour
 		{
 			return ;
 		}
-		
-		
+
 		foreach( var obj in m_CurrentBlock )
 		{
 			Vector3 pos = obj.transform.position ;
 			pos.y -= 1 ;
 			obj.transform.position = pos ;
 		}
-		
+
 		
 	}
 	
@@ -114,6 +121,7 @@ public class TetrixController : MonoBehaviour
 		if( null == m_CurrentBlock || m_CurrentBlock.Count <= 0 )
 		{
 			m_CurrentBlock = GenerateANewBlock() ;
+
 			return ;
 		}
 		
@@ -130,9 +138,24 @@ public class TetrixController : MonoBehaviour
 		m_CurrentBlock.Clear() ;
 		
 		m_CurrentBlock = GenerateANewBlock() ;
+
 	}
 	
 	List<GameObject> GenerateANewBlock()
+	{
+		List<GameObject> ret = null ;
+
+		int random = Random.Range( 0 , 3 ) ;
+		switch( random )
+		{
+		case 0 : ret = GenerateStraight4Blocks() ; break;
+		case 1 : ret = GenerateStraight2x2Blocks() ; break;
+		case 2 : ret = GenerateStraightLBlocks() ; break;
+		}
+		return ret ;
+	}
+
+	List<GameObject> Generate1x1Blocks()
 	{
 		List<GameObject> ret = new List<GameObject>() ;
 		var obj = GameObject.Instantiate( m_SampleBlock ) ;
@@ -140,6 +163,122 @@ public class TetrixController : MonoBehaviour
 		pos.y = 5 ;
 		obj.transform.position = pos ;
 		ret.Add( obj ) ;
+		return ret ;
+	}
+
+	List<GameObject> GenerateStraightLBlocks()
+	{
+		List<GameObject> ret = new List<GameObject>() ;
+
+		var firstObj = GameObject.Instantiate( m_SampleBlock ) ;
+		var firstPos = firstObj.transform.position ;
+		firstPos.y = INIT_HEIGHT ;
+		firstObj.transform.position = firstPos ;
+		ret.Add( firstObj ) ;
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 2 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 2 ;
+			pos.x += 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+		return ret ;
+	}
+
+	List<GameObject> GenerateStraight2x2Blocks()
+	{
+		List<GameObject> ret = new List<GameObject>() ;
+
+		var firstObj = GameObject.Instantiate( m_SampleBlock ) ;
+		var firstPos = firstObj.transform.position ;
+		firstPos.y = INIT_HEIGHT ;
+		firstObj.transform.position = firstPos ;
+		ret.Add( firstObj ) ;
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.x += 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 1 ;
+			pos.x += 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+		return ret ;
+	}
+
+	List<GameObject> GenerateStraight4Blocks()
+	{
+		List<GameObject> ret = new List<GameObject>() ;
+
+		var firstObj = GameObject.Instantiate( m_SampleBlock ) ;
+		var firstPos = firstObj.transform.position ;
+		firstPos.y = INIT_HEIGHT ;
+		firstObj.transform.position = firstPos ;
+		ret.Add( firstObj ) ;
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 1 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 2 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
+		{
+			var obj = GameObject.Instantiate( m_SampleBlock ) ;
+			obj.transform.position = firstPos ;
+			var pos = obj.transform.position ;
+			pos.y -= 3 ;
+			obj.transform.position = pos ;
+			ret.Add( obj ) ;
+		}
 		return ret ;
 	}
 	
@@ -191,8 +330,9 @@ public class TetrixController : MonoBehaviour
 		return true ;
 		
 	}
-	
-	const int MAP_HEIGHT = 10 ;
+
+	const int INIT_HEIGHT = 25 ;
+	const int MAP_HEIGHT = 20 ;
 	const int MAP_WIDTH = 3 ;
 	bool [] tempOccupied = new bool[MAP_WIDTH] ;
 	void CheckRemoveALineOfBlocks()
@@ -231,6 +371,23 @@ public class TetrixController : MonoBehaviour
 		
 		UpdateQueueBlockDownward() ;
 		
+	}
+
+
+	void CheckBlockHasReachTheTop()
+	{
+
+
+		foreach( var obj in this.m_QueuedBlocks )
+		{
+			int x = (int) obj.transform.position.x ;
+			if( obj.transform.position.y == MAP_HEIGHT - 1 )
+			{
+				m_IsGameOver = true ;
+				return; 
+			}
+		}
+
 	}
 	
 	void RemoveLine( int _Y )
@@ -291,4 +448,7 @@ public class TetrixController : MonoBehaviour
 	
 	float m_NextCount = 0.0f ;
 	float m_CountInterval = 1.0f ;
+
+	bool m_IsGameOver = false ;
+
 }
