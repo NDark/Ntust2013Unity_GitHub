@@ -421,8 +421,35 @@ public class TetrixController : MonoBehaviour
 		{
 			TryMoveRight() ;
 		}
+
+		if( Input.GetKeyDown( KeyCode.Space ) )
+		{
+			TryTurnCurrentBlock() ;
+		}
 	}
-	
+
+	void TryTurnCurrentBlock()
+	{
+		if( 0 == m_CurrentBlock.Count )
+		{
+			return ;
+		}
+
+		Vector3 firstPos = m_CurrentBlock[ 0 ].transform.position ;
+
+		float tmp = 0 ;
+		for( int i = 1 ; i < m_CurrentBlock.Count ; ++i )
+		{
+			Vector3 pos = m_CurrentBlock[ i ].transform.position ;
+			Vector3 diffVec = pos - firstPos ;
+			tmp = diffVec.x ;
+			diffVec.x = -diffVec.y ;
+			diffVec.y = tmp ;
+
+			m_CurrentBlock[ i ].transform.position = firstPos + diffVec ;
+		}
+	}
+
 	void UpdateQueueBlockDownward()
 	{
 		for( int h = 0 ; h < MAP_HEIGHT ; ++h )
