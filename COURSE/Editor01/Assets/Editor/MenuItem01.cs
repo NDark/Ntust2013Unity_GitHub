@@ -59,11 +59,11 @@ public class MenuItem01 : MonoBehaviour
 			// GameObject obj = Selection.activeTransform.gameObject ;
 			GameObject obj = Selection.activeGameObject ;
 			if( null == obj.GetComponent( "GameUnitData02" ) )
-				obj.AddComponent( "GameUnitData02" ) ;
+				obj.AddComponent<GameUnitData02>(  ) ;
 			if( null == obj.GetComponent( "RegisterToMainUpdate03" ) )
-				obj.AddComponent( "RegisterToMainUpdate03" ) ;
+				obj.AddComponent<RegisterToMainUpdate03>(  ) ;
 			if( null == obj.GetComponent( "GUI_UnitHP01" ) )
-				obj.AddComponent( "GUI_UnitHP01" ) ;
+				obj.AddComponent<GUI_UnitHP01>(  ) ;
 			
 		}
 	}
