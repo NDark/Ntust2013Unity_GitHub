@@ -25,6 +25,8 @@ public class SSAOEffect : MonoBehaviour
 	public Texture2D m_RandomTexture;
 	
 	private bool m_Supported;
+	
+	private Camera camera ;
 
 	private static Material CreateMaterial (Shader shader)
 	{
@@ -51,6 +53,8 @@ public class SSAOEffect : MonoBehaviour
 	
 	void Start()
 	{
+		this.camera = this.GetComponent<Camera>() ;
+	
 		if (!SystemInfo.supportsImageEffects || !SystemInfo.SupportsRenderTextureFormat (RenderTextureFormat.Depth))
 		{
 			m_Supported = false;
@@ -71,7 +75,9 @@ public class SSAOEffect : MonoBehaviour
 		m_Supported = true;
 	}
 	
-	void OnEnable () {
+	void OnEnable () 
+	{
+		
 		camera.depthTextureMode |= DepthTextureMode.DepthNormals;
 	}
 
