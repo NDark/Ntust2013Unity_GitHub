@@ -22,24 +22,24 @@ public class OnMouseDownPlayMovie01 : MonoBehaviour
 	
 	void OnMouseDown()
 	{
-		if( null == this.audio )
+		if( null == this.GetComponent<AudioSource>() )
 		{
 			Debug.LogError( "No audio source" ) ;
 			return ;
 		}
 		
-		MovieTexture mt = (MovieTexture) renderer.material.mainTexture ;
+		MovieTexture mt = (MovieTexture) GetComponent<Renderer>().material.mainTexture ;
 		if( false == mt.isPlaying )
 		{
 			Debug.Log( "StartPlay" ) ;
 			mt.Play() ;
-			this.audio.Play() ;
+			this.GetComponent<AudioSource>().Play() ;
 		}
 		else
 		{
 			Debug.Log( "Pause" ) ;
 			mt.Pause() ;
-			this.audio.Pause() ;
+			this.GetComponent<AudioSource>().Pause() ;
 		}
 	}
 }
