@@ -9,11 +9,11 @@ public class FollowTargetByNavMesh01 : MonoBehaviour
 {
 	
 	public GameObject m_TargetObj = null ;
-	public NavMeshAgent m_NavMeshAgent = null ;
+	public UnityEngine.AI.NavMeshAgent m_NavMeshAgent = null ;
 	// Use this for initialization
 	void Start () 
 	{
-		m_NavMeshAgent = this.gameObject.GetComponent<NavMeshAgent>() ;
+		m_NavMeshAgent = this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>() ;
 		if( null == m_NavMeshAgent )
 		{
 			Debug.LogError( "null == m_NavMeshAgent )" ) ;
