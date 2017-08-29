@@ -24,7 +24,7 @@ public class TextureSetPixel : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		m_Tex2D = (Texture2D) this.guiTexture.texture ;
+		m_Tex2D = (Texture2D) this.GetComponent<GUITexture>().texture ;
 		Debug.Log( m_Tex2D.GetType().ToString() ) ;
 	}
 	
