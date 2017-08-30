@@ -160,16 +160,16 @@ public class TripleTaoEditorWindow : EditorWindow
 						}
 						
 						// center board pos - shift
-						Camera.mainCamera.transform.position = 
+						Camera.main.transform.position = 
 							new Vector3( obj.transform.position.x - shiftVec.x ,
 									 	 obj.transform.position.y + 10 ,
 										 obj.transform.position.z - shiftVec.z ) ;	
 						
 						// orthogonal size by max of width and height
 						if( m_WidthNum > m_HeightNum )
-							Camera.mainCamera.orthographicSize = m_WidthNum * m_SpaceOfBoards.x / 2.0f ;
+							Camera.main.orthographicSize = m_WidthNum * m_SpaceOfBoards.x / 2.0f ;
 						else 
-							Camera.mainCamera.orthographicSize = m_HeightNum * m_SpaceOfBoards.z / 2.0f ;
+							Camera.main.orthographicSize = m_HeightNum * m_SpaceOfBoards.z / 2.0f ;
 					}
 					
 					
