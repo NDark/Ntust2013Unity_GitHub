@@ -392,6 +392,7 @@ public class TetrixController : MonoBehaviour
 	bool [] tempOccupied = new bool[MAP_WIDTH] ;
 	void CheckRemoveALineOfBlocks()
 	{
+		int minLineH = int.MaxValue;
 		for( int h = 0 ; h < MAP_HEIGHT ; ++h )
 		{
 			for( int w = 0 ; w < MAP_WIDTH ; ++w )
@@ -420,11 +421,20 @@ public class TetrixController : MonoBehaviour
 			
 			if( true == removeLine )
 			{
+				if (minLineH == int.MaxValue) 
+				{
+					minLineH = h;
+				}
+					
 				RemoveLine( h ) ;
 			}
 		}
-		
-		UpdateQueueBlockDownward() ;
+
+		if (minLineH != int.MaxValue) 
+		{
+			UpdateQueueBlockDownward( minLineH ) ;
+		}
+
 		
 	}
 
@@ -528,13 +538,14 @@ public class TetrixController : MonoBehaviour
 		}
 	}
 
-	void UpdateQueueBlockDownward()
+	void UpdateQueueBlockDownward( float minH )
 	{
 		for( int h = 0 ; h < MAP_HEIGHT ; ++h )
 		{
 			foreach( var obj in this.m_QueuedBlocks )
 			{
-				if( obj.transform.position.y != h )
+				if( obj.transform.position.y != h
+					|| obj.transform.position.y < minH )
 				{
 					continue ;
 				}
@@ -548,7 +559,7 @@ public class TetrixController : MonoBehaviour
 				}
 			}
 		}
-		
+		Debug.Log ("UpdateQueueBlockDownward");
 	}
 	
 	float m_NextCount = 0.0f ;
