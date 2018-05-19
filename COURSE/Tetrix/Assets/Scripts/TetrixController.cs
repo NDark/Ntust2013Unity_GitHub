@@ -465,6 +465,12 @@ public class TetrixController : MonoBehaviour
 		
 	}
 
+	void TryMoveDown() 
+	{
+		CheckBlockHasReachTheEnd ();
+		UpdateBlockDownward ();
+	}
+
 	void CheckInput()
 	{
 		if( Input.GetKeyDown( KeyCode.LeftArrow ) )
@@ -475,6 +481,11 @@ public class TetrixController : MonoBehaviour
 		if( Input.GetKeyDown( KeyCode.RightArrow ) )
 		{
 			TryMoveRight() ;
+		}
+
+		if( Input.GetKeyDown( KeyCode.DownArrow ) )
+		{
+			TryMoveDown() ;
 		}
 
 		if( Input.GetKeyDown( KeyCode.Space ) )
