@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class TetrixController : MonoBehaviour 
 {
+	const int INIT_HEIGHT = 25 ;
+	const int MAP_HEIGHT = 20 ;
+	const int MAP_WIDTH = 4 ;
+
 	public GameObject m_SampleBlock = null ;
 	public List<GameObject> m_CurrentBlock = new List<GameObject>() ;
 	
@@ -22,22 +26,20 @@ public class TetrixController : MonoBehaviour
 
 	void TryMoveLeft()
 	{
-		bool allowtoMove = true ;
 		foreach( var obj in m_CurrentBlock )
 		{
 			Vector3 pos = obj.transform.position ;
 			if( pos.x - 1 < 0 )
 			{
-				allowtoMove = false ;
-				break ;
+				return;
 			}
 		}
-		
-		if( false == allowtoMove )
+
+		if (false == CanThisBlockGoLeft (m_CurrentBlock)) 
 		{
-			return ;
+			return;
 		}
-		
+
 		foreach( var obj in m_CurrentBlock )
 		{
 			Vector3 pos = obj.transform.position ;
@@ -55,14 +57,13 @@ public class TetrixController : MonoBehaviour
 			Vector3 pos = obj.transform.position ;
 			if( pos.x + 1 >= MAP_WIDTH )
 			{
-				allowtoMove = false ;
-				break ;
+				return;
 			}
 		}
-		
-		if( false == allowtoMove )
+
+		if (false == CanThisBlockGoRight (m_CurrentBlock)) 
 		{
-			return ;
+			return;
 		}
 		
 		foreach( var obj in m_CurrentBlock )
@@ -158,8 +159,8 @@ public class TetrixController : MonoBehaviour
 		int random = Random.Range( 0 , 3 ) ;
 		switch( random )
 		{
-		case 0 : ret = GenerateStraight4Blocks() ; break;
-		case 1 : ret = GenerateStraight2x2Blocks() ; break;
+		case 0 : ret = GenerateStraightLBlocks() ; break;
+		case 1 : ret = GenerateStraightLBlocks() ; break;
 		case 2 : ret = GenerateStraightLBlocks() ; break;
 		}
 		return ret ;
@@ -291,7 +292,24 @@ public class TetrixController : MonoBehaviour
 		}
 		return ret ;
 	}
-	
+
+	bool CanThisBlockGoWithQueueBlocks( Vector3 testPos )
+	{
+		bool isOccupiedDownward = false ;
+
+		foreach( var obj in m_QueuedBlocks )
+		{
+			if( testPos.y == obj.transform.position.y 
+				&& testPos.x == obj.transform.position.x 
+			)
+			{
+				return false;
+			}
+		}
+
+		return true ;// valid
+	}
+
 	bool CanThisBlockGoDown( GameObject _TestBlock )
 	{
 		bool isReachBottom = false ;
@@ -326,7 +344,37 @@ public class TetrixController : MonoBehaviour
 		return true ;
 		
 	}
-	
+
+
+	bool CanThisBlockGoLeft( List<GameObject> _TestBlock )
+	{
+		foreach( var testBlock in _TestBlock )
+		{
+			Vector3 left = testBlock.transform.position;
+			left.x -= 1;
+			if( false == this.CanThisBlockGoWithQueueBlocks( left ) ) 
+			{
+				return false ;
+			}
+		}
+		return true ;
+	}
+
+	bool CanThisBlockGoRight( List<GameObject> _TestBlock )
+	{
+		foreach( var testBlock in _TestBlock )
+		{
+			Vector3 left = testBlock.transform.position;
+			left.x += 1;
+			if( false == this.CanThisBlockGoWithQueueBlocks( left ) ) 
+			{
+				return false ;
+			}
+		}
+		return true ;
+	}
+
+
 	bool CanThisBlockGoDown( List<GameObject> _TestBlock )
 	{
 		foreach( var testBlock in _TestBlock )
@@ -341,9 +389,6 @@ public class TetrixController : MonoBehaviour
 		
 	}
 
-	const int INIT_HEIGHT = 25 ;
-	const int MAP_HEIGHT = 20 ;
-	const int MAP_WIDTH = 3 ;
 	bool [] tempOccupied = new bool[MAP_WIDTH] ;
 	void CheckRemoveALineOfBlocks()
 	{
@@ -446,7 +491,10 @@ public class TetrixController : MonoBehaviour
 		}
 
 		Vector3 firstPos = m_CurrentBlock[ 0 ].transform.position ;
+
 		List<Vector3> finalPosArray = new List<Vector3> ();
+		finalPosArray.Add( firstPos ) ;
+
 		float tmp = 0 ;
 		for( int i = 1 ; i < m_CurrentBlock.Count ; ++i )
 		{
@@ -463,7 +511,7 @@ public class TetrixController : MonoBehaviour
 			finalPosArray.Add( finalPos ) ;
 		}
 
-		for( int i = 1 ; i < m_CurrentBlock.Count ; ++i )
+		for( int i = 0 ; i < m_CurrentBlock.Count ; ++i )
 		{
 			m_CurrentBlock[ i ].transform.position = finalPosArray[i] ;
 		}
