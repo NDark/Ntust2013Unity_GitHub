@@ -9,7 +9,17 @@ public class TetrixController : MonoBehaviour
 	public List<GameObject> m_CurrentBlock = new List<GameObject>() ;
 	
 	public List<GameObject> m_QueuedBlocks = new List<GameObject>() ;
-	
+
+	bool IsValidPositionX( float x )
+	{
+		if (x < 0 || x >= MAP_WIDTH) 
+		{
+			return false;
+		}
+
+		return true;
+	}
+
 	void TryMoveLeft()
 	{
 		bool allowtoMove = true ;
@@ -436,7 +446,7 @@ public class TetrixController : MonoBehaviour
 		}
 
 		Vector3 firstPos = m_CurrentBlock[ 0 ].transform.position ;
-
+		List<Vector3> finalPosArray = new List<Vector3> ();
 		float tmp = 0 ;
 		for( int i = 1 ; i < m_CurrentBlock.Count ; ++i )
 		{
@@ -445,8 +455,17 @@ public class TetrixController : MonoBehaviour
 			tmp = diffVec.x ;
 			diffVec.x = -diffVec.y ;
 			diffVec.y = tmp ;
+			Vector3 finalPos = firstPos + diffVec;
+			if (!IsValidPositionX (finalPos.x)) 
+			{
+				return;
+			}
+			finalPosArray.Add( finalPos ) ;
+		}
 
-			m_CurrentBlock[ i ].transform.position = firstPos + diffVec ;
+		for( int i = 1 ; i < m_CurrentBlock.Count ; ++i )
+		{
+			m_CurrentBlock[ i ].transform.position = finalPosArray[i] ;
 		}
 	}
 
